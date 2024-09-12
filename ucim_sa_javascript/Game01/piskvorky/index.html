@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="main-container">
+    <div class="game-container">
+        <div class="scoreboard">
+            <div class="player-container">
+                <div class="player" id="playerX">Hráč (X) : <span id="scoreX">0</span></div>
+                <div class="abilities">
+                    <button class="ability" id="clearX">🧹 Vymazať</button>
+                    <button class="ability" id="changeX">🔄 Zmeniť</button>
+                    <button class="ability" id="lockX">🔒 Uzamknúť</button>
+                </div>
+            </div>
+            <div class="player-container">
+                <div class="player" id="playerO">Hráč (O) : <span id="scoreO">0</span></div>
+                <div class="abilities">
+                    <button class="ability" id="clearO">🧹 Vymazať</button>
+                    <button class="ability" id="changeO">🔄 Zmeniť</button>
+                    <button class="ability" id="lockO">🔒 Uzamknúť</button>
+                </div>
+            </div>
+        </div>
+        <div class="board">
+            <div class="cell" id="cell0"></div>
+            <div class="cell" id="cell1"></div>
+            <div class="cell" id="cell2"></div>
+            <div class="cell" id="cell3"></div>
+            <div class="cell" id="cell4"></div>
+            <div class="cell" id="cell5"></div>
+            <div class="cell" id="cell6"></div>
+            <div class="cell" id="cell7"></div>
+            <div class="cell" id="cell8"></div>
+        </div>
+        <h3 id="turnIndicator" class="turn-indicator">X</h3>
+        <button id="restartButton">Reštart</button>
+    </div>
+</div>
+<script src="globals.js"></script>
+<script src="script.js"></script>
+<script src="abilities.js"></script>
+</body>
+</html>
