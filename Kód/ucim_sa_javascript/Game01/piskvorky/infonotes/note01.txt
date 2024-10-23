@@ -1,0 +1,24 @@
+Funkcia: handleCellClick
+
+Účel:
+Táto funkcia je určená na spracovanie kliknutia hráča na jedno z políčok na hracej doske v hre piškvorky.
+
+Parametre:
+
+    event: Objekt udalosti, ktorý obsahuje informácie o kliknutí vrátane cieľa udalosti, čo umožňuje identifikovať, na ktoré políčko bolo kliknuté.
+
+Funkčnosť:
+
+    Identifikácia políčka: Na základe udalosti sa získa cieľové políčko (element DOM), na ktoré hráč klikol.
+    Určenie aktuálneho hráča: Na základe globálnej premennej currentPlayerTurn sa určí, či je na ťahu hráč 'X' alebo 'O'.
+    Značkovanie políčka: Políčko je označené symbolom aktuálneho hráča volaním funkcie placeMark.
+    Kontrola výhry: Po značkovaní sa skontroluje, či aktuálny ťah spôsobil výhru hráča volaním funkcie checkForWin. Ak je to výhra, zavolá sa funkcia endGame s parametrom false indikujúcim, že hra skončila víťazstvom, nie remízou.
+    Kontrola remízy: Ak predchádzajúca kontrola neukončila hru výhrou, skontroluje sa, či došlo k remíze volaním funkcie isDraw. Ak je výsledok true, zavolá sa endGame s parametrom true.
+    Prepínanie hráčov: Ak hra nekončí ani výhrou ani remízou, zmení sa hodnota globálnej premennej currentPlayerTurn na opačnú, čím sa umožní ťah druhému hráčovi.
+
+Použitie:
+Táto funkcia je naviazaná na každé políčko hracej dosky ako poslucháč udalostí pre kliknutia. Je aktivovaná len raz pre každé políčko vďaka parametru { once: true } pri pridávaní poslucháča udalostí,
+ aby sa zabránilo viacnásobnému označeniu rovnakého políčka.
+Zhrnutie:
+
+Funkcia handleCellClick zohráva kľúčovú úlohu v riadení herného procesu piškvoriek, spracúva ťahy hráčov, kontroluje podmienky pre výhru alebo remízu a spravuje postupné striedanie hráčov.
