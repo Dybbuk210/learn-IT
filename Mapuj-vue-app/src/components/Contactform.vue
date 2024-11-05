@@ -90,7 +90,7 @@
         </form>
       </div>
     </section>
-  </template>
+</template>
   
   <script>
   import { reactive, toRefs } from "vue";

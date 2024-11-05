@@ -1,7 +1,7 @@
 <template>
     <div class="product-card">
       <article>
-        <!-- Header: Logo and Support Text -->
+        <!-- Header: Logo and Support -->
         <div class="card-header">
           <img src="https://via.placeholder.com/50" alt="Brand Logo" class="brand-logo">
           <span class="support-text">Podporiť</span>
@@ -19,7 +19,7 @@
         <!-- Buy Button -->
         <button class="buy-button">Kúpiť</button>
   
-        <!-- Rating Section: Stars -->
+        <!-- Rating Section -->
         <div class="rating">
           <ul class="rating-stars">
             <li><img src="https://via.placeholder.com/20" alt="Star"></li>
@@ -70,7 +70,7 @@
     opacity: 1;
   }
   
-  /* Other existing styles */
+
   .card-header {
     display: flex;
     justify-content: space-between;
