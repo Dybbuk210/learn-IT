@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    }
+
+body {
+    width: 100%;
+    background-color: #000000;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    }
+
+.body_container {
+    max-width: 1440px;
+    width: 100%;
+    background-color: #ffffff;
+    margin: 0 auto;
+    }
+
+/*=== nav start ===*/
+.main_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    margin: 47px auto;
+    }
+
+.nav_container {
+    position: relative;
+    height: 100%;
+    max-width: 1280px;
+    width: 100%;
+    background-color: #132B58;
+    border-radius: 16px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+.main_nav .nav_container .sidebar_open{
+    color: #ffffff;
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+    }
+
+.nav_ul {
+    display: flex;
+    align-items: center;
+    }
+
+.nav_ul li {
+    margin-left: 33px;
+    }
+
+
+.nav_ul li a {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 10px;
+    }
+
+.nav_menu .logo_toggle {
+   display: none;
+    }
+
+.sidebar_close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    }
+
+.fullnav_button {
+    width: 197px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    gap: 10px;
+    background-color: #1376F8;
+    color: #ffffff;
+    display: block;
+    padding: 10px 46px;
+    margin: 16px;
+    font-weight: 600;
+    }
+
+.logo {
+    width: 80px;
+    height: 50px;
+    margin-left: 22px;
+    }
+
+.nav_logo {
+    content: url('img/Nav_logo_A.svg');
+    }
+
+/*=== end nav ===*/
+
+@media (max-width: 800px) {
+
+    .main_nav .nav_container .sidebar_open {
+        display: block;
+    }
+
+    .fullnav_button {
+        display: none;
+    }
+
+    .nav_logo {
+        content: url('img/nav_logo_B.svg');
+        }
+
+    .nav_menu {
+        position: fixed;
+        height: 100%;
+        width: 350px;
+        left: -100%;
+        top: 0;
+        background-color: #132B58;
+        padding: 20px;
+        transition: all 0.4s ease;
+    }
+
+    .nav_container {
+        background-color: #ffffff;
+    }
+
+    nav.active .nav_menu {
+    left: -0%; 
+    }
+    .nav_menu .logo_toggle {
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main_nav .nav_ul {
+        flex-direction: column;
+        padding: 60px;
+    }
+
+
+    .nav_ul li a{
+        display: block;
+        margin-top: 20px;
+    }
+
+}
