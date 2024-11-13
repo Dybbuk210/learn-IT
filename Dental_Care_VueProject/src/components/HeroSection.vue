@@ -2,18 +2,16 @@
     <section class="section_heroes">
         <div class="section_container">
                 <article class="section_hero">
-                    <div class="hero_htext .center-wrapper">
+                    <div class="hero_htext">
                         <h1 class="h1h2_style">naši špecialisti</h1>
                         <h1 class="h1h2_style">
-                            <span class="highlighted-box">piliere</span> <span class="highlighted-box">vášho</span> <span class="highlighted-box">úsmevu</span>
+                            <span class="highlighted_box">piliere</span> <span class="highlighted_box">vášho</span> <span class="highlighted_box special_width">úsmevu</span>
                         </h1>
                     </div>
-                    <div class="center-wrapper">
                         <p>
                             Stretnite sa s naším tímom skúsených zubných lekárov, ktorí sú odhodlaní prinášať vám tú najlepšiu možnú starostlivosť. 
                             Naša prax je založená na dôvere, odbornosti a inováciách v oblasti dentálnej medicíny.
                         </p>
-                    </div>
                     <div class="hero_buttons">
                         <button class="blue_button">Objednať elektronicky</button>
                         <button class="contact_button">
@@ -45,7 +43,6 @@
         background-color: #ffffff;
         max-width: 1440px;
         width: 100%;
-        height: 860px;
     }
 
     .section_container {
@@ -59,7 +56,6 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        text-align: center;
     }
 
     .h1h2_style {
@@ -70,23 +66,27 @@
         text-align: start;
     }
 
-    .highlighted-box {
+    .highlighted_box {
         position: relative;
         max-width: 700px;
         font-weight: 700;
         z-index: 5;
     }
 
-    .highlighted-box::after {
+    .highlighted_box::after {
     content: '';
     position: absolute;
-    left: -10px;
-    bottom: 10px; /* Uprav vzdialenosť podčiarknutia od textu */
-    width: 115%;
+    left: -10px; /* Left mi posúva effekt s kombináciou s width% dokažem aby viac slov mali svoj vlastný spam ale neostala medzi nimi medzera */
+    bottom: 8px; /* Uprav vzdialenosť podčiarknutia od textu */
+    width: 120%; /* Dávam  viac ako 100% width, tímto viem ovplivnovať ako sa rozťahuje effekt */
     height: 26px; /* Hrúbka podčiarknutia */
     background-color: #8CD3FF; /* Farba podčiarknutia */
     border-radius: 8px; /* Zaoblenie rohov */
     z-index: -1; /* Ak chceš, aby bolo podčiarknutie pod textom */
+}
+
+.special_width::after {
+    width: 115%;
 }
 
     .hero_buttons {
@@ -165,12 +165,13 @@
     }
 
     p {
-        margin: 24px 6px 32px 0;
+        margin: 24px 6px 24px 0;
         font-size: 18px;
         font-weight: 400;
         line-height: 27.9px;
         text-align: start;
         color: #1E293B;
+        letter-spacing: 1px;
     }
 
     @media only screen and (max-width: 1100px) {
@@ -185,12 +186,6 @@
         p {
           max-width: 695px;
         }
-
-        .center-wrapper {
-        display: flex;
-        justify-content: center;
-        }
-
     }
 
     @media only screen and (max-width: 800px) {
@@ -199,7 +194,7 @@
         font-size: 42px;
     }
 
-    .highlighted-box::after {
+    .highlighted_box::after {
         height: 17px;
     }
 
