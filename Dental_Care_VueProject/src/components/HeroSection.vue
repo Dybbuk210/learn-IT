@@ -39,41 +39,42 @@
 </script>
 
 <style scoped>
-    .section_heroes {
-        background-color: #ffffff;
-        max-width: 1440px;
-        width: 100%;
-    }
+.section_heroes {
+    background-color: #ffffff;
+    max-width: 1440px;
+    width: 100%;
+}
 
-    .section_container {
-        display: flex;
-        max-width: 1280px;
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    article {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
+.section_container {
+    display: flex;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
 
-    .h1h2_style {
-        font-size: 62px;
-        font-weight: 500;
-        color: #132B58;
-        text-transform: capitalize;
-        text-align: start;
-    }
+article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
-    .highlighted_box {
-        position: relative;
-        max-width: 700px;
-        font-weight: 700;
-        z-index: 5;
-    }
+.h1h2_style {
+    font-size: 62px;
+    font-weight: 500;
+    color: #132B58;
+    text-transform: capitalize;
+    text-align: start;
+    line-height: 52.5px;
+}
 
-    .highlighted_box::after {
+.highlighted_box {
+    position: relative;
+    max-width: 700px;
+    font-weight: 700;
+    z-index: 5;
+}
+
+.highlighted_box::after {
     content: '';
     position: absolute;
     left: -10px; /* Left mi posúva effekt s kombináciou s width% dokažem aby viac slov mali svoj vlastný spam ale neostala medzi nimi medzera */
@@ -89,12 +90,12 @@
     width: 115%;
 }
 
-    .hero_buttons {
-        display: flex;
-        gap: 10px;
-    }
+.hero_buttons {
+    display: flex;
+    gap: 10px;
+}
 
-    .blue_button {
+.blue_button {
     width: 301px;
     height: 48px;
     border: none;
@@ -108,127 +109,126 @@
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
-    }
+}
 
-    .hero_buttons .blue_button {
-        margin: 32px 0;
-    }
+.hero_buttons .blue_button {
+    margin: 32px 0;
+}
 
-    .icon {
-        margin: 0;
-        width: 48px;
-        height: 48px;
-    }
+.icon {
+    margin: 0;
+    width: 48px;
+    height: 48px;
+}
 
-    span.icon {
-        margin: 0;
-    }
+span.icon {
+    margin: 0;
+}
 
-    .contact_button {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 0.6em 1.2em;
-        background-color: transparent;
-    }
+.contact_button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.6em 1.2em;
+    background-color: transparent;
+}
 
-    .call_button {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+.call_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-    .phone_nuber {
-        font-size: 24px;
-        font-weight: 600;
-        margin: 0;
-    }
+.phone_nuber {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
 
-    .phone_text {
-        margin: 0;
-        font-size: 16px;
-        font-weight: 500;
-        color: #2F98FF;
-    }
+.phone_text {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2F98FF;
+}
 
-    .hero_img img {
-        width: 100%;    
-        max-width: 500px; 
-        min-width: 350px; 
-        height: auto;    
-    }
+.hero_img img {
+    width: 100%;    
+    max-width: 500px; 
+    min-width: 350px; 
+    height: auto;    
+}
 
-    .hero_img {
-        width: 545px;
-        height: 525px;
-        width: 100%;
-    }
+.hero_img {
+    width: 545px;
+    height: 525px;
+    width: 100%;
+}
 
-    p {
-        margin: 24px 6px 24px 0;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 27.9px;
-        text-align: start;
-        color: #1E293B;
-        letter-spacing: 1px;
-    }
+p {
+    margin: 24px 6px 24px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27.9px;
+    text-align: start;
+    color: #1E293B;
+}
 
-    @media only screen and (max-width: 1100px) {
-        .section_container {
-            display: block;
-        }
+@media only screen and (max-width: 1100px) {
+.section_container {
+    display: block;
+}
 
-        article {
-            align-items: center;
-        }
+article {
+    align-items: center;
+}
 
-        p {
-          max-width: 695px;
-        }
-    }
+p {
+    max-width: 695px;
+}
+}
 
-    @media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
 
-    .h1h2_style {
-        font-size: 42px;
-    }
+.h1h2_style {
+    font-size: 42px;
+}
 
-    .highlighted_box::after {
-        height: 17px;
-    }
+.highlighted_box::after {
+    height: 17px;
+}
 
-    .section_container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.section_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .hero_buttons {
-        flex-direction: column;
-        gap: 2px;
-    }
+.hero_buttons {
+    flex-direction: column;
+    gap: 2px;
+}
 
-    .hero_img {
-        margin-top: 20px;
-        width: 100%;
-        max-width: none;
-    }
+.hero_img {
+    margin-top: 20px;
+    width: 100%;
+    max-width: none;
+}
 
-    .contact_button {
-        text-align: center;
-        justify-content: center;
-    }
+.contact_button {
+    text-align: center;
+    justify-content: center;
+}
 
-    p {
-        max-width: 469px;
-    }
+p {
+    max-width: 469px;
+}
 
 }
 
 @media only screen and (max-width: 500px) {
-    article {
-        padding: 1rem;
-    }
+article {
+    padding: 1rem;
+}
 }
 </style>

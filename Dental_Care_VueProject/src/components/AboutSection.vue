@@ -27,60 +27,60 @@ export default {
 </script>
 
 <style scoped>
-    .about {
-        max-width: 1440px;
-        width: 100%;
-        padding: 60px 0;
-        background-color: #EEF8FF;
-        color: #132B58;
-    }
+.about {
+    max-width: 1440px;
+    width: 100%;
+    padding: 60px 0;
+    background-color: #EEF8FF;
+    color: #132B58;
+}
 
-    article {
-        max-width: 1280px;
-        width: 100%;
-        display: flex;
-        padding: 1rem;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
+article {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
-        p {
-            max-width: 469px;
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 27.9px; 
-            text-align: start;
-            margin: 24px 0;
-            letter-spacing: 1px;
-        }
-    
-    button {
-        display: inline-block;
-        width: 183px;
-        height: 48px;
-        border-radius: 8px;
-        background-color: #132B58;
-        color: #EEF8FF;
-    }
+p {
+    max-width: 469px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27.9px; 
+    text-align: start;
+    margin: 24px 0;
+}
 
-    .h1h2_style {
-        font-size: 42px;
-        font-weight: 500;
-        color: #132B58;
-        text-transform: capitalize;
-        text-align: start;
-    }
+button {
+    display: inline-block;
+    width: 183px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #132B58;
+    color: #EEF8FF;
+}
 
-    .highlighted_box {
-        position: relative;
-        max-width: 700px;
-        font-weight: 700;
-        z-index: 5;
-    }
+.h1h2_style {
+    font-size: 42px;
+    font-weight: 500;
+    color: #132B58;
+    text-transform: capitalize;
+    text-align: start;
+    line-height: 52.5px;
+}
 
-    .highlighted_box::after {
+.highlighted_box {
+    position: relative;
+    max-width: 700px;
+    font-weight: 700;
+    z-index: 5;
+}
+
+.highlighted_box::after {
     content: '';
     position: absolute;
     left: -10px; /* Left mi posúva effekt s kombináciou s width% dokažem aby viac slov mali svoj vlastný spam ale neostala medzi nimi medzera */
@@ -108,25 +108,25 @@ export default {
 }
 
 @media only screen and (min-width: 570px) {
-    .about_img img {
-        display: block;
-    }
+.about_img img {
+    display: block;
+}
 }
 
 @media only screen and (min-width: 1100px) {
 
-    .about_text {
-        margin: 0 1rem;
-    }
+.about_text {
+    margin: 0 1rem;
+}
 
-   .mobile_container {
+.mobile_container {
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-   }
+}
 
-   button {
+button {
     display: flex;
     align-items: start;
     justify-content: center;
@@ -140,5 +140,5 @@ article {
     margin: 0;
 }
 
- }
+}
 </style>

@@ -1,228 +1,148 @@
+  <!-- Skúška animácie na pohyb kariet. Kód nieje môj takže ho potrebujem poskúšať ak sa mi ho podari implementovať bude to pekna animacia pohybu kariet -->
 <template>
-  <section class="section_heroes">
-      <div class="section_container">
-              <article class="section_hero">
-                  <div class="hero_htext .center-wrapper">
-                      <h1 class="h1h2_style">naši špecialisti</h1>
-                      <h1 class="h1h2_style highlighted-box">piliere vášho úsmevu</h1>
-                  </div>
-                  <div class="center-wrapper">
-                      <p>
-                          Stretnite sa s naším tímom skúsených zubných lekárov, ktorí sú odhodlaní prinášať vám tú najlepšiu možnú starostlivosť. 
-                          Naša prax je založená na dôvere, odbornosti a inováciách v oblasti dentálnej medicíny.
-                      </p>
-                  </div>
-                  <div class="hero_buttons">
-                      <button class="blue_button">Objednať elektronicky</button>
-                      <button class="contact_button">
-                          <span class="icon">
-                              <img src="../assets/img/phone_icon.svg" alt="">
-                          </span>
-                          <div class="call_button">
-                              <span class="phone_nuber">0900 000 000</span>
-                              <span class="phone_text">Objednať telefonicky</span>
-                          </div>
-                      </button>
-                  </div>
-              </article>
-              <figure class="hero_img">
-                  <img src="../assets/img/heroimg.jpg" alt="">
-              </figure>
+    <section class="clients_section">
+      <div class="clients_header">
+        <h1 class="h1h2_style">Naši klienti</h1>
+        <p>Naši spokojní klienti.</p>
+      </div>
+      <div class="clients_wrapper">
+        <button @click="moveLeft" class="nav_button left">◀</button>
+        <div class="clients_cards">
+          <div
+            v-for="(client, index) in visibleClients"
+            :key="index"
+            class="client_card"
+            :class="{ animating: isAnimating }"
+          >
+            <img :src="client.image" alt="Klient obrázok" class="client_image" />
+            <div class="client_info">
+              <h4>{{ client.name }}</h4>
+              <div class="rating">{{ client.rating }}</div>
+              <p>{{ client.description }}</p>
+            </div>
           </div>
-   </section>
-</template>
-
-<script>
-export default {
-  name: 'HeroSection',
-};
-</script>
-
-<style scoped>
-  .section_heroes {
-      background-color: #ffffff;
-      max-width: 1440px;
-      width: 100%;
-      height: 860px;
-  }
-
-  .section_container {
-      display: flex;
-      max-width: 1280px;
-      width: 100%;
-      margin: 0 auto;
+        </div>
+        <button @click="moveRight" class="nav_button right">▶</button>
+      </div>
+    </section>
+  </template>
+  
+  <script>
+  export default {
+    name: 'TestingSection',
+    data() {
+      return {
+        clients: [
+          { image: 'path/to/client-image1.jpg', name: 'Klient 1', rating: '★★★★★', description: 'Popis klienta 1' },
+          { image: 'path/to/client-image2.jpg', name: 'Klient 2', rating: '★★★★★', description: 'Popis klienta 2' },
+          { image: 'path/to/client-image3.jpg', name: 'Klient 3', rating: '★★★★★', description: 'Popis klienta 3' },
+          { image: 'path/to/client-image4.jpg', name: 'Klient 4', rating: '★★★★★', description: 'Popis klienta 4' },
+          { image: 'path/to/client-image5.jpg', name: 'Klient 5', rating: '★★★★★', description: 'Popis klienta 5' },
+          { image: 'path/to/client-image6.jpg', name: 'Klient 6', rating: '★★★★★', description: 'Popis klienta 6' },
+          { image: 'path/to/client-image7.jpg', name: 'Klient 7', rating: '★★★★★', description: 'Popis klienta 7' },
+          { image: 'path/to/client-image8.jpg', name: 'Klient 8', rating: '★★★★★', description: 'Popis klienta 8' },
+          { image: 'path/to/client-image9.jpg', name: 'Klient 9', rating: '★★★★★', description: 'Popis klienta 9' },
+        ],
+        currentIndex: 0,
+        isAnimating: false,
+      };
+    },
+    computed: {
+      visibleClients() {
+        return this.clients.slice(this.currentIndex, this.currentIndex + 3);
+      },
+    },
+    methods: {
+      moveLeft() {
+        if (this.currentIndex > 0) {
+          this.startAnimation();
+          this.currentIndex -= 3;
+        }
+      },
+      moveRight() {
+        if (this.currentIndex < this.clients.length - 3) {
+          this.startAnimation();
+          this.currentIndex += 3;
+        }
+      },
+      startAnimation() {
+        this.isAnimating = true;
+        setTimeout(() => {
+          this.isAnimating = false;
+        }, 1000); // Trvanie animácie
+      },
+    },
+  };
+  </script>
+  
+  <style scoped>
+  .clients_section {
+    padding: 20px;
   }
   
-  article {
-      display: flex;
-      justify-content: center; /* Horizontálne centrovanie */
-      flex-direction: column; /* Obsah bude usporiadaný vertikálne */
-      text-align: center;     /* Ak chceš zarovnať text */
+  .clients_wrapper {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
   }
-
-  .h1h2_style {
-      font-size: 62px;
-      font-weight: 500;
-      color: #132B58;
-      text-transform: capitalize;
-      text-align: start;
-  }
-
-  .highlighted-box {
-      max-width: 700px;
-      position: relative;
-      font-weight: 700;
-      z-index: 10;
-  }
-
-  .highlighted-box::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0px; /* Uprav vzdialenosť podčiarknutia od textu */
-  width: 100%;
-  height: 26px; /* Hrúbka podčiarknutia */
-  background-color: #8CD3FF; /* Farba podčiarknutia */
-  border-radius: 8px; /* Zaoblenie rohov */
-  z-index: -1; /* Ak chceš, aby bolo podčiarknutie pod textom */
-}
-
-  .hero_buttons {
-      display: flex;
-      gap: 10px;
-  }
-
-  .blue_button {
-  width: 301px;
-  height: 48px;
-  border: none;
-  border-radius: 8px;
-  gap: 10px;
-  background-color: #1376F8;
-  color: #ffffff;
-  padding: 10px 46px;
-  margin: 16px;
-  margin: 32px;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  }
-
-  .icon {
-      margin: 0;
-      width: 48px;
-      height: 48px;
-  }
-
-  span.icon {
-      margin: 0;
-  }
-
-  .contact_button {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 0.6em 1.2em;
-      background-color: transparent;
-  }
-
-  .call_button {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-  }
-
-  .phone_nuber {
-      font-size: 24px;
-      font-weight: 600;
-      margin: 0;
-  }
-
-  .phone_text {
-      margin: 0;
-      font-size: 16px;
-      font-weight: 500;
-      color: #2F98FF;
-  }
-
-  .hero_img img {
-      width: 100%;    
-      max-width: 500px; 
-      min-width: 350px; 
-      height: auto;    
-  }
-
-  .hero_img {
-      width: 545px;
-      height: 525px;
-      width: 100%;
-  }
-
-  p {
-      margin: 24px 6px 32px 0;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 27.9px;
-      text-align: start;
-      color: #1E293B;
-  }
-
-  @media only screen and (max-width: 1100px) {
-      .section_container {
-          display: block;
-      }
-
-      article {
-          align-items: center;
-      }
-
-      .h1h2_style {
-          margin: 0 auto;
-          max-width: 90%;
-      }
-
-      p {
-          margin: 24px auto;
-          max-width: 90%;
-      }
-
-      .center-wrapper {
-      display: flex;
-      justify-content: center; /* Centrovanie obsahu vo vnútri kontajnera */
-      }
-
-  }
-
-  @media only screen and (max-width: 800px) {
-
-  .h1h2_style {
-      font-size: 42px;
-  }
-
-
-  .section_container {
-      display: flex;
-      flex-direction: column; /* Zabezpečí vertikálne usporiadanie */
-      align-items: center; /* Zarovná obsah na stred */
-  }
-
-  .hero_buttons {
-      flex-direction: column; /* Ukladá tlačidlá pod seba */
-      gap: 2px; /* Pridá vertikálny rozostup medzi tlačidlá */
-  }
-
-  .hero_img {
-      margin-top: 20px; /* Pridá medzeru medzi text a obrázok */
-      width: 100%; /* Obrázok sa prispôsobí šírke */
-      max-width: none; /* Zruší maximálnu šírku obrázka */
-  }
-
-  .contact_button {
-      text-align: center;
-      justify-content: center;
-  }
-
-}
-
-</style>
   
+  .clients_cards {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+  }
+  
+  .client_card {
+    min-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+  }
+  
+  .client_card.animating {
+  animation: moveUp 0.3s ease-in-out forwards, moveSide 0.4s ease-in-out 0.3s forwards, moveDown 0.3s ease-in-out 0.7s forwards;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2rem); /* Posunutie nahor */
+  }
+}
+
+@keyframes moveSide {
+  0% {
+    transform: translateY(-2rem) translateX(0);
+  }
+  100% {
+    transform: translateY(-2rem) translateX(-100%); /* Posunutie do strany */
+  }
+  
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(-2rem) translateX(-100%);
+  }
+  100% {
+    transform: translateY(0) translateX(-100%); /* Návrat nadol */
+  }
+}
+
+  
+  .nav_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+  }
+  </style>
+
+  <!-- Skúška animácie na pohyb kariet. Kód nieje môj takže ho potrebujem poskúšať ak sa mi ho podari implementovať bude to pekna animacia pohybu kariet -->

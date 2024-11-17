@@ -89,7 +89,8 @@ p {
     line-height: 27.9px; 
     text-align: start;
     margin: 2rem 0;
-    letter-spacing: 1px;
+    color: #334155;
+    letter-spacing: 1.5%;
 }
 
 .services_text {
@@ -105,6 +106,7 @@ p {
     color: #132B58;
     text-transform: capitalize;
     text-align: start;
+    line-height: 52.5px;
 }
 
 .highlighted_box {
@@ -159,6 +161,7 @@ p {
 }
 
 .services_card p {
+    font-size: 16px;
     text-align: center;
     justify-content: center;
     color: #334155;
@@ -206,11 +209,18 @@ p {
 
 @media only screen and (min-width: 1120px) {
 
+
 .services_cards {
     flex-direction: row;
     gap: 2rem;
     justify-content: space-between;
 }
 
+}
+
+@media only screen and (min-width: 1280px) {
+    article {
+        padding: 0;
+    }
 }
 </style>
