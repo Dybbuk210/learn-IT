@@ -63,6 +63,7 @@ export default {
 <style scoped>
 
 .services {
+    max-width: 1440px;
     width: 100%;
     padding: 60px 0;
     background-color: #ffffff;

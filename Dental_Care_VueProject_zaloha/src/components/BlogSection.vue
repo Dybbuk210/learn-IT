@@ -82,6 +82,7 @@ export default {
 
 <style scoped>
 .blog {
+    max-width: 1440px;
     width: 100%;
     padding: 60px 0;
     background-color: #EEF8FF;

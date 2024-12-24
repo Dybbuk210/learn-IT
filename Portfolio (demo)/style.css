@@ -457,6 +457,15 @@ img {
 .services__card:hover .services__circle {
     transform: translate(0.25rem, -0.25rem);
 }
+
+.card__closed {
+    opacity: 0.2;
+}
+
+.card__closed:hover {
+    cursor: not-allowed; /* Zmení kurzor na zakázaný */
+    box-shadow: 0 4px 8px var(--first-color); /* Pridá mierny tieň */
+}
 /* End Services */
 
 /* Start Experience */
@@ -515,6 +524,52 @@ img {
     background-color: var(--first-color-alt);
 }
 /* End Buttons */
+
+/* Start Contact */
+.contact__group,
+.contact__form {
+    gap: 1rem;
+}
+
+.contact__form {
+    position: relative;
+}
+
+.contact__input {
+    background-color: var(--container-color);
+    padding: 1.25rem;
+    border-radius: 4rem;
+    color: var(--white-color);
+}
+
+.contact__input::placeholder {
+    color: var(--text-color);
+}
+
+
+/* !!!!!!!!---------------------Otestovať upraviť-----------------------!!!!!!!!!!!  */
+.contact__input:-webkit-autofill {
+    transition: background-color 6000s ease-in-out, color 6000s ease-in-out;
+}
+
+.contact__area {
+    height: 10rem;
+    border-radius: 1.5rem;
+    resize: none;
+}
+
+.contact__button {
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.contact__message {
+    position: absolute;
+    left: 0;
+    bottom: 4.5rem;
+    font-size: var(--smaller-font-size);
+}
+/* End Contact */
 
 /* Start Footer */
 .footer {
@@ -630,7 +685,8 @@ footer__link:hover {
     .home__container,
     .projects__container,
     .services__container,
-    .experience__container {
+    .experience__container,
+    .contact__container {
         grid-template-columns: 380px;
         justify-content: center;
     }
@@ -686,7 +742,7 @@ footer__link:hover {
     }
 
     .section {
-        padding-block: 3rem 4rem;
+        padding-block: 5rem 5rem;
     }
 
     .section__title {
@@ -794,10 +850,27 @@ footer__link:hover {
         border-radius: 2rem;
     }
 
+    .contact__container {
+        grid-template-columns: 620px;
+    }
+
+    .contact__group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact__area {
+        height: 15rem;
+    }
+
+    .contact__button {
+        width: max-content;
+        justify-self: center;
+    }
+
     .footer {
         padding-top: 3rem;
     }
-
+    
     .footer__links {
         column-gap: 3rem;
     }
@@ -821,7 +894,7 @@ footer__link:hover {
     }
 
     .footer {
-        padding-block: 3rem;
+        padding-block:8rem 12rem;
     }
 
     .scrollup {

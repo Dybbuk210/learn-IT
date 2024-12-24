@@ -41,6 +41,7 @@
 <style scoped>
 .section_heroes {
     background-color: #ffffff;
+    max-width: 1440px;
     width: 100%;
 }
 

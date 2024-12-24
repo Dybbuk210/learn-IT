@@ -28,6 +28,7 @@ export default {
 
 <style scoped>
 .about {
+    max-width: 1440px;
     width: 100%;
     padding: 60px 0;
     background-color: #EEF8FF;

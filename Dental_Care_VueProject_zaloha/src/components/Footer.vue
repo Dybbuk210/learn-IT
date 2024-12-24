@@ -23,6 +23,7 @@ export default {
 
 section {
     display: block;
+    max-width: 1440px;
     width: 100%;
     padding: 60px 0;
 }

@@ -54,6 +54,7 @@ export default {
 
 <style scoped>
 .contact {
+    max-width: 1440px;
     width: 100%;
     padding: 60px 0;
     background-color: #132B58;

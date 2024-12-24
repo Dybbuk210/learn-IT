@@ -81,6 +81,7 @@ export default {
 <style scoped>
 
 .clients {
+    max-width: 1440px;
     width: 100%;
     padding: 60px 0;
     background-color: #ffffff;
