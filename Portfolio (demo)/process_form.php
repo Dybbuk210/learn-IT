@@ -16,10 +16,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // 3. Príprava emailu
     $to = "dybbuk210@gmail.com"; // Nahraď svojím emailom
-    $subject = "Sprava s portfolia";
-    $headers = "From: $email" . "\r\n" .
-               "Reply-To: $email" . "\r\n" .
-               "Content-Type: text/plain; charset=utf-8";
+    $subject = "Správa z portfólia";
+    $headers = "From: portfolio@filipmonis .online\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-Type: text/plain; charset=utf-8";
 
     $email_body = "Meno: $name\n";
     $email_body .= "Email: $email\n\n";
@@ -27,11 +27,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // 4. Odoslanie emailu
     if (mail($to, $subject, $email_body, $headers)) {
-        echo "Správa bola úspešne odoslaná.";
+        header("Location: thank__you.html");
+        exit();
     } else {
-        echo "Nepodarilo sa odoslať správu. Skúste to znova.";
+        error_log("E-mail sa nepodarilo odoslať: " . error_get_last()['message']);
+        die("Nepodarilo sa odoslať správu. Skúste to znova.");
     }
 } else {
-    echo "Formulár nebol odoslaný správne.";
+    die("Formulár nebol odoslaný správne.");
 }
 ?>

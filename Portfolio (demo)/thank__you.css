@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Montserrat+Alternates:wght@400;500;600&display=swap');
+
+:root {
+    --hue: 195;
+    --first-color: hsl(var(--hue), 80%, 49%);
+    --white-color: hsl(0, 0%, 98%);
+    --black-color: hsl(0, 0%, 1%);
+    --text-color: hsl(var(--hue), 2%, 66%);
+    --body-color: hsl(var(--hue), 100%, 1%);
+    --container-color: hsl(var(--hue), 2%, 10%);
+    --body-font: "Montserrat Alternates", sans-serif;
+    --second-font: "Grechen Fuemen", cursive;
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--white-color);
+    font-family: var(--body-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.thank-you-container {
+    background: var(--container-color);
+    padding: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    max-width: 500px;
+    width: 100%;
+}
+
+.thank-you-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.thank-you-message {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.thank-you-link {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4rem;
+    transition: background-color 0.3s;
+}
+
+.thank-you-link:hover {
+    background-color: hsl(var(--hue), 76%, 45%);
+}
