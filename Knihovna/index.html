@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Knihovna</title>
+</head>
+<body> 
+    <header>
+        <h2>Vytvoril <strong>Filip Moniš</strong></h2>
+    </header>
+
+    <main>
+        <section id="pridat" class="pridat_knihu">
+            <form action="pridat_knihu.php" method="POST" enctype="multipart/form-data">
+                <!-- Fotka knihy -->
+                <div class="image-upload">
+                    <label for="obrazok" class="upload-label">
+                        <p>Kliknite sem alebo presuňte obrázok knihy</p>
+                    </label>
+                    <input type="file" id="obrazok" name="obrazok" accept="image/*" required onchange="previewImage(event)">
+                    <div id="image-preview" class="image-preview">
+    
+                    </div>
+                </div>
+                
+
+                <!-- Názov knihy -->
+                <label for="nazov">Názov knihy:</label>
+                <input type="text" id="nazov" name="nazov" required>
+            
+                <!-- Názov autora -->
+                <label for="autor">Autor:</label>
+                <input type="text" id="autor" name="autor" required>
+            
+                <!-- Žáner -->
+                <label for="zaner">Žáner:</label>
+                <select id="zaner" name="zaner" required>
+                    <option value="Vyberte žaner" disabled selected>Vyberte žáner</option>
+                    <option value="román">Román</option>
+                    <option value="sci-fi">Sci-fi</option>
+                    <option value="historický">Historický</option>
+                    <option value="biografia">Biografia</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="horror">Horror</option>
+                    <option value="náučná">Náučná</option>
+                    <option value="pre deti">Pre deti</option>
+                </select>
+            
+                <!-- Rok vydania -->
+                <label for="rok">Rok vydania:</label>
+                <input type="number" id="rok" name="rok" min="1000" max="9999" required>
+            
+                <!-- Odoslať -->
+                <button type="submit">Vytvoriť</button>
+            </form>
+        </section>
+
+        <section id="nastole">
+
+        </section>
+
+        <section id="kniznica">
+
+                <div class="kniha_cards">
+                    <article class="kniha_card">
+                        <h3 class="meno_knihy">Blood Song</h3>
+                        <img src="img/knihy/Pieseň krvi.webp" alt="">
+                        <ul>
+                            <li class="meno_autora">Anthony Ryan</li>
+                            <li class="zaner">Fantasy</li>
+                            <li class="rok">2015</li>
+                        </ul>
+                    </article>
+
+                    <article class="kniha_card">
+                        <h3 class="meno_knihy">Blood Song</h3>
+                        <img src="img/knihy/Pieseň krvi.webp" alt="">
+                        <ul>
+                            <li class="meno_autora">Anthony Ryan</li>
+                            <li class="zaner">Fantasy</li>
+                            <li class="rok">2015</li>
+                        </ul>
+                    </article>
+
+                    <article class="kniha_card">
+                        <h3 class="meno_knihy">Blood Song</h3>
+                        <img src="img/knihy/Pieseň krvi.webp" alt="">
+                        <ul>
+                            <li class="meno_autora">Anthony Ryan</li>
+                            <li class="zaner">Fantasy</li>
+                            <li class="rok">2015</li>
+                        </ul>
+                    </article>
+                </div>
+
+            <div class="change_buttons">
+                <button class="change_button"><img src="img/svg-icons/buttons/left-svgrepo-com.svg" alt=""></button>
+                <button class="change_button"><img src="img/svg-icons/buttons/right-svgrepo-com.svg" alt=""></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="skills__items">
+           <img class="skills__item" src="img/svg-icons/html-1.svg" alt="htmlicon">
+           <img class="skills__item" src="img/svg-icons/css-3.svg" alt="cssicon">
+           <img class="skills__item" src="img/svg-icons/javascript-1.svg" alt="jsicon">
+           <img class="skills__item" src="img/svg-icons/php-programming-language-svgrepo-com(1).svg" alt="phpicon">
+           <img class="skills__item" src="img/svg-icons/mysql-3.svg" alt="mysqlicon">
+           <img class="skills__item" src="img/svg-icons/git-icon.svg" alt="giticon">
+           <img class="skills__item" src="img/svg-icons/github-icon-1.svg" alt="githubicon">
+        </div>
+
+        <nav>
+          <a href="" target="_blank">Zdrojový kód na GitHub</a>
+          <a href="" target="_blank">Navštív moje portfólio</a>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

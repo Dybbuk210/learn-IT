@@ -1,6 +1,21 @@
 <?php
 // Skontrolujeme, či bol formulár odoslaný
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    // Kontrola honeypot poľa
+    if (!empty($_POST['website'])) {
+        die("Spam detekovaný.");
+    }
+
+    // Kontrola time poľa
+    $formLoadTime = isset($_POST['form_load_time']) ? (int)$_POST['form_load_time'] : 0;
+    $currentTime = round(microtime(true) * 1000);
+    $timeDiff = $currentTime - $formLoadTime;
+
+    if ($formLoadTime === 0 || $timeDiff < 3000) {
+        die("Formulár bol odoslaný príliš rýchlo. Pravdepodobne bot.");
+    }
+
     // 1. Načítanie údajov z formulára
     $name = htmlspecialchars(trim($_POST['user_name']));
     $email = htmlspecialchars(trim($_POST['user_email']));
@@ -15,9 +30,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // 3. Príprava emailu
-    $to = "dybbuk210@gmail.com"; // Nahraď svojím emailom
+    $to = "dybbuk210@gmail.com";
     $subject = "Správa z portfólia";
-    $headers = "From: portfolio@filipmonis .online\r\n";
+    $headers = "From: portfolio@filipmonis.online\r\n"; // opravený medzera
     $headers .= "Reply-To: $email\r\n";
     $headers .= "Content-Type: text/plain; charset=utf-8";
 

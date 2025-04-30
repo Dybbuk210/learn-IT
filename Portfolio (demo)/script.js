@@ -53,3 +53,14 @@ const sedEmail = (e) =>{
     emailjs.sedForm('','','','')
 }
 contactForm.addEventListener('submit', sedEmail)
+
+/* tento kód je na ochranu form pred botmi */
+document.addEventListener("DOMContentLoaded", function () {
+    const formLoadField = document.getElementById("form_load_time");
+    if (formLoadField) {
+      const now = Date.now();
+      formLoadField.value = now;
+    }
+  });
+
+  console.log("🕒 Ochrana formulára aktivovaná");

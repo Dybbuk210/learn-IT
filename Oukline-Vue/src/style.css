@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --main-color-black: #151515;
+  --main-second-color: #6A7283;
+
+  /* pôvodné riadky */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Inter Tight', sans-serif;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--main-color-black);
+}
+
+/* container pre div ktori bude zodpovedať za maximalnu širku */
+.inner-container {
+  max-width: 1400px;
+  width: 92%;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* zápis pre clamp font-size: clamp(px, 4vw, px); */
+
+/* používané na <span class="text-style-light"> pre texty */
+.text-style-light {
+  font-weight: 300;
+  color: var(--main-second-color);
+}
+
+/* hlavný button + hover effekt 
+vzor: 
+<button class=".main-style-button switch-btn">
+    <span class="switch-text switch-current">Text 01</span>
+    <span class="switch-text switch-next">Text 02</span>
+</button>
+
+*/
+.main-style-button {
+  background-color: var(--main-color-black);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 3px;
+  box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button-icon {
+  width: 19px;
+  height: 19px;
+}
+
+.button-text {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.switch-btn {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Oba texty absolutne v strede na začiatku */
+.switch-btn .switch-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.3s ease, top 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Počiatočné pozície */
+.switch-btn .switch-current {
+  font-weight: 300;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.switch-btn .switch-next {
+  font-weight: 500;
+  top: 130%; /* úplne mimo dole */
+  transform: translate(-50%, -50%);
+}
+
+/* Hover – výmena s oneskorením */
+.switch-btn:hover .switch-current {
+  top: -150%;
+  transform: translate(-50%, -50%);
+  transition-delay: 0s; /* okamžitý odsun */
+}
+
+.switch-btn:hover .switch-next {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition-delay: 0.1s; /* jemný oneskorený príchod */
+}
+/* end button hover efekt */
+
+.second-btn-style {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  background-color: var(--main-color-black);
+  padding: 25px 87px;
+  border-radius: 3px;
+}
+
+.light-btn-style {
+  background-color: #F5F5F5;
+  border-radius: 3px;
+  color: var(--main-color-black);
+  padding: 25px 87px;
+  font-size: 16px;
+  font-weight: 400;
+}

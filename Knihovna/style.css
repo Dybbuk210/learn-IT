@@ -1,0 +1,262 @@
+/* Farebná paleta a jej použitie <-----------
+1. Pozadie stránky:
+    Primárna farba: Svetlá béžová (#EFE8D8)
+    Použijeme ju na hlavné pozadie stránky, aby bolo jemné a príjemné pre oči.
+
+2. Texty:
+    Primárny text: Tmavohnedá (#4B3621)
+    Táto farba je dostatočne tmavá, aby bola čitateľná na svetlom pozadí.
+    Sekundárny text (menší, menej dôležitý): Jemná krémová (#F5F1E3)
+    Napríklad popisy alebo menej výrazné časti.
+
+3. Navigácia:
+    Pozadie: Tmavohnedá (#4B3621)
+    Navigácia by mala byť kontrastná, aby bola výrazná a ľahko dostupná.
+    Odkazy v navigácii: Jantárová (#D49A6A)
+    Tým dosiahneš pekný vizuálny kontrast.
+
+4. Tlačidlá a interaktívne prvky:
+    Primárne tlačidlá (dôležité akcie): Jantárová (#D49A6A)
+    Táto farba prirodzene priťahuje pozornosť.
+    Text na tlačidlách: Krémová (#F5F1E3) alebo Tmavohnedá (#4B3621), podľa kontrastu s pozadím.
+
+5. Rámy a okraje:
+    Tmavohnedá (#4B3621)
+    Použi ju na oddelenie sekcií alebo zvýraznenie prvkov (napr. karty, formuláre).
+
+6. Akcenty:
+    Jantárová (#D49A6A)
+    Používaj ju striedmo na zvýraznenie (napr. aktívne položky, hover efekty).
+
+7. Karty a obsahové bloky:
+    Pozadie kariet: Krémová (#F5F1E3)
+    Dodá jemnosť a vizuálnu rovnováhu.
+    Okraje kariet: Tmavohnedá (#4B3621)
+    Zabezpečí oddelenie a kontrast.
+----------> */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Merriweather", serif;
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    background-color: #EFE8D8;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    flex: 0 0 10%;
+    background-color: #D49A6A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    flex: 1;
+    background-color: #EFE8D8;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* styli pre pridanie knihy */
+.pridat_knihu {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #4B3621;
+    border-radius: 6px;
+    background-color: #EFE8D8;
+}
+label {
+    font-weight: bold;
+}
+input, select, button {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+button {
+    background-color: #D49A6A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+button:hover {
+    background-color: #4B3621;
+}
+
+/* vlastné stíli pre pridať obrazok knihy */
+/* Pridanie obrázku knihy */
+.image-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: 2px dashed #4B3621;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: rgba(239, 232, 216, 0.5); /* Priehľadné pozadie */
+    color: #4B3621;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    z-index: 2;
+}
+
+.upload-label {
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #4B3621;
+    border: 1px dashed #D49A6A;
+    padding: 0.5rem 1rem;
+    background-color: rgba(212, 154, 106, 0.2); /* Priehľadný efekt */
+    border-radius: 4px;
+}
+
+.upload-label:hover {
+    background-color: rgba(212, 154, 106, 0.4); /* Zmena pozadia pri hover */
+    border: 1px solid #D49A6A;
+}
+
+.image-upload input[type="file"] {
+    display: none; /* Skrytie štandardného tlačidla */
+}
+
+.image-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Neprekáža interakcii */
+    z-index: -1;
+    opacity: 20%;
+}
+
+.image-preview img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+/* Footer skills */
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills__item {
+    width: 2.5rem;
+    transition: transform 0.4s;
+    margin: 10px;
+}
+
+.skills__item:hover {
+    transform: translateY(-0.25rem);
+}
+
+.skills__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem;
+    gap: 1rem;
+    background-color: #4B3621;
+    border: solid 3px black;
+    border-radius: 6px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer nav a {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+footer nav a:hover {
+    color: #4B3621;
+    border-bottom: solid 3px #4B3621;
+}
+
+/* Knihy a card style */
+.kniha_card {
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    border: solid 2px #4B3621;
+    border-radius: 1rem;
+}
+
+.kniha_cards {
+    display: flex;
+    gap: 1rem;
+}
+
+.kniha_card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.kniha_card img {
+    margin: 6px 0;
+}
+
+.kniha_card ul li {
+    margin-bottom: 6px;
+}
+
+.change_button {
+    width: 50px;
+    height: 40px;
+}
+
+.change_button img{
+    width: 100%;
+    height: 100%;
+}
+
+.change_buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+} 
+
+.mini {
+    width: 100px;
+    height: 200px;
+}

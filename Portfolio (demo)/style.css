@@ -104,13 +104,13 @@ img {
 }
 
 .section {
-    padding-block: 2rem 3rem;
+    padding-block: 2rem 12rem;
 }
 
 .section__title {
     font-size: var(--h2-font-size);
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 .main {
@@ -180,6 +180,7 @@ img {
 
 .perfil__data {
     align-self: flex-end;
+    justify-content: start;
     background-color: hsla(0, 0%, 1%, 0.1);
     -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
@@ -628,7 +629,7 @@ img {
 
 /* Start Footer */
 .footer {
-    padding-block: 2rem 8rem;
+    padding-block: 5rem 15rem;
 }
 
 .footer__container {
@@ -797,7 +798,7 @@ footer__link:hover {
     }
 
     .section {
-        padding-block: 5rem 5rem;
+        padding-block: 2rem 12rem;
     }
 
     .section__title {
@@ -824,6 +825,7 @@ footer__link:hover {
         width: 370px;
         padding: 1.5rem;
         border-radius: 2rem;
+        justify-content: center;
     }
 
     .info {
