@@ -1,7 +1,7 @@
 <template>
     <HeaderComponent />
-  <!--   <router-view /> -->
-    <BlogPage />
+    <router-view />
+<!-- <BlogPage />  -->   
     <FooterComponent />
 </template>
 

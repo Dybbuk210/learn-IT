@@ -59,7 +59,7 @@
             <div class="form-down-box">
                 <p class="box-down-text">
                     Do you prefer direct conversation? 
-                    <img src="../assets/icons/RightArrow.svg" alt="" class="box-down-icon">
+                    <img src="../../assets/icons/RightArrow.svg" alt="" class="box-down-icon">
                 </p>
                 <button class="form-button main-style-button switch-btn">
                     <span class="switch-text switch-current">Book a call (FREE)</span>
