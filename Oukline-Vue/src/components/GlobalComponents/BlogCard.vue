@@ -1,19 +1,18 @@
 <template>
+<router-link :to="`/blog/${blog.id}`">
     <article class="card">
         <div class="card-up">
-            <img src="../../assets/img/Blog/Blog01.png" alt="">
+            <img :src="getImageUrl(blog.MainImage)" alt="">
             <div class="overlay">
                 <div class="inner-box">
-                    <h3 class="card-title">Lorem ipsum dolor sit amet consectetur incididunt ut.</h3>
-                    <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                    <h3 class="card-title">{{ blog.MainTitle }}</h3>
+                    <p class="card-text">{{ blog.CardText }}</p>
                 </div>
             </div>    
         </div>
         <div class="card-down">
             <ul>
-                <li><a href="">webdesgin</a></li>
-                <li><a href="">framer</a></li>
-                <li><a href="">digitalcreativity</a></li>
+              <li v-for="(tag, index) in blog.tags" :key="index">{{ tag }}</li>
             </ul>
             <button class="card-button switch-btn">
                 <span class="switch-text switch-current"><img src="../../assets/icons/ArrowUpBlack.svg" alt=""></span>
@@ -21,12 +20,24 @@
             </button>
         </div>
     </article>
+  </router-link>
   </template>
   
   <script setup>
+    defineProps({
+    blog: Object
+  })
+  const getImageUrl = (path) => {
+    return new URL(`../../assets/img/Blog/${path}`, import.meta.url).href
+  }
   </script>
   
   <style scoped>
+  .card {
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
   .card-up {
     height: 300px;
     position: relative;
@@ -45,6 +56,7 @@
   .card-title, .card-text {
     position: relative;
     align-self: flex-end;
+    padding-bottom: 10px;
   }
   
   .card-title {
@@ -66,13 +78,14 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 0%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
   }
   
   .inner-box {
     width: 100%;
     align-self: flex-end;
     padding: 20px;
+    z-index: 2;
   }
   
   .card-down {
@@ -116,10 +129,4 @@
     font-weight: 300;
     color: var(--main-color-black);
   }
-  
-  ul li a {
-    color: var(--main-color-black);
-    font-size: 12px;
-    font-weight: 300;
-  }
-  </style>
+</style>

@@ -22,16 +22,14 @@
                 </li>
             </ul>
             <div class="nav-break"></div>
-            <button class="eng-sk header-text-size">En</button>
-
+<!--             <button class="eng-sk header-text-size">En</button>   Zatiaľ deaktivovane -->
             <button class="nav-button header-text-size switch-btn">
                 <span class="button-text switch-text switch-current">
                         Schedule a call
                         <img src="../../assets/icons/RightArrow.svg" alt="" class="button-icon">
                     </span>
                     <span class="button-text switch-text switch-next">
-                        Schedule a call
-                        <img src="../../assets/icons/RightArrow.svg" alt="" class="button-icon">
+                        Let's talk
                     </span>
             </button>
 
@@ -71,7 +69,7 @@ onMounted(() => {
     }
 
     header {
-        padding: 32px 0;
+        padding: 20px 0;
         justify-content: space-between;
     }
 
@@ -122,11 +120,6 @@ onMounted(() => {
     ul li:hover .drop-down {
         display: block;
     }
-
-    ul li:hover > a,
-    ul li:hover > router-link {
-        font-weight: 400;
-    }
     /* drop-down end */
 
     .main-nav .nav-bar-desktop {
@@ -160,15 +153,11 @@ onMounted(() => {
     
     ul li {
     transition: border-bottom 0.4s ease;
-    border-bottom: solid 2px transparent;
+    border-bottom: solid 1px transparent;
     }
 
     ul li:hover {
-        border-bottom: solid 2px var(--main-color-black);
-    }
-
-    ul li a:hover {
-        font-weight: 400;
+        border-bottom: solid 1px var(--main-color-black);
     }
 
     .logo-box {

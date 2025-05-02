@@ -109,7 +109,10 @@
                 How can your project look like? 
                 <img src="../../../assets/icons/RightArrow.svg" alt="" class="box-down-icon">
             </p>
-            <button class="second-btn-style box-down-btn">See recent work</button>
+            <button class="second-btn-style box-down-btn switch-btn">
+                <span class="switch-text switch-current">See recent work</span>
+                <span class="switch-text switch-next">See recent work</span>
+            </button>
         </div>
     </div>
 </template>
@@ -256,10 +259,6 @@
     .box-down-icon {
         width: 24px;
         height: auto;
-    }
-
-    .box-down-btn {
-        padding: 16px 25px;
     }
 
     @media (max-width: 1420px) {

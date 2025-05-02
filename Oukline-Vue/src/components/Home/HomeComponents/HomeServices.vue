@@ -116,7 +116,6 @@
 
     .service-card:hover {
         background-color: #fff;
-        transform: translateY(-3px);
     }
 
     .img-box {

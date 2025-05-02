@@ -47,7 +47,7 @@
                 <!-- Odosielacie tlačidlo -->
                 <button class="switch-btn send-btn">
                     <span class="switch-text switch-current">Send message!</span>
-                    <span class="switch-text switch-next">Send message!</span>
+                    <span class="switch-text switch-next">Let's talk</span>
                 </button>
 
                 <!-- Text po odoslaní -->
@@ -246,6 +246,7 @@
     }
 
     .form-text {
+        display: none;
         color: #B7BAC1;
         font-size: 14px;
         font-weight: 300;

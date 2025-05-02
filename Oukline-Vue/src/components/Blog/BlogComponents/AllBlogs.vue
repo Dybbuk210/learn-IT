@@ -3,15 +3,7 @@
         <h2 class="main-title">All blog posts</h2>
         <div class="break"></div>  <!-- prázdny div služi len na effekt -->
         <div class="blog-gallery">
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
+            <BlogCard v-for="(blog, index) in blogData" :key="blog.id" :blog="blog" />
         </div>
         <div class="break break-padding"></div> <!-- prázdny div služi len na effekt -->
       <!--
@@ -26,6 +18,7 @@
 </template>
 
 <script setup>
+import blogData from '../../../blogdata.json'
 import BlogCard from '../../GlobalComponents/BlogCard.vue';
 </script>
 

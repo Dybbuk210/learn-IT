@@ -1,40 +1,53 @@
 <template>
     <div class="inner-container">
 
-        <div class="main-box"> <!-- Main-box obsahuje dáta ktore sa ťahaju a dinamicky dopĺňajú -->
+        <div class="main-box">
             <div class="box-up">
-                <h2 class="main-title">How do you recognize a quality and creative marketing company?</h2>
-                <p class="main-text">In today’s competitive business landscape, marketing is no longer just about spreading awareness. It’s about creating memorable, meaningful, and impactful connections with your audience.</p>
-                <ul class="main-points">
-                    <li class="main-point">creativity</li>
-                    <li class="main-point">marketing</li>
-                    <li class="main-point">business</li>
-                    <li class="main-point">services</li>
+                <h2 class="main-title" v-if="blog" v-html="blog.MainTitle"></h2>
+                <p class="main-text" v-if="blog">{{ blog.MainText }}</p>
+                <ul class="main-points" v-if="blog"> <!-- sem pôjdu tags -->
+                    <li class="main-point" v-for="(tag, index) in blog.tags" :key="index">{{ tag }}</li>
                 </ul>
                 <div class="main-img">
-                    <img src="../../assets/img/Blog/BlogPage01/MainImg.png" alt="">
+                    <img :src="getImageUrl(blog.MainImage)" alt="" v-if="blog" class="main-img" />
                 </div>
             </div>
             <div class="box-down">
-                <div class="blog-import-data">
-                    <h3 class="blog-title">Title01</h3>
-                    <img src="../../assets/img/Blog/BlogPage01/SecondImg.png" alt="" class="blog-img">
-                    <ol class="blog-list">
-                        <li>
-                            <h3 class="list-title">Small and Medium Businesses (SMBs)</h3>
-                            <p class="list-text">For SMBs, a professional website is essential for competing against larger companies. It serves as a platform to showcase your products or services and build customer trust.</p>
-                        </li>
-                        <li>
-                            <h3 class="list-title">Small and Medium Businesses (SMBs)</h3>
-                            <p class="list-text">For SMBs, a professional website is essential for competing against larger companies. It serves as a platform to showcase your products or services and build customer trust.</p>
-                        </li>
-                        <li>
-                            <h3 class="list-title">Small and Medium Businesses (SMBs)</h3>
-                            <p class="list-text">For SMBs, a professional website is essential for competing against larger companies. It serves as a platform to showcase your products or services and build customer trust.</p>
-                        </li>
-                    </ol>
-                    <p class="blog-text-second">Choosing the right marketing company can make or break your brand's growth trajectory. But with countless options available, how do you separate the exceptional from the mediocre? Here are key indicators to help you recognize a quality and creative marketing company.</p>
-                    <p class="blog-text">Choosing the right marketing company can make or break your brand's growth trajectory. But with countless options available, how do you separate the exceptional from the mediocre? Here are key indicators to help you recognize a quality and creative marketing company.</p>
+                <div class="blog-import-data"> <!-- tu sa vitvoria data s clasami čo sme pripravovali pre title h3 pre texti p pre obrasky img pre  listi budu ol v nom li s h3 a p  -->
+                    <div class="blog-import-data" v-if="blog">
+                        <template v-for="(block, index) in blog.content" :key="index">
+                            
+                            <!-- Nadpis -->
+                            <h3 v-if="block.type === 'title'" class="blog-title">{{ block.text }}</h3>
+
+                            <!-- Normálny text -->
+                            <p v-if="block.type === 'text' && block.class !== 'blog-text-second'" class="blog-text">
+                            {{ block.text }}
+                            </p>
+
+                            <!-- Sekundárny text -->
+                            <p v-if="block.type === 'text' && block.class === 'blog-text-second'" class="blog-text-second">
+                            {{ block.text }}
+                            </p>
+
+                            <!-- Obrázok -->
+                            <img
+                            v-if="block.type === 'image'"
+                            :src="getImageUrl(block.src || block.MainImage)"
+                            :alt="block.alt || 'Blog image'"
+                            class="blog-img"
+                            />
+
+                            <!-- Zoznam -->
+                            <ol v-if="block.type === 'list'" class="blog-list">
+                            <li v-for="(item, i) in block.items" :key="i">
+                                <h3 class="list-title">{{ item.title }}</h3>
+                                <p class="list-text">{{ item.text }}</p>
+                            </li>
+                            </ol>
+
+                        </template>
+                    </div>
                 </div>
 
                 <!-- Blog-Socials toto su jedine statické prvky  -->
@@ -71,6 +84,20 @@
 </template>
 
 <script setup>
+    import { onMounted, ref } from 'vue'
+    import { useRoute } from 'vue-router'
+    import blogData from '../../blogdata.json'
+
+    const route = useRoute()
+    const blog = ref(null)
+
+    onMounted(() => {
+    blog.value = blogData.find((item) => item.id === route.params.id)
+    })
+
+    const getImageUrl = (imgPath) => {
+        return new URL(`../../assets/img/Blog/${imgPath}`, import.meta.url).href
+    }
 </script>
 
 <style scoped>
@@ -128,14 +155,14 @@
 
     .blog-text {
         color: var(--main-color-black);
-        font-size: clamp(16px, 4vw, 18px);
+        font-size: clamp(16px, 3vw, 18px);
         font-weight: 300;
         padding-bottom: 70px;
     }
 
     .blog-text-second {
         color: var(--main-color-black);
-        font-size: clamp(16px, 4vw, 18px);
+        font-size: clamp(16px, 3vw, 18px);
         font-weight: 400;
         padding-bottom: 70px;
     }
@@ -156,13 +183,13 @@
 
     .list-title {
         color: var(--main-color-black);
-        font-size: clamp(16px, 4vw, 18px);
+        font-size: clamp(16px, 3vw, 18px);
         font-weight: 500;
     }
 
     .list-text {
         color: var(--main-color-black);
-        font-size: clamp(16px, 4vw, 18px);
+        font-size: clamp(16px, 3vw, 18px);
         font-weight: 300;
     }
     /* dáta koniec */
@@ -206,4 +233,26 @@
         border-bottom: 1px solid #EAECF0;
     }
 
+    @media (max-width: 1200px) {
+        .main-text {
+            max-width: none;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .main-box {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 520px) {
+        .posts-up {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        .posts-title {
+            align-self: flex-start;
+        }
+    }
 </style>

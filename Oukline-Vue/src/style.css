@@ -57,7 +57,7 @@ button {
 
 /* hlavný button + hover effekt 
 vzor: 
-<button class=".main-style-button switch-btn">
+<button class="main-style-button switch-btn">
     <span class="switch-text switch-current">Text 01</span>
     <span class="switch-text switch-next">Text 02</span>
 </button>
