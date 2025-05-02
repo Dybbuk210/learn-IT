@@ -1,6 +1,6 @@
 <template>
     <div class="inner-container main-box">
-        <img src="../../../assets/img/Blog/TopBlog.png" alt="" class="top-img">
+        <img src="../../../assets/img/blog.png" alt="" class="top-img">
         <div class="overlay">
             <div class="inner-box">
                 <h2 class="title">WCAG a guide to web accessibility standards</h2>
