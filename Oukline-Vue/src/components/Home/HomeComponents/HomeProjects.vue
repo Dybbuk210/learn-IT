@@ -6,12 +6,11 @@
             </div>
             <div class="title-box-right">
                 <p class="title-box-text">
-                    <span class="text-style-light">Explore our</span> most recent projects
-                    <span class="text-style-light">and see how they've</span> positively impacted our clients and their businesses.
+                    Explore our recent work <span class="text-style-light">and the</span> results we’ve delivered <span class="text-style-light">for</span> clients <span class="text-style-light">across industries.</span>
                 </p>
                 <button class=".main-style-button switch-btn light-btn-style">
-                    <span class="switch-text switch-current">Show all projects //</span>
-                    <span class="switch-text switch-next">Show all projects //</span>
+                    <span class="switch-text switch-current">Start your project</span>
+                    <span class="switch-text switch-next">Start your project</span>
                 </button>
             </div>
         </div>

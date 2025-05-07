@@ -8,13 +8,18 @@
             </p>
             </div>
             <div class="btn-box-right">
-                <button class="second-btn-style btn-width">
-                    studio@oukline.com
-                    <span class="studio-btn-icon"><img src="../../../assets/icons/PartnersBTNicon.svg" alt=""></span>
-                </button>
+                <button class="second-btn-style btn-width switch-btn">
+                    <span class="button-text switch-text switch-current">
+                        studio@oukline.com
+                        <img src="../../../assets/icons/PartnersBTNicon.svg" alt="" class="button-icon">
+                    </span>
+                    <span class="button-text switch-text switch-next">
+                        studio@oukline.com
+                        <img src="../../../assets/icons/PartnersBTNicon.svg" alt="" class="button-icon">
+                    </span>
+                </button> 
             </div>
         </div>
-        <div class="img-box"><img src="../../../assets/img/procesimg.png" alt=""></div>
     </div>
 </template>
 
@@ -51,7 +56,7 @@
 
 .btn-box button {
   display: flex;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
 }
 
@@ -62,7 +67,7 @@
 .btn-width{
     display: flex;
     column-gap: 8px;
-    padding: 16px 25px;
+    padding: 25px 112px;
 }
 
 @media (max-width: 600px) {

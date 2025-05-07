@@ -2,10 +2,11 @@
     <div class="inner-container">
         <div class="contact-container">
             <div class="title-text">
-                <h2 class="contact-title"><span class="text-style-light">Simple, Transparent Pricing:</span> Customize your Project to fit your needs.</h2>
+                <h2 class="contact-title"><span class="text-style-light">Simple, Transparent Pricing:</span> Customize your Project to
+                    match your needs.</h2>
                 <p class="contact-text">
-                    <span class="text-style-light">Use our intuitive form</span> to select the services you need <span class="text-style-light">and</span> set a budget that 
-                    aligns with your project’s scope <span class="text-style-light">ensuring a</span> tailored solution that fits your goals.
+                    Select your services, set your budget, <span class="text-style-light">and get
+                    a solution</span> tailored to your goals → no surprises.
                 </p>
             </div>
             <ContactForm />

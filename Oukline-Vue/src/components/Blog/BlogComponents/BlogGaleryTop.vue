@@ -1,24 +1,36 @@
 <template>
-    <div class="inner-container main-box">
-        <img src="../../../assets/img/blog.png" alt="" class="top-img">
-        <div class="overlay">
-            <div class="inner-box">
-                <h2 class="title">WCAG a guide to web accessibility standards</h2>
-                <p class="text">Learn about the WCAG their importance, and how they ensure a more inclusive and accessible digital experience.</p>
-                <div class="box-down">
-                    <ul>
-                        <li><a href="">webdesign</a></li>
-                        <li><a href="">framer</a></li>
-                        <li><a href="">digitalcreativity</a></li>
-                        <li><a href="">inspiration</a></li>
-                    </ul>
-                </div>
-            </div>
+    <div class="inner-container main-box" v-if="latestBlog">
+      <img :src="imageUrl" :alt="latestBlog.MainTitle" class="top-img">
+      <div class="overlay">
+        <div class="inner-box">
+          <h2 class="title">{{ latestBlog.MainTitle }}</h2>
+          <p class="text">{{ latestBlog.MainText }}</p>
+          <div class="box-down">
+            <ul>
+              <li v-for="(tag, index) in latestBlog.tags" :key="index">
+                <a href="#">{{ tag }}</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
-</template>
+  </template>
 
 <script setup>
+import { ref, onMounted, computed } from 'vue';
+import blogs from '../../../blogdata.json'; // uprav cestu podľa potreby
+
+const latestBlog = ref(null);
+
+onMounted(() => {
+  latestBlog.value = blogs[blogs.length - 1];
+});
+
+const imageUrl = computed(() => {
+  if (!latestBlog.value) return '';
+  return new URL(`../../../assets/img/Blog/${latestBlog.value.MainImage}`, import.meta.url).href;
+});
 </script>
 
 <style scoped>

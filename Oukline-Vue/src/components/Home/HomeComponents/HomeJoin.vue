@@ -3,13 +3,12 @@
         <div class="main-box">
             <div class="main-box-up">
                 <div class="img-box">
-                    <img src="../../../assets/icons/Joinicon.svg" alt="">
+                    <img src="../../../assets/img/Mainrecense.png" alt="">
                 </div>
                 <p class="up-text">
-                    Oukline is a no-brainer for businesses <span class="text-style-light">and brands</span> who are looking for high-quality
-                    design and development work. <span class="text-style-light">Not only that, they offer you a</span> wide range of services <span class="text-style-light">like UI/UX & branding.</span> Amazing quality and speed!
+                    <span class="text-style-light">Working with team was</span> such an amazing experience. <span class="text-style-light">They are</span> incredibly skilled & reliable. <span class="text-style-light">We received a</span> smooth, usable design prototype <span class="text-style-light">even</span> before the deadline. <span class="text-style-light">I can</span> highly recommend hiring them.
                 </p>
-                <a href="" class="up-link">Appky.sk  <span class="text-style-light">Software solutions</span></a>
+                <a href="" class="up-link">David Mráz - Atheros</a>
             </div>
             <button class="main-style-button switch-btn services-button ">
                     <span class="button-text switch-text switch-current">
@@ -58,11 +57,6 @@
         font-size: 18px;
         font-weight: 400;
         color: var(--main-color-black);
-    }
-
-    .img-box {
-        width: 60px;
-        height: 60px;
     }
 
     button {

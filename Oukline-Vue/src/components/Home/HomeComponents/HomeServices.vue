@@ -2,14 +2,14 @@
     <div class="inner-container main-container">
         <div class="box-up">
             <div class="box-up-left">
-                <p class="box-up-text"><span class="text-style-light">We focus on what</span> we truly excel <span class="text-style-light">at, delivering only the services we know</span> will make a real impact for your brand.</p>
+                <p class="box-up-text"><span class="text-style-light">We focus on</span> what we’re best at <span class="text-style-light">no fluff, just services that</span> move your brand forward.</p>
                 <button class="main-style-button switch-btn services-button ">
                     <span class="button-text switch-text switch-current">
-                        Case studies
+                        See projects
                         <img src="../../../assets/icons/RightArrowWhite.svg" alt="" class="button-icon">
                     </span>
                     <span class="button-text switch-text switch-next">
-                        Case studies
+                        See projects
                         <img src="../../../assets/icons/RightArrowWhite.svg" alt="" class="button-icon">
                     </span>
                 </button> 

@@ -118,7 +118,9 @@
   
   ul {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 10px;
+    row-gap: 10px;
   }
   
   ul li {

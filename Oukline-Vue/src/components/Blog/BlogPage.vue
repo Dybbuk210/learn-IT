@@ -76,28 +76,43 @@
                 </button> 
             </div>
             <div class="break"></div> <!-- prázdny div služi len na effekt -->
-            <div class="posts-down">
-
+            <div class="posts-down"> <!-- sem pôjdu 3 náhodné blogy -->
+                <BlogCard v-for="(item, index) in recommendedBlogs" :key="item.id" :blog="item" />
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
-    import { onMounted, ref } from 'vue'
-    import { useRoute } from 'vue-router'
-    import blogData from '../../blogdata.json'
+import { onMounted, ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
+import blogData from '../../blogdata.json'
+import BlogCard from '../GlobalComponents/BlogCard.vue'
 
-    const route = useRoute()
-    const blog = ref(null)
+const route = useRoute()
+const blog = ref(null)
+const recommendedBlogs = ref([])
 
-    onMounted(() => {
-    blog.value = blogData.find((item) => item.id === route.params.id)
-    })
+const getImageUrl = (imgPath) => {
+    return new URL(`../../assets/img/Blog/${imgPath}`, import.meta.url).href
+}
 
-    const getImageUrl = (imgPath) => {
-        return new URL(`../../assets/img/Blog/${imgPath}`, import.meta.url).href
-    }
+// Funkcia, ktorá načíta blog a odporúčané blogy
+const loadBlog = () => {
+    blog.value = blogData.find(item => item.id === route.params.id)
+    const otherBlogs = blogData.filter(item => item.id !== route.params.id)
+    const shuffled = otherBlogs.sort(() => 0.5 - Math.random())
+    recommendedBlogs.value = shuffled.slice(0, 3)
+}
+
+onMounted(() => {
+    loadBlog()
+})
+
+// Sleduj zmeny ID v URL a vždy znovu načítaj dáta
+watch(() => route.params.id, () => {
+    loadBlog()
+})
 </script>
 
 <style scoped>
@@ -128,7 +143,9 @@
 
     .main-points {
         display: flex;
+        flex-wrap: wrap;
         column-gap: 10px;
+        row-gap: 10px;
     }
 
     .main-point {
@@ -210,6 +227,7 @@
         display: flex;
         flex-direction: column;
         row-gap: 30px;
+        padding-bottom: 200px;
     }
 
     .posts-up {
@@ -233,6 +251,19 @@
         border-bottom: 1px solid #EAECF0;
     }
 
+    .posts-down {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    @media (max-width: 1240px) {
+        .posts-down {
+         grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
     @media (max-width: 1200px) {
         .main-text {
             max-width: none;
@@ -245,6 +276,12 @@
         }
     }
 
+    @media (max-width: 840px) {
+        .posts-down {
+         grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
     @media (max-width: 520px) {
         .posts-up {
             flex-direction: column;
@@ -253,6 +290,10 @@
 
         .posts-title {
             align-self: flex-start;
+        }
+
+        .recommended-blog-posts {
+            padding-bottom: 100px;
         }
     }
 </style>

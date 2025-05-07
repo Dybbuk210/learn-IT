@@ -23,10 +23,10 @@
                 <div class="text-box">
                     <p class="text-up">Introduction:</p>
                     <div class="text-down">
-                        <p><span class="text-style-light">We craft</span> creative solutions</p>
+                        <p><span class="text-style-light">Helping</span> modern brands</p>
                         <span class="text-down-img"><img src="../../../assets/icons/SmallStar.svg" alt=""></span>
-                        <p><span class="text-style-light">for modern</span></p>
-                        <p><span class="text-style-light">brands that</span> want to stand out.</p>
+                        <p><span class="text-style-light">stand out with</span></p>
+                        <p><span class="text-style-light"></span> smart design and strategy.</p>
                     </div>
                 </div>
                 <button class="hero-button main-style-button switch-btn">
@@ -195,6 +195,15 @@
     @media (max-width: 500px) {
     .title-up, .title-down {
             font-size: 28px;
+        }
+
+        .video-box {
+            height: 400px;
+        }
+
+        .video-box video {
+            width: auto;
+            height: 100%;
         }
 
         .text-box p{

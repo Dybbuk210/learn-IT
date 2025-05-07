@@ -5,19 +5,17 @@
             <div class="box-up">
                 <h2 class="title">Recent blog post</h2>
                 <div class="img-box">
-                    <img src="../../../assets/img/blog.png" alt="">
+                    <img :src="imageUrl" alt="" v-if="latestBlog" class="main-img" />
                 </div>
             </div>
             <div class="box-down">
                 <div class="box-down-flex">
-                    <div class="box-down-left">
-                        <h3 class="blog-name">WCAG a guide to web accessibility standards</h3>
-                        <p class="blog-text">Learn about the WCAG their importance, and how they ensure a more inclusive and accessible digital experience.</p>
+                    <div class="box-down-left" v-if="latestBlog">
+                        <h3 class="blog-name">{{ latestBlog.MainTitle }}</h3>
+                        <p class="blog-text">{{ latestBlog.CardText }}</p>
                         <div class="box-down-ul">
-                            <ul>
-                                <li>webdesgin</li>
-                                <li>framer</li>
-                                <li>digitalcreativity</li>
+                            <ul v-if="latestBlog">
+                              <li v-for="(tag, index) in latestBlog.tags" :key="index">{{ tag }}</li>
                             </ul>
                         </div>
                     </div>
@@ -41,6 +39,19 @@
 </template>
 
 <script setup>
+import { ref, onMounted, computed } from 'vue';
+import blogs from '../../../blogdata.json';
+
+const latestBlog = ref(null);
+
+onMounted(() => {
+  latestBlog.value = blogs[blogs.length - 1];
+});
+
+const imageUrl = computed(() => {
+  if (!latestBlog.value) return '';
+  return new URL(`../../../assets/img/Blog/${latestBlog.value.MainImage}`, import.meta.url).href;
+});
 </script>
 
 <style scoped>
@@ -100,6 +111,21 @@
         font-weight: 300;
         color: var(--main-second-color);
     }
+
+    .img-box {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .main-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+
 
     .blog-button {
         align-self: flex-end;

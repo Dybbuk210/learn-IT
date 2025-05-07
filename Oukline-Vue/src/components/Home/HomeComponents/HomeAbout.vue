@@ -17,9 +17,9 @@
                 </div>
             </div>
             <p class="about-text">
-                We are a dedicated, experienced team focused on delivering meaningful, high-impact results through → UX/UI 
-                design, Branding & Development. By staying ahead of trends, we create modern, 
-                customized solutions tailored to our clients' needs that drive growth, build trust, and foster lasting relationships.
+                We’re a focused, experienced team delivering meaningful results through → UX/UI design, branding, and development. 
+                Our work is built on clarity, function, and creativity — tailored to each brand’s 
+                goals to drive growth, build trust, and create lasting impact.
             </p>
         </div>
     </div>

@@ -1,5 +1,6 @@
 <template>
-    <header class="inner-container">
+<div class="inner-container">
+    <header>
         <a href="" class="logo-box"><img src="../../assets/logo/Logo-B.svg" alt=""></a>
         <div class="main-nav">
             <ul class="nav-bar-desktop">
@@ -33,15 +34,50 @@
                     </span>
             </button>
 
-            <button class="burger-open">
-                <img src="../../assets/icons/BurgerMenu.svg" alt="">
+            <button class="burger-open" @click="toggleMenu">
+                <img src="../../assets/icons/BurgerMenu.svg" alt="" class="open" v-if="!showMobileMenu">
+                <img src="../../assets/icons/crossicon.svg" alt="" class="close" v-else>
             </button>
         </div>
     </header>
+    <div class="mobile-menu"  :class="{ active: showMobileMenu }" v-show="showMobileMenu">
+        <div class="mobile-nav-box">
+            <div class="mobile-up">
+                <ul class="mobile-nav">
+                    <li><a href="" class="mobile-nav-font">Services</a></li>
+                    <li><a href="" class="mobile-nav-font">Case studies</a></li>
+                    <li><a href="" class="mobile-nav-font">Project gallery</a></li>
+                    <li><a href="" class="mobile-nav-font">Pricing</a></li>
+                    <li><a href="" class="mobile-nav-font">About</a></li>
+                    <li><a href="" class="mobile-nav-font">Testimonials</a></li>
+                    <li><a href="" class="mobile-nav-font">Blog</a></li>
+                    <li><a href="" class="mobile-nav-font">Interviews</a></li>
+                </ul>
+            </div>
+            <div class="mobile-down">
+                <button class="light-btn-style switch-btn mobile-nav-button">
+                    <span class="switch-text switch-current">Get a quote</span>
+                    <span class="switch-text switch-next">Get a quote</span>
+                </button>
+                <ul class="mobile-socials">
+                    <li><a href=""><img src="../../assets/footersocials/X.svg" alt=""></a></li>
+                    <li><a href=""><img src="../../assets/footersocials/instagram.svg" alt=""></a></li>
+                    <li><a href=""><img src="../../assets/footersocials/linkedin.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 </template>
 
 <script setup>
 import { onMounted } from 'vue'
+import { ref } from 'vue'
+
+const showMobileMenu = ref(false)
+const toggleMenu = () => {
+  showMobileMenu.value = !showMobileMenu.value
+}
 
 onMounted(() => {
     document.querySelectorAll('.drop-down-li').forEach(item => {
@@ -69,8 +105,11 @@ onMounted(() => {
     }
 
     header {
+        position: relative;
         padding: 20px 0;
         justify-content: space-between;
+        z-index: 10;
+        background-color: #fff;
     }
 
     .header-text-size {
@@ -180,6 +219,75 @@ onMounted(() => {
         display: none;
     }
 
+/* test */
+.mobile-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;
+  position: fixed;
+  top: 74px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 74px);
+  background-color: var(--main-color-black);
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  pointer-events: none;
+  opacity: 0;
+  overflow-y: auto;
+}
+
+.mobile-menu.active {
+  transform: translateX(0);
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.mobile-nav-box {
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+}
+
+.mobile-nav-font {
+    font-size: 25px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+}
+
+.mobile-nav li{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.mobile-socials {
+    display: flex;
+    column-gap: 25px;
+}
+
+.mobile-down {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 35px;
+}
+
+.mobile-nav-button {
+    width: 100%;
+}
+/* end testu */
+
     @media (max-width: 980px) {
         .eng-sk, .nav-break, .nav-btn-img, .main-nav .nav-bar-desktop {
             display: none;
@@ -187,6 +295,26 @@ onMounted(() => {
 
         .burger-open {
             display: block;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .main-nav {
+            column-gap: 15px;
+        }
+
+        .nav-button {
+            padding: 17px 62px;
+        }
+
+        .button-icon {
+            display: none;
+        }
+    }
+
+    @media (min-width: 981px) {
+        .mobile-menu {
+            display: none;
         }
     }
 </style>
