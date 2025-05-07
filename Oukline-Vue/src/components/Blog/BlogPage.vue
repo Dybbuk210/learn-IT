@@ -1,87 +1,88 @@
 <template>
     <div class="inner-container">
-
-        <div class="main-box">
-            <div class="box-up">
-                <h2 class="main-title" v-if="blog" v-html="blog.MainTitle"></h2>
-                <p class="main-text" v-if="blog">{{ blog.MainText }}</p>
-                <ul class="main-points" v-if="blog"> <!-- sem pôjdu tags -->
-                    <li class="main-point" v-for="(tag, index) in blog.tags" :key="index">{{ tag }}</li>
-                </ul>
-                <div class="main-img">
-                    <img :src="getImageUrl(blog.MainImage)" alt="" v-if="blog" class="main-img" />
-                </div>
-            </div>
-            <div class="box-down">
-                <div class="blog-import-data"> <!-- tu sa vitvoria data s clasami čo sme pripravovali pre title h3 pre texti p pre obrasky img pre  listi budu ol v nom li s h3 a p  -->
-                    <div class="blog-import-data" v-if="blog">
-                        <template v-for="(block, index) in blog.content" :key="index">
-                            
-                            <!-- Nadpis -->
-                            <h3 v-if="block.type === 'title'" class="blog-title">{{ block.text }}</h3>
-
-                            <!-- Normálny text -->
-                            <p v-if="block.type === 'text' && block.class !== 'blog-text-second'" class="blog-text">
-                            {{ block.text }}
-                            </p>
-
-                            <!-- Sekundárny text -->
-                            <p v-if="block.type === 'text' && block.class === 'blog-text-second'" class="blog-text-second">
-                            {{ block.text }}
-                            </p>
-
-                            <!-- Obrázok -->
-                            <img
-                            v-if="block.type === 'image'"
-                            :src="getImageUrl(block.src || block.MainImage)"
-                            :alt="block.alt || 'Blog image'"
-                            class="blog-img"
-                            />
-
-                            <!-- Zoznam -->
-                            <ol v-if="block.type === 'list'" class="blog-list">
-                            <li v-for="(item, i) in block.items" :key="i">
-                                <h3 class="list-title">{{ item.title }}</h3>
-                                <p class="list-text">{{ item.text }}</p>
-                            </li>
-                            </ol>
-
-                        </template>
-                    </div>
-                </div>
-
-                <!-- Blog-Socials toto su jedine statické prvky  -->
-                <p class="blog-socials-title">Share post:</p> 
-                <ul class="blog-socials">
-                    <li><a href=""></a><img src="../../assets/icons/BlogSocials/Xicon.svg" alt=""></li>
-                    <li><a href=""></a><img src="../../assets/icons/BlogSocials/Instagram.svg" alt=""></li>
-                    <li><a href=""></a><img src="../../assets/icons/BlogSocials/linkedin.svg" alt=""></li>
-                    <li><a href=""></a><img src="../../assets/icons/BlogSocials/Facebook.svg" alt=""></li>
-                </ul>
-            </div>
+  
+      <div class="main-box">
+        <div class="box-up">
+          <!-- Hlavný nadpis ako HTML -->
+          <h2 class="main-title" v-if="blog" v-html="blog.MainTitle"></h2>
+  
+          <!-- Úvodný text ako HTML -->
+          <p class="main-text" v-if="blog" v-html="blog.MainText"></p>
+  
+          <!-- Tagy ostávajú ako plain text -->
+          <ul class="main-points" v-if="blog">
+            <li class="main-point" v-for="(tag, index) in blog.tags" :key="index">{{ tag }}</li>
+          </ul>
+  
+          <div class="main-img">
+            <img :src="getImageUrl(blog.MainImage)" alt="" v-if="blog" class="main-img" />
+          </div>
         </div>
-
-        <div class="recommended-blog-posts">
-            <div class="posts-up">
-                <h3 class="posts-title">Recommended blog posts</h3>
-                <button class="second-btn-style switch-btn posts-button">
-                    <span class="button-text switch-text switch-current">
-                        Case studies
-                        <img src="../../assets/icons/RightArrowWhite.svg" alt="" class="button-icon">
-                    </span>
-                    <span class="button-text switch-text switch-next">
-                        Case studies
-                        <img src="../../assets/icons/RightArrowWhite.svg" alt="" class="button-icon">
-                    </span>
-                </button> 
+  
+        <div class="box-down">
+          <div class="blog-import-data">
+            <div class="blog-import-data" v-if="blog">
+              <template v-for="(block, index) in blog.content" :key="index">
+                <!-- Nadpis -->
+                <h3 v-if="block.type === 'title'" class="blog-title" v-html="block.text"></h3>
+  
+                <!-- Normálny text -->
+                <p v-if="block.type === 'text' && block.class !== 'blog-text-second'" class="blog-text" v-html="block.text"></p>
+  
+                <!-- Sekundárny text -->
+                <p v-if="block.type === 'text' && block.class === 'blog-text-second'" class="blog-text-second" v-html="block.text"></p>
+  
+                <!-- Obrázok -->
+                <img
+                  v-if="block.type === 'image'"
+                  :src="getImageUrl(block.src || block.MainImage)"
+                  :alt="block.alt || 'Blog image'"
+                  class="blog-img"
+                />
+  
+                <!-- Zoznam -->
+                <ol v-if="block.type === 'list'" class="blog-list">
+                  <li v-for="(item, i) in block.items" :key="i">
+                    <h3 class="list-title" v-html="item.title"></h3>
+                    <p class="list-text" v-html="item.text"></p>
+                  </li>
+                </ol>
+              </template>
             </div>
-            <div class="break"></div> <!-- prázdny div služi len na effekt -->
-            <div class="posts-down"> <!-- sem pôjdu 3 náhodné blogy -->
-                <BlogCard v-for="(item, index) in recommendedBlogs" :key="item.id" :blog="item" />
-            </div>
+          </div>
+  
+          <!-- Statické Socials -->
+          <p class="blog-socials-title">Share post:</p> 
+          <ul class="blog-socials">
+            <li><a href=""></a><img src="../../assets/icons/BlogSocials/Xicon.svg" alt=""></li>
+            <li><a href=""></a><img src="../../assets/icons/BlogSocials/Instagram.svg" alt=""></li>
+            <li><a href=""></a><img src="../../assets/icons/BlogSocials/linkedin.svg" alt=""></li>
+            <li><a href=""></a><img src="../../assets/icons/BlogSocials/Facebook.svg" alt=""></li>
+          </ul>
         </div>
+      </div>
+  
+      <div class="recommended-blog-posts">
+        <div class="posts-up">
+          <h3 class="posts-title">Recommended blog posts</h3>
+          <button class="second-btn-style switch-btn posts-button">
+            <span class="button-text switch-text switch-current">
+              Case studies
+              <img src="../../assets/icons/RightArrowWhite.svg" alt="" class="button-icon">
+            </span>
+            <span class="button-text switch-text switch-next">
+              Case studies
+              <img src="../../assets/icons/RightArrowWhite.svg" alt="" class="button-icon">
+            </span>
+          </button> 
+        </div>
+        <div class="break"></div>
+        <div class="posts-down">
+          <BlogCard v-for="(item, index) in recommendedBlogs" :key="item.id" :blog="item" />
+        </div>
+      </div>
     </div>
-</template>
+  </template>
 
 <script setup>
 import { onMounted, ref, watch } from 'vue'

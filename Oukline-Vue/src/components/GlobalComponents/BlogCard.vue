@@ -5,8 +5,8 @@
             <img :src="getImageUrl(blog.MainImage)" alt="">
             <div class="overlay">
                 <div class="inner-box">
-                    <h3 class="card-title">{{ blog.MainTitle }}</h3>
-                    <p class="card-text">{{ blog.CardText }}</p>
+                  <h3 class="card-title" v-html="blog.MainTitle"></h3>
+                  <p class="card-text" v-html="blog.CardText"></p>
                 </div>
             </div>    
         </div>
