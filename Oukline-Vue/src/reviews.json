@@ -1,0 +1,32 @@
+[
+    {
+        "id": "reviews-01",
+        "CardImg": "reviews01.png",
+        "CardText": "<span class=\"text-style-light\">Working with team was</span> such an amazing experience. <span class=\"text-style-light\">They are</span> incredibly skilled & reliable. <span class=\"text-style-light\">We received a</span> smooth, usable design prototype <span class=\"text-style-light\">even</span> before the deadline. <span class=\"text-style-light\">I can</span> highly recommend hiring them.",
+        "CardName": "David Mráz - Atheros"
+    },
+    {
+        "id": "reviews-02",
+        "CardImg": "reviews02.png",
+        "CardText": "<span class=\"text-style-light\">Oukline is a</span> no-brainer for businesses and brands <span class=\"text-style-light\">who are looking for</span> high-quality design and development work. <span class=\"text-style-light\">Not only that, they offer you a</span> wide range of services <span class=\"text-style-light\">like UI/UX & branding.</span> Amazing quality and speed!",
+        "CardName": "Miguel Queirós - QuickFold"
+    },
+    {
+        "id": "reviews-03",
+        "CardImg": "reviews03.png",
+        "CardText": "Our collaboration <span class=\"text-style-light\">has been and</span> continues to be exceptional. <span class=\"text-style-light\">Their</span> communication is seamless, <span class=\"text-style-light\">allowing us to</span> reach agreements effortlessly. <span class=\"text-style-light\">Additionally, the</span> speed and efficiency of our workflow are remarkable.",
+        "CardName": "Danny Kouba - Design Freaks"
+    },
+    {
+        "id": "reviews-04",
+        "CardImg": "reviews04.png",
+        "CardText": "<span class=\"text-style-light\">Thank you so much for the</span><br> great collaboration. <span class=\"text-style-light\">We definitely</span> recommend.<br> Professional, friendly and fast <span class=\"text-style-light\">from the beginning to the final products!</span> ✌️",
+        "CardName": "Tuning Story - Tuning event organiser"
+    },
+    {
+        "id": "reviews-05",
+        "CardImg": "reviews05.png",
+        "CardText": "<span class=\"text-style-light\">Oukline helped me with logo design and graphic adjustments for a running jersey.</span> Great communication, professional approach & very accommodating. Highly recommended!",
+        "CardName": "Pavel Lancko - Professional Spartan Athlete"
+    }
+]

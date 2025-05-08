@@ -16,24 +16,31 @@
             <div class="box-slider">
                 <div class="slider-up">
                     <div class="slider-img">
-                        <img src="../../../assets/img/client.png" alt="">
+                        <img :src="getImageUrl(reviews[currentIndex].CardImg)" alt="">
                     </div>
-                    <p class="slider-text">
-                        Oukline is a no-brainer for businesses and brands who are looking for high-quality design and development work. 
-                        Not only that, they offer you a wide range of services like UI/UX & branding. Amazing quality and speed!
-                    </p>
-                    <h3 class="name-box">Miguel Queirós <span class="text-style-light">Oblivion dope</span></h3>
-                </div>
-                <div class="slider-down">
-                    <button class="previos-btn"><img src="../../../assets/icons/SliderArrow.svg" alt="" class="slider-btn-left"> Previous</button>
+                    <p class="slider-text" v-html="reviews[currentIndex].CardText"></p>
+                    <h3 class="name-box">{{ reviews[currentIndex].CardName }}</h3>
+                    </div>
+
+                    <!-- KONTROLY -->
+                    <div class="slider-down">
+                    <button class="previos-btn" @click="prev">
+                        <img src="../../../assets/icons/SliderArrow.svg" alt="" class="slider-btn-left"> Previous
+                    </button>
+
                     <div class="pagginator-box">
-                        <span class="dot active"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
+                        <span
+                        v-for="(item, index) in reviews"
+                        :key="item.id"
+                        class="dot"
+                        :class="{ active: index === currentIndex }"
+                        @click="goTo(index)"
+                        ></span>
                     </div>
-                    <button class="next-btn">Next <img src="../../../assets/icons/SliderArrow.svg" alt="" class="slider-btn-right"></button>
+
+                    <button class="next-btn" @click="next">
+                        Next <img src="../../../assets/icons/SliderArrow.svg" alt="" class="slider-btn-right">
+                    </button>
                 </div>
             </div>
         </div>
@@ -41,7 +48,28 @@
 </template>
 
 <script setup>
+    import { ref } from 'vue'
+    import reviews from '../../../reviews.json' // uprav cestu podľa svojho projektu
+
+    const currentIndex = ref(0)
+
+    const next = () => {
+    currentIndex.value = (currentIndex.value + 1) % reviews.length
+    }
+
+    const prev = () => {
+    currentIndex.value = (currentIndex.value - 1 + reviews.length) % reviews.length
+    }
+
+    const goTo = (index) => {
+    currentIndex.value = index
+    }
+
+    const getImageUrl = (img) => {
+    return new URL(`../../../assets/img/Reviews/${img}`, import.meta.url).href
+    }
 </script>
+
 
 <style scoped>
     .clients-container {
@@ -89,7 +117,6 @@
     }
 
     .slider-img {
-        width: 60px;
         height: auto;
     }
 
@@ -162,7 +189,7 @@
         background-color: var(--main-color-black);
         outline: 1px solid var(--main-color-black);
         outline-offset: 8px;
-        margin-right: 8px;
+        margin: 0px 8px;
     }
 
     @media (max-width: 1100px) {
