@@ -48,37 +48,61 @@
 </template>
 
 <script setup>
-    import { ref, onMounted, onUnmounted } from 'vue'
-    import reviews from '../../../reviews.json' // uprav cestu podľa svojho projektu
+import { ref, onMounted, onUnmounted } from 'vue'
+import reviews from '../../../reviews.json' // uprav cestu podľa svojho projektu
 
-    const currentIndex = ref(0)
-    let interval = null
+const currentIndex = ref(0)
+let interval = null
 
-    const next = () => {
-    currentIndex.value = (currentIndex.value + 1) % reviews.length
-    }
+// Funkcia: spustí autoplay
+const startAutoplay = () => {
+  if (interval) return
+  interval = setInterval(() => {
+    next(false) // posunie bez ďalšieho resetu
+  }, 5000)
+}
 
-    const prev = () => {
-    currentIndex.value = (currentIndex.value - 1 + reviews.length) % reviews.length
-    }
+// Funkcia: pozastaví autoplay a znova ho spustí po delay (napr. 5 sekúnd)
+const resetAutoplay = (delay = 5000) => {
+  clearInterval(interval)
+  interval = null
+  setTimeout(() => {
+    startAutoplay()
+  }, delay)
+}
 
-    const goTo = (index) => {
-    currentIndex.value = index
-    }
+// Posun doprava
+const next = (manual = true) => {
+  currentIndex.value = (currentIndex.value + 1) % reviews.length
+  if (manual) resetAutoplay()
+}
 
-    const getImageUrl = (img) => {
-    return new URL(`../../../assets/img/Reviews/${img}`, import.meta.url).href
-    }
+// Posun doľava
+const prev = () => {
+  currentIndex.value = (currentIndex.value - 1 + reviews.length) % reviews.length
+  resetAutoplay()
+}
 
-    onMounted(() => {
-    interval = setInterval(() => {
-        next()
-    }, 3000)
-    })
+// Klik na konkrétny bod
+const goTo = (index) => {
+  currentIndex.value = index
+  resetAutoplay()
+}
 
-    onUnmounted(() => {
-    clearInterval(interval)
-    })
+// Vygeneruje cestu k obrázku
+const getImageUrl = (img) => {
+  return new URL(`../../../assets/img/Reviews/${img}`, import.meta.url).href
+}
+
+// Spustenie po načítaní komponentu
+onMounted(() => {
+  startAutoplay()
+})
+
+// Zastavenie pri odchode
+onUnmounted(() => {
+  clearInterval(interval)
+})
 </script>
 
 
