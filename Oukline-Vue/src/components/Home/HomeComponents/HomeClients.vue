@@ -48,10 +48,11 @@
 </template>
 
 <script setup>
-    import { ref } from 'vue'
+    import { ref, onMounted, onUnmounted } from 'vue'
     import reviews from '../../../reviews.json' // uprav cestu podľa svojho projektu
 
     const currentIndex = ref(0)
+    let interval = null
 
     const next = () => {
     currentIndex.value = (currentIndex.value + 1) % reviews.length
@@ -68,6 +69,16 @@
     const getImageUrl = (img) => {
     return new URL(`../../../assets/img/Reviews/${img}`, import.meta.url).href
     }
+
+    onMounted(() => {
+    interval = setInterval(() => {
+        next()
+    }, 3000)
+    })
+
+    onUnmounted(() => {
+    clearInterval(interval)
+    })
 </script>
 
 
