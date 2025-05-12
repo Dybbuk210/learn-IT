@@ -159,6 +159,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  row-gap: 10px;
 }
 
 .img-box img {
@@ -168,8 +169,9 @@
 }
 
 .card-info {
-  padding: 15px;
+    color: var(--main-color-black);
   font-size: 14px;
+  font-weight: 300;
 }
 
 .card.offset-up {
@@ -181,7 +183,7 @@
 }
 
 .card.offset-up-3 {
-  transform: translateY(-220px);
+  transform: translateY(-270px);
 }
 
 .card.offset-up-4 {
