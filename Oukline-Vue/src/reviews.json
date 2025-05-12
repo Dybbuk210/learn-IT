@@ -28,5 +28,11 @@
         "CardImg": "reviews05.png",
         "CardText": "<span class=\"text-style-light\">Oukline helped me with logo design and graphic adjustments for a running jersey.</span> Great communication, professional approach & very accommodating. Highly recommended!",
         "CardName": "Pavel Lancko - Professional Spartan Athlete"
+    },
+       {
+        "id": "reviews-06",
+        "CardImg": "reviews06.png",
+        "CardText": "<span class=\"text-style-light\">I was very</span> happy with the collaboration. Communication was professional, <span class=\"text-style-light\">we refined my logo idea together, and I received</span> full support throughout.<br><span class=\"text-style-light\">I truly</span> recommend working <span class=\"text-style-light\">with the</span> creative team <span class=\"text-style-light\">at</span> Studio Oukline.",
+        "CardName": "Petra - Yogayn"
     }
 ]

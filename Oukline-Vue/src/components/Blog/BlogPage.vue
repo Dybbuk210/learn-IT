@@ -57,7 +57,6 @@
             <li><a href=""></a><img src="../../assets/icons/BlogSocials/Xicon.svg" alt=""></li>
             <li><a href=""></a><img src="../../assets/icons/BlogSocials/Instagram.svg" alt=""></li>
             <li><a href=""></a><img src="../../assets/icons/BlogSocials/linkedin.svg" alt=""></li>
-            <li><a href=""></a><img src="../../assets/icons/BlogSocials/Facebook.svg" alt=""></li>
           </ul>
         </div>
       </div>
@@ -67,11 +66,11 @@
           <h3 class="posts-title">Recommended blog posts</h3>
           <button class="second-btn-style switch-btn posts-button">
             <span class="button-text switch-text switch-current">
-              Case studies
+              View all posts
               <img src="../../assets/icons/RightArrowWhite.svg" alt="" class="button-icon">
             </span>
             <span class="button-text switch-text switch-next">
-              Case studies
+              View all posts
               <img src="../../assets/icons/RightArrowWhite.svg" alt="" class="button-icon">
             </span>
           </button> 

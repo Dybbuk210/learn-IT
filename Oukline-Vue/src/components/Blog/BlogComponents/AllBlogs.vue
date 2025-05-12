@@ -18,8 +18,8 @@
 </template>
 
 <script setup>
-import blogData from '../../../blogdata.json'
-import BlogCard from '../../GlobalComponents/BlogCard.vue';
+    import blogData from '../../../blogdata.json'
+    import BlogCard from '../../GlobalComponents/BlogCard.vue';
 </script>
 
 <style scoped>

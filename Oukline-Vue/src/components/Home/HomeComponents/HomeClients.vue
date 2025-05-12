@@ -194,10 +194,6 @@ onUnmounted(() => {
         opacity: 1;
     }
 
-    .previos-btn:hover, .next-btn:hover {
-        opacity: 0.6;
-    }
-
     .slider-btn-left, .slider-btn-right {
         height: 40px;
         width: 30px;
