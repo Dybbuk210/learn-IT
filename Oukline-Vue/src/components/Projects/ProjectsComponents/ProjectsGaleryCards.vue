@@ -31,7 +31,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card offset-up">
         <div class="img-box">
           <img src="../../../assets/img/ProjectsCards/Sweetland.png" alt="">
         </div>
@@ -49,7 +49,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card offset-up">
         <div class="img-box">
           <img src="../../../assets/img/ProjectsCards/YOGAYNbyPetra01.png" alt="">
         </div>
@@ -58,7 +58,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card offset-up-2">
         <div class="img-box">
           <img src="../../../assets/img/ProjectsCards/Galaxys.png" alt="">
         </div>
@@ -67,7 +67,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card offset-up-2">
         <div class="img-box">
           <img src="../../../assets/img/ProjectsCards/Nuvo.png" alt="">
         </div>
@@ -76,7 +76,7 @@
         </div>
       </article>
 
-      <article class="card card-tall">
+      <article class="card card-tall offset-up-3">
         <div class="img-box">
           <img src="../../../assets/img/ProjectsCards/ÚspornéKlímy.png" alt="">
         </div>
@@ -85,7 +85,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card offset-up-2">
         <div class="img-box">
           <img src="../../../assets/img/ProjectsCards/STAVBY KK.png" alt="">
         </div>
@@ -94,7 +94,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card offset-up-2">
         <div class="img-box">
           <img src="../../../assets/img/ProjectsCards/3deCreative.png" alt="">
         </div>
@@ -103,7 +103,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card offset-up-2">
         <div class="img-box">
           <img src="../../../assets/img/ProjectsCards/YOGAYNbyPetra02.png" alt="">
         </div>
@@ -112,7 +112,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card offset-up-4">
         <div class="img-box">
           <img src="../../../assets/img/ProjectsCards/WegTrans02.png" alt="">
         </div>
@@ -170,6 +170,22 @@
 .card-info {
   padding: 15px;
   font-size: 14px;
+}
+
+.card.offset-up {
+  transform: translateY(-200px);
+}
+
+.card.offset-up-2 {
+  transform: translateY(-180px);
+}
+
+.card.offset-up-3 {
+  transform: translateY(-220px);
+}
+
+.card.offset-up-4 {
+  transform: translateY(-280px);
 }
 
 /* Špeciálne veľkosti kariet */
