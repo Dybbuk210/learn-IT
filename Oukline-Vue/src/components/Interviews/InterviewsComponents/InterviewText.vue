@@ -9,6 +9,7 @@
 
 <style scoped>
     .text-style {
+        font-family: "Literata", serif;
         color: var(--main-color-black);
         font-size: 18px;
         font-weight: 300;
