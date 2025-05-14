@@ -1,6 +1,6 @@
 <template>
-<div class="inner-container">
-    <header>
+<div class="sticky-header">
+    <header class="inner-container">
         <a href="" class="logo-box"><img src="../../assets/logo/Logo-B.svg" alt=""></a>
         <div class="main-nav">
             <ul class="nav-bar-desktop">
@@ -18,7 +18,7 @@
                 <li class="drop-down-li">
                     <router-link to="/bloggalery" class="header-text-size">Blog</router-link>
                     <ul class="drop-down">
-                        <li><a href="" class="header-text-size">Interviews</a></li>
+                        <li><router-link to="/interviewgalery" class="header-text-size">Interviews</router-link></li>
                     </ul>
                 </li>
             </ul>
@@ -71,34 +71,55 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
-import { ref } from 'vue'
+import { onMounted, onBeforeUnmount, ref } from 'vue'
 
 const showMobileMenu = ref(false)
 const toggleMenu = () => {
   showMobileMenu.value = !showMobileMenu.value
 }
 
+// Sleduj resize okna a resetuj menu pri návrate na desktop
+const handleResize = () => {
+  if (window.innerWidth > 980 && showMobileMenu.value) {
+    showMobileMenu.value = false
+  }
+}
+
 onMounted(() => {
-    document.querySelectorAll('.drop-down-li').forEach(item => {
-        let timeout
-        const dropdown = item.querySelector('.drop-down')
+  window.addEventListener('resize', handleResize)
 
-        item.addEventListener('mouseenter', () => {
-        clearTimeout(timeout)
-        dropdown.classList.add('show')
-        })
+  document.querySelectorAll('.drop-down-li').forEach(item => {
+    let timeout
+    const dropdown = item.querySelector('.drop-down')
 
-        item.addEventListener('mouseleave', () => {
-        timeout = setTimeout(() => {
-            dropdown.classList.remove('show')
-        }, 300)
-        })
+    item.addEventListener('mouseenter', () => {
+      clearTimeout(timeout)
+      dropdown.classList.add('show')
     })
+
+    item.addEventListener('mouseleave', () => {
+      timeout = setTimeout(() => {
+        dropdown.classList.remove('show')
+      }, 300)
+    })
+  })
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', handleResize)
 })
 </script>
 
 <style scoped>
+    .sticky-header {
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        background-color: #fff;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
     header, .main-nav {
         display: flex;
         align-items: center;
@@ -249,7 +270,7 @@ onMounted(() => {
     width: 92%;
     display: flex;
     flex-direction: column;
-    row-gap: 80px;
+    row-gap: 60px;
 }
 
 .mobile-nav-font {
@@ -261,7 +282,7 @@ onMounted(() => {
 .mobile-nav {
     display: flex;
     flex-direction: column;
-    row-gap: 28px;
+    row-gap: 20px;
 }
 
 .mobile-nav li{

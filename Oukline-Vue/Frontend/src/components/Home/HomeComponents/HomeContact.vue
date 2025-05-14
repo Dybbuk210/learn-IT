@@ -9,13 +9,13 @@
                     a solution</span> tailored to your goals → no surprises.
                 </p>
             </div>
-            <ContactForm />
+            <ContactFormTest />
         </div>
     </div>
 </template>
 
 <script setup>
-    import ContactForm from '../../GlobalComponents/ContactForm.vue';
+    import ContactFormTest from '../../GlobalComponents/ContactFormTest.vue';
 </script>
 
 <style scoped>
