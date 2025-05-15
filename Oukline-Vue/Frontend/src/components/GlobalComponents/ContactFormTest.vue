@@ -69,7 +69,7 @@
           <span class="switch-text switch-next">Let's talk</span>
         </button>
 
-        <p class="form-text" v-show="formSent">
+        <p class="form-text" v-if="formSent">
           Thank you for reaching out! We’ve received your message and will get back to you as soon as we review it.
           <span class="form-text-span">Looking forward to connecting with you!</span>
         </p>
@@ -128,8 +128,9 @@ const submitForm = async () => {
     })
 
     const text = await response.text()
+    console.log('RESPONSE TEXT:', text) // 👈 tu vidíš, čo ti odpovedá PHP
 
-    if (response.ok && text.includes("úspešne")) {
+    if (response.ok && text.trim() === "success") {
       formSent.value = true
       resetForm()
     } else {

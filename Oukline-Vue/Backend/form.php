@@ -1,14 +1,15 @@
 <?php
-// ✅ Overíme, či bol formulár odoslaný pomocou POST metódy (nie GET)
+header("Access-Control-Allow-Origin: *");
+// Overíme, či bol formulár odoslaný pomocou POST metódy (nie GET)
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-    // 🛡️ 1. Honeypot ochrana: skryté pole, ktoré by nemal človek nikdy vyplniť
+    // 1. Honeypot ochrana: skryté pole, ktoré by nemal človek nikdy vyplniť
     if (!empty($_POST['website'])) {
         echo "Spam detekovaný.";
         exit;
     }
 
-    // ⏱️ 2. Časová ochrana proti botom: overíme, že formulár nebol odoslaný okamžite po načítaní
+    // 2. Časová ochrana proti botom: overíme, že formulár nebol odoslaný okamžite po načítaní
     $formLoadTime = isset($_POST['form_load_time']) ? (int)$_POST['form_load_time'] : 0;
     $currentTime = round(microtime(true) * 1000); // aktuálny čas v milisekundách
 
@@ -17,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit;
     }
 
-    // 📝 3. Načítanie údajov z formulára + sanitizácia (ochrana pred XSS útokmi)
+    // 3. Načítanie údajov z formulára + sanitizácia (ochrana pred XSS útokmi)
     $name = htmlspecialchars(trim($_POST['user_name']));
     $email = htmlspecialchars(trim($_POST['user_email']));
     $message = htmlspecialchars(trim($_POST['user_message']));
@@ -28,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         ? implode(", ", array_map('htmlspecialchars', $_POST['services'])) 
         : "None";
 
-    // ✅ 4. Validácia – kontrola správnosti vstupov
+    // 4. Validácia – kontrola správnosti vstupov
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo "Neplatný email.";
         exit;
@@ -39,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit;
     }
 
-    // ✉️ 5. Príprava emailu
+    // 5. Príprava emailu
     $to = "dybbuk210@gmail.com"; // ← Tu zadaj svoju e-mailovú adresu
     $subject = "Nová správa z portfólia";
 
@@ -54,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $body .= "Služby: $services\n\n";
     $body .= "Správa:\n$message\n";
 
-    // 📬 6. Odoslanie emailu
+    // 6. Odoslanie emailu
     if (mail($to, $subject, $body, $headers)) {
         echo "success";
     } else {
@@ -62,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
 } else {
-    // 🚫 Neplatný prístup (nie cez POST)
+    // Neplatný prístup (nie cez POST)
     echo "Formulár nebol odoslaný.";
 }
 ?>
