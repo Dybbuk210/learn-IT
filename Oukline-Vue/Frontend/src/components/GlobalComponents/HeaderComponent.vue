@@ -44,14 +44,14 @@
         <div class="mobile-nav-box">
             <div class="mobile-up">
                 <ul class="mobile-nav">
-                    <li><a href="" class="mobile-nav-font">Services</a></li>
-                    <li><a href="" class="mobile-nav-font">Projects</a></li>
-                    <li><a href="" class="mobile-nav-font">Project gallery</a></li>
-                    <li><a href="" class="mobile-nav-font">Pricing</a></li>
-                    <li><a href="" class="mobile-nav-font">About</a></li>
-                    <li><a href="" class="mobile-nav-font">Testimonials</a></li>
-                    <li><a href="" class="mobile-nav-font">Blog</a></li>
-                    <li><a href="" class="mobile-nav-font">Interviews</a></li>
+                    <li><router-link to="/#services" class="mobile-nav-font" @click="closeMenu">Services</router-link></li>
+                    <li><router-link to="/projectsgalery" class="mobile-nav-font" @click="closeMenu">Projects</router-link></li>
+                    <li><router-link to="/projectsgalery/#allprojects" class="mobile-nav-font" @click="closeMenu">Project gallery</router-link></li>
+                    <li><router-link to="/#contactform" class="mobile-nav-font" @click="closeMenu">Pricing</router-link></li>
+                    <li><router-link to="/about" class="mobile-nav-font" @click="closeMenu">About</router-link></li>
+                    <li><router-link to="/#clients" class="mobile-nav-font" @click="closeMenu">Testimonials</router-link></li>
+                    <li><router-link to="/bloggalery" class="mobile-nav-font" @click="closeMenu">Blog</router-link></li>
+                    <li><router-link to="/interviewgalery" class="mobile-nav-font" @click="closeMenu">Interviews</router-link></li>
                 </ul>
             </div>
             <div class="mobile-down">
@@ -71,14 +71,25 @@
 </template>
 
 <script setup>
-import { onMounted, onBeforeUnmount, ref } from 'vue'
+import { onMounted, onBeforeUnmount, ref, watch } from 'vue'
+import { useButtonsNav } from '../../ButtonsNav'
 
 const showMobileMenu = ref(false)
+
 const toggleMenu = () => {
   showMobileMenu.value = !showMobileMenu.value
 }
 
-// Sleduj resize okna a resetuj menu pri návrate na desktop
+const closeMenu = () => {
+  showMobileMenu.value = false
+}
+
+watch(showMobileMenu, (isOpen) => {
+  const state = isOpen ? 'hidden' : 'auto'
+  document.body.style.overflow = state
+  document.documentElement.style.overflow = state
+})
+
 const handleResize = () => {
   if (window.innerWidth > 980 && showMobileMenu.value) {
     showMobileMenu.value = false
@@ -109,9 +120,9 @@ onBeforeUnmount(() => {
   window.removeEventListener('resize', handleResize)
 })
 
-import { useButtonsNav } from '../../ButtonsNav'
 const { goToContact } = useButtonsNav()
 </script>
+
 
 <style scoped>
     .sticky-header {
@@ -320,7 +331,7 @@ const { goToContact } = useButtonsNav()
         }
 
         .nav-button {
-            padding: 17px 62px;
+            padding: 17px 80px;
         }
 
         .button-icon {

@@ -86,34 +86,55 @@
   </template>
 
 <script setup>
-import { onMounted, ref, watch } from 'vue'
-import { useRoute } from 'vue-router'
-import blogData from '../../blogdata.json'
-import BlogCard from '../GlobalComponents/BlogCard.vue'
+import { onMounted, onBeforeUnmount, ref, watch } from 'vue'
+import { useButtonsNav } from '../../ButtonsNav'
 
-const route = useRoute()
-const blog = ref(null)
-const recommendedBlogs = ref([])
+const { goToContact } = useButtonsNav()
 
-const getImageUrl = (imgPath) => {
-    return new URL(`../../assets/img/Blog/${imgPath}`, import.meta.url).href
+const showMobileMenu = ref(false)
+
+const toggleMenu = () => {
+  showMobileMenu.value = !showMobileMenu.value
 }
 
-// Funkcia, ktorá načíta blog a odporúčané blogy
-const loadBlog = () => {
-    blog.value = blogData.find(item => item.id === route.params.id)
-    const otherBlogs = blogData.filter(item => item.id !== route.params.id)
-    const shuffled = otherBlogs.sort(() => 0.5 - Math.random())
-    recommendedBlogs.value = shuffled.slice(0, 3)
+const closeMenu = () => {
+  showMobileMenu.value = false
+}
+
+// Zakáž scrollovanie tela pri otvorenom menu
+watch(showMobileMenu, (isOpen) => {
+  document.body.style.overflow = isOpen ? 'hidden' : 'auto'
+})
+
+// Resetni menu pri zmene veľkosti okna
+const handleResize = () => {
+  if (window.innerWidth > 980 && showMobileMenu.value) {
+    showMobileMenu.value = false
+  }
 }
 
 onMounted(() => {
-    loadBlog()
+  window.addEventListener('resize', handleResize)
+
+  document.querySelectorAll('.drop-down-li').forEach(item => {
+    let timeout
+    const dropdown = item.querySelector('.drop-down')
+
+    item.addEventListener('mouseenter', () => {
+      clearTimeout(timeout)
+      dropdown.classList.add('show')
+    })
+
+    item.addEventListener('mouseleave', () => {
+      timeout = setTimeout(() => {
+        dropdown.classList.remove('show')
+      }, 300)
+    })
+  })
 })
 
-// Sleduj zmeny ID v URL a vždy znovu načítaj dáta
-watch(() => route.params.id, () => {
-    loadBlog()
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', handleResize)
 })
 </script>
 

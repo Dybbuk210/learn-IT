@@ -1,36 +1,30 @@
 <template>
   <div>
     <div class="form-box">
-      <form
-        class="contact-form"
-        action="http://localhost/Oukline-Vue/Backend/form.php"
-        method="POST"
-      >
+      <form class="contact-form" @submit.prevent="submitForm">
         <!-- Honeypot -->
         <div style="position: absolute; left: -9999px;" aria-hidden="true">
           <label for="website">Nechaj prázdne</label>
-          <input type="text" name="website" id="website" tabindex="-1" autocomplete="off" />
+          <input type="text" name="website" id="website" v-model="form.website" tabindex="-1" autocomplete="off" />
         </div>
 
         <!-- Time input -->
-        <input type="hidden" name="form_load_time" id="form_load_time" />
+        <input type="hidden" name="form_load_time" id="form_load_time" :value="form.form_load_time" />
 
         <!-- Select service -->
         <fieldset class="form-group services">
           <div class="services-box inner-row-gap">
             <legend class="title-font">Select a service you need:</legend>
             <div class="services-box-down">
-              <label>
-                <input class="services-box-label" type="checkbox" name="services[]" value="UX/UI Design" /> UX/UI Design
-              </label>
-              <label>
-                <input class="services-box-label" type="checkbox" name="services[]" value="Development" /> Development
-              </label>
-              <label>
-                <input class="services-box-label" type="checkbox" name="services[]" value="Branding" /> Branding
-              </label>
-              <label>
-                <input class="services-box-label" type="checkbox" name="services[]" value="Other" /> Other
+              <label v-for="option in serviceOptions" :key="option">
+                <input
+                  class="services-box-label"
+                  type="checkbox"
+                  :value="option"
+                  v-model="form.services"
+                  name="services[]"
+                />
+                {{ option }}
               </label>
             </div>
           </div>
@@ -39,12 +33,12 @@
         <!-- Budget -->
         <div class="form-group budget inner-row-gap">
           <label for="budget" class="title-font">Budget:</label>
-          <select id="budget" class="budget-selector" name="budget" required>
-            <option disabled hidden selected>Select your budget</option>
-            <option value="-1000"> - 1000€</option>
-            <option value="1000-2000">1000€ - 2000€</option>
-            <option value="2000-3000">2000€ - 3000€</option>
-            <option value="3000+">3000€ +</option>
+          <select id="budget" class="budget-selector" name="budget" required v-model="form.budget">
+            <option disabled hidden value="">Select your budget</option>
+            <option value="1,000-3,000">1,000€ - 3,000€</option>
+            <option value="3,000-5,000">3,000€ - 5,000€</option>
+            <option value="5,000-10,000">5000€ - 10,000€</option>
+            <option value="10,000+">10,000€ +</option>
           </select>
         </div>
 
@@ -53,14 +47,15 @@
           <legend class="title-font">Contact informations</legend>
           <div class="contact-box">
             <div class="form-row">
-              <input type="text" placeholder="Full name" name="user_name" required />
-              <input type="email" placeholder="Email" name="user_email" required />
+              <input type="text" placeholder="Full name" name="user_name" required v-model="form.user_name" />
+              <input type="email" placeholder="Email" name="user_email" required v-model="form.user_email" />
             </div>
             <textarea
               class="textarea-style"
               name="user_message"
               placeholder="Description of your request..."
               required
+              v-model="form.user_message"
             ></textarea>
           </div>
         </fieldset>
@@ -74,7 +69,7 @@
           <span class="switch-text switch-next">Let's talk</span>
         </button>
 
-        <p class="form-text">
+        <p class="form-text" v-show="formSent">
           Thank you for reaching out! We’ve received your message and will get back to you as soon as we review it.
           <span class="form-text-span">Looking forward to connecting with you!</span>
         </p>
@@ -85,9 +80,9 @@
           Do you prefer direct conversation?
           <img src="../../assets/icons/RightArrow.svg" alt="" class="box-down-icon" />
         </p>
-        <a class="form-button main-style-button switch-btn" href="https://cal.com/ouklinestudio/15min"  target="_blank"  rel="noopener noreferrer">
-                <span class="switch-text switch-current">Book a call (FREE)</span>
-                <span class="switch-text switch-next">Book a call (FREE)</span>
+        <a class="form-button main-style-button switch-btn" href="https://cal.com/ouklinestudio/15min" target="_blank" rel="noopener noreferrer">
+          <span class="switch-text switch-current">Book a call (FREE)</span>
+          <span class="switch-text switch-next">Book a call (FREE)</span>
         </a>
       </div>
     </div>
@@ -95,14 +90,67 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
+
+const formSent = ref(false)
+
+const form = ref({
+  website: '',
+  form_load_time: '',
+  services: [],
+  budget: '',
+  user_name: '',
+  user_email: '',
+  user_message: ''
+})
+
+const serviceOptions = ['UX/UI Design', 'Development', 'Branding', 'Other']
 
 onMounted(() => {
-  const loadTimeField = document.getElementById("form_load_time")
-  if (loadTimeField) {
-    loadTimeField.value = Date.now()
-  }
+  form.value.form_load_time = Date.now()
 })
+
+const submitForm = async () => {
+  const formData = new FormData()
+
+  for (const key in form.value) {
+    if (Array.isArray(form.value[key])) {
+      form.value[key].forEach(val => formData.append(`${key}[]`, val))
+    } else {
+      formData.append(key, form.value[key])
+    }
+  }
+
+  try {
+    const response = await fetch('http://localhost/Oukline-Vue/Backend/form.php', {
+      method: 'POST',
+      body: formData
+    })
+
+    const text = await response.text()
+
+    if (response.ok && text.includes("úspešne")) {
+      formSent.value = true
+      resetForm()
+    } else {
+      console.error('Chyba pri odoslaní formulára:', text)
+    }
+  } catch (error) {
+    console.error('Fetch error:', error)
+  }
+}
+
+const resetForm = () => {
+  form.value = {
+    website: '',
+    form_load_time: Date.now(),
+    services: [],
+    budget: '',
+    user_name: '',
+    user_email: '',
+    user_message: ''
+  }
+}
 </script>
 
 <style scoped>
@@ -277,7 +325,6 @@ onMounted(() => {
     }
 
     .form-text {
-        display: none;
         color: #B7BAC1;
         font-size: 14px;
         font-weight: 300;

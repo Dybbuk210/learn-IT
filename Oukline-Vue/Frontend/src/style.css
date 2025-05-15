@@ -11,6 +11,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #292929 inset !important;
+  -webkit-text-fill-color: #7C8088 !important;
+  border-radius: 3px !important;
+  caret-color: #fff;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -71,7 +71,7 @@ const imageUrl = computed(() => {
     .title {
         max-width: 50%;
         color: #fff;
-        font-size: 40px;
+        font-size: clamp(30px, 5vw, 40px);
         font-weight: 400;
         padding-bottom: 25px;
     }
@@ -103,6 +103,12 @@ const imageUrl = computed(() => {
         font-weight: 300;
     }
 
+    @media (max-width: 800px) {
+      .title {
+        max-width: none;
+      }
+    }
+
     @media (max-width: 500px) {
         .main-box {
             max-height: 340px;
@@ -110,6 +116,12 @@ const imageUrl = computed(() => {
 
         .inner-box {
             padding: 0px 18px 25px 18px ;
+        }
+
+        ul {
+          flex-wrap: wrap;
+          row-gap: 8px;
+          column-gap: 5px;
         }
     }
 </style>
