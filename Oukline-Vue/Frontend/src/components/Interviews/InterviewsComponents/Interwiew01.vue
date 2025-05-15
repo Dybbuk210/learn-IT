@@ -467,6 +467,10 @@ onMounted(() => {
   row-gap: 20px;
 }
 
+.socials-down {
+    display: none;
+}
+
 @media (max-width: 1240px) {
   .posts-down {
     grid-template-columns: repeat(2, 1fr);

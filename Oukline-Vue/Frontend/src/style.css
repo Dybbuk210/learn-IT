@@ -106,7 +106,7 @@ vzor:
 }
 
 .switch-btn .switch-next {
-  font-weight: 500;
+  font-weight: 300;
   top: 130%; /* úplne mimo dole */
   transform: translate(-50%, -50%);
 }

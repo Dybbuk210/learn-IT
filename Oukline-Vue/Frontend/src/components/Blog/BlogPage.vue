@@ -52,12 +52,14 @@
           </div>
   
           <!-- Statické Socials -->
-          <p class="blog-socials-title">Share post:</p> 
-          <ul class="blog-socials">
-            <li><a href=""></a><img src="../../assets/icons/BlogSocials/Xicon.svg" alt=""></li>
-            <li><a href=""></a><img src="../../assets/icons/BlogSocials/Instagram.svg" alt=""></li>
-            <li><a href=""></a><img src="../../assets/icons/BlogSocials/linkedin.svg" alt=""></li>
+          <div class="socials-none">
+            <p class="blog-socials-title">Share post:</p> 
+            <ul class="blog-socials">
+              <li><a href=""></a><img src="../../assets/icons/BlogSocials/Xicon.svg" alt=""></li>
+              <li><a href=""></a><img src="../../assets/icons/BlogSocials/Instagram.svg" alt=""></li>
+              <li><a href=""></a><img src="../../assets/icons/BlogSocials/linkedin.svg" alt=""></li>
           </ul>
+          </div>
         </div>
       </div>
   
@@ -171,6 +173,7 @@ watch(() => route.params.id, () => {
     }
 
     .blog-text {
+        font-family: "Literata", serif;
         color: var(--main-color-black);
         font-size: clamp(16px, 3vw, 18px);
         font-weight: 300;
@@ -178,6 +181,7 @@ watch(() => route.params.id, () => {
     }
 
     .blog-text-second {
+        font-family: "Literata", serif;
         color: var(--main-color-black);
         font-size: clamp(16px, 3vw, 18px);
         font-weight: 400;
@@ -205,6 +209,7 @@ watch(() => route.params.id, () => {
     }
 
     .list-text {
+        font-family: "Literata", serif;
         color: var(--main-color-black);
         font-size: clamp(16px, 3vw, 18px);
         font-weight: 300;
@@ -256,6 +261,10 @@ watch(() => route.params.id, () => {
         grid-template-columns: repeat(3, 1fr);
         column-gap: 20px;
         row-gap: 20px;
+    }
+
+    .socials-none {
+      display: none;
     }
 
     @media (max-width: 1240px) {

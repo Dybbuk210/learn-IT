@@ -4,21 +4,22 @@
         <div class="box">
             <h2 class="title"><span class="text-style-light">You can kick project off by filling out our</span><br> Contact form or Scheduling a call.</h2>
             <div class="box-buttons">
-                <button class=".main-style-button switch-btn second-btn-style">
+                <button class=".main-style-button switch-btn second-btn-style" @click="goToContact">
                     <span class="switch-text switch-current">Get a quote</span>
                     <span class="switch-text switch-next">Get a quote</span>
                 </button>
-                <button class=".main-style-button switch-btn light-btn-style">
+                <a class=".main-style-button switch-btn light-btn-style" href="https://cal.com/ouklinestudio/15min"  target="_blank"  rel="noopener noreferrer">
                     <span class="switch-text switch-current">Schedule a call</span>
                     <span class="switch-text switch-next">Schedule a call</span>
-                </button>
+                </a>
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
-
+import { useButtonsNav } from '../../../ButtonsNav'
+const { goToContact } = useButtonsNav()
 </script>
 
 <style scoped>
@@ -46,7 +47,7 @@
         column-gap: 15px;
     }
 
-    .box-buttons button {
+    .box-buttons button, .box-buttons a {
         align-self: flex-end;
     }
 
