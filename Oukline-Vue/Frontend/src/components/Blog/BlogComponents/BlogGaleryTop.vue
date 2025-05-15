@@ -4,7 +4,6 @@
       <div class="overlay">
         <div class="inner-box">
           <h2 class="title">{{ latestBlog.MainTitle }}</h2>
-          <p class="text">{{ latestBlog.MainText }}</p>
           <div class="box-down">
             <ul>
               <li v-for="(tag, index) in latestBlog.tags" :key="index">
@@ -70,10 +69,11 @@ const imageUrl = computed(() => {
     }
 
     .title {
+        max-width: 50%;
         color: #fff;
-        font-size: 25px;
+        font-size: 40px;
         font-weight: 400;
-        padding-bottom: 10px;
+        padding-bottom: 25px;
     }
 
     .text {

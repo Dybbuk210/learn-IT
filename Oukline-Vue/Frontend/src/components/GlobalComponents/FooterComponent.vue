@@ -3,9 +3,9 @@
         <div class="inner-container">
             <div class="footer-up footer-flex">
                 <div class="footer-up-left footer-flex">
-                    <a href="">
-                        <img src="../../assets/logo/Logo-W.svg" alt="" class="logo-box">
-                    </a>
+                        <router-link to="/">
+                                <img src="../../assets/logo/Logo-W.svg" alt="" class="logo-box">
+                        </router-link>
                     <div class="footer-break hide-on-mobile"></div>
                     <p>Based in Slovakia / Acting globally</p>
                 </div>
@@ -13,28 +13,28 @@
 
                         <ul>
                             <li>
-                                <a href="">
+                                <a href="https://x.com/Ouklinestudio" target="_blank"  rel="noopener noreferrer">
                                     <img src="../../assets/footersocials/X.svg" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="https://www.instagram.com/ouklinestudio/" target="_blank"  rel="noopener noreferrer">
                                     <img src="../../assets/footersocials/instagram.svg" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="https://www.linkedin.com/company/ouklinestudio/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BvvjQ9%2BuCQL6eKyRb4CYKVA%3D%3D" target="_blank"  rel="noopener noreferrer">
                                     <img src="../../assets/footersocials/linkedin.svg" alt="">
                                 </a>
                             </li>
                         </ul>
 
                     <div class="footer-break"></div>
-                    <button class="footer-button border-animate">Book a call</button>
+                    <button class="footer-button border-animate" @click="goToContact">Let's talk</button>
                 </div>
             </div>
             <div class="footer-down footer-flex">
-                <p>© Oukline 2024. All rights reserved.</p>
+                <p>© Oukline 2025. All rights reserved.</p>
                 <a href="" class="footer-link">studio@oukline.com</a>
             </div>
         </div>
@@ -42,6 +42,8 @@
 </template>
 
 <script setup>
+import { useButtonsNav } from '../../ButtonsNav'
+const { goToContact } = useButtonsNav()
 </script>
 
 <style scoped>
@@ -181,9 +183,9 @@
         }
     }
 
-    @media (max-width: 360px) {
+    @media (max-width: 420px) {
             .footer-button {
-                width: 50%;
+                width: 55%;
                 padding: 14px 31px;
             }
     }

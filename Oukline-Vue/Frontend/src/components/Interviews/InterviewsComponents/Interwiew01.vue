@@ -379,6 +379,7 @@ onMounted(() => {
 
     .main-img-box {
         max-width: 120px;
+        border: solid 2px #fff;
     }
 
     .main-title {

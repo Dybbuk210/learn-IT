@@ -8,7 +8,7 @@
                 <p class="title-box-text">
                     Explore our recent work <span class="text-style-light">and the</span> results we’ve delivered <span class="text-style-light">for</span> clients <span class="text-style-light">across industries.</span>
                 </p>
-                <button class=".main-style-button switch-btn light-btn-style">
+                <button class=".main-style-button switch-btn light-btn-style" @click="goToContact">
                     <span class="switch-text switch-current">Start your project</span>
                     <span class="switch-text switch-next">Start your project</span>
                 </button>
@@ -108,7 +108,7 @@
                 How can your project look like? 
                 <img src="../../../assets/icons/RightArrow.svg" alt="" class="box-down-icon">
             </p>
-            <button class="second-btn-style box-down-btn switch-btn">
+            <button class="second-btn-style box-down-btn switch-btn" @click="goToProjects">
                 <span class="switch-text switch-current">See recent work</span>
                 <span class="switch-text switch-next">See recent work</span>
             </button>
@@ -117,6 +117,9 @@
 </template>
 
 <script setup>
+import { useButtonsNav } from '../../../ButtonsNav'
+const { goToContact } = useButtonsNav()
+const { goToProjects } = useButtonsNav()
 </script>
 
 <style scoped>
@@ -321,10 +324,6 @@
 
         .box-down-icon {
           transform: rotate(90deg);
-        }
-
-        .box-down-btn {
-            padding: 16px 31px;
         }
 
         .main-box {

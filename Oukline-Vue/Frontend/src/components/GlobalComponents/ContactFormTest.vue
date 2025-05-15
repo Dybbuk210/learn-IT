@@ -85,10 +85,10 @@
           Do you prefer direct conversation?
           <img src="../../assets/icons/RightArrow.svg" alt="" class="box-down-icon" />
         </p>
-        <button class="form-button main-style-button switch-btn">
-          <span class="switch-text switch-current">Book a call (FREE)</span>
-          <span class="switch-text switch-next">Book a call (FREE)</span>
-        </button>
+        <a class="form-button main-style-button switch-btn" href="https://cal.com/ouklinestudio/15min"  target="_blank"  rel="noopener noreferrer">
+                <span class="switch-text switch-current">Book a call (FREE)</span>
+                <span class="switch-text switch-next">Book a call (FREE)</span>
+        </a>
       </div>
     </div>
   </div>

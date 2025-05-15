@@ -1,112 +1,10 @@
 [
     {
       "id": "blog-01",
-      "MainTitle": "How do you recognize a quality and creative marketing company?",
-      "MainText": "In today’s competitive business landscape, marketing is no longer just about spreading awareness. It’s about creating memorable, meaningful, and impactful connections with your audience.",
-      "MainImage": "01main.png",
-      "tags": ["creativity", "marketing", "business", "services"],
-      "CardText": "",
-      "content": [
-            {
-                "type": "text",
-                "class": "blog-text",
-                "text": "Choosing the right marketing company can make or break your brand's growth trajectory. But with countless options available, how do you separate the exceptional from the mediocre? Here are key indicators to help you recognize a quality and creative marketing company."
-                },
-            {
-                "type": "title",
-                "class": "blog-title",
-                "text": "A Proven Track Record"
-                },
-            {
-                "type": "text",
-                "class": "blog-text",
-                "text": "A reputable marketing company will have a history of successful campaigns across various industries. Look for case studies or portfolios showcasing their work. These examples should demonstrate tangible results like increased brand awareness, higher conversion rates, or substantial ROI. Don’t just take their word for it—ask for client references to verify their claims."
-                },
-            {
-                "type": "title",
-                "class": "blog-title",
-                "text": "Testimonials and Awards"
-                },
-            {
-                "type": "text",
-                "class": "blog-text",
-                "text": "Accolades from industry peers and positive testimonials from satisfied clients can serve as strong indicators of a quality marketing company. While awards don’t guarantee success, they often reflect the company’s commitment to excellence and innovation."
-                },
-            {
-                "type": "title",
-                "class": "blog-title",
-                "text": "A Long-Term Vision"
-                },
-            {
-                "type": "text",
-                "class": "blog-text",
-                "text": "A quality marketing company won’t just focus on short-term wins. They’ll help you build a sustainable strategy that supports long-term brand growth. This involves fostering brand loyalty, enhancing customer relationships, and creating a scalable marketing plan."
-                },
-            {
-                "type": "title",
-                "class": "blog-title",
-                "text": "Innovative and Original Ideas"
-                },
-            {
-                "type": "text",
-                "class": "blog-text",
-                "text": "Creativity is the lifeblood of effective marketing. A quality company will present ideas that are not only unique but also tailored to your brand’s voice and target audience. Watch for originality during their pitch or proposal process. Are their suggestions fresh, or do they rely on cookie-cutter strategies? A truly creative marketing company will approach your campaign with out-of-the-box thinking and a deep understanding of your goals."
-                },
-            {
-                "type": "title",
-                "class": "blog-title",
-                "text": "Standing Out in a Saturated Market"
-                },
-            {
-                "type": "text",
-                "class": "blog-text",
-                "text": "The market today is oversaturated with ads, with consumers bombarded by countless messages across every platform. This intense competition between brands means it’s no longer enough to simply have a presence; you need to stand out. A strong, distinctive brand visual is critical for cutting through the noise, grabbing attention, and leaving a lasting impression. Partnering with a creative agency can make all the difference—they have the expertise to craft a brand identity that is not only visually compelling but also interesting and credible, helping your business rise above the competition."
-                },
-            {
-                "type": "image",
-                "MainImage": "01second.png",
-                "alt": "Blog secondary image"
-                },
-            {
-                "type": "title",
-                "class": "blog-title",
-                "text": "Strategic Thinking"
-                },
-            {
-                "type": "text",
-                "class": "blog-text",
-                "text": "Behind every brilliant marketing campaign is a well-thought-out strategy. Quality marketing companies don’t just jump into tactics; they take the time to research your industry, competitors, and audience. They’ll provide a roadmap that includes defined objectives, key performance indicators (KPIs), and strategies to achieve measurable outcomes."
-                },
-            {
-                "type": "title",
-                "class": "blog-title",
-                "text": "Data-Driven Decision Making"
-                },
-            {
-                "type": "text",
-                "class": "blog-text",
-                "text": "In the digital age, marketing is as much about analytics as it is about creativity. A quality marketing company will use data to inform their strategies, refine their campaigns, and measure success. They’ll provide you with regular reports and insights, demonstrating transparency and accountability."
-                },
-            {
-                "type": "title",
-                "class": "blog-title",
-                "text": "Skilled Team"
-                },
-            {
-                "type": "text",
-                "class": "blog-text",
-                "text": "The team behind the marketing company is its greatest asset. Look for companies with a diverse group of skilled professionals, from creative designers and copywriters to analytics experts and campaign managers. Passionate teams are more likely to go the extra mile to make your campaigns stand out."
-                }
-        ]
-    },
-
-    {
-      "id": "blog-02",
       "MainTitle": "Cheap website, cheap presentation. Who is worth investing in a website.",
       "MainText": "In the digital age, a website is more than just a virtual storefront, it’s a critical representation of your brand. While opting for a cheap website may seem like a cost-saving move, it can severely impact your business credibility and customer trust. Here's why investing in a high quality website is crucial and who stands to benefit the most.",
       "MainImage": "02main.png",
       "tags": ["website", "template", "budget", "recommend"],
-      "CardText": "Your website is your first impression. Invest in trust, not shortcuts.",
       "content": [
             {
                 "type": "title",
@@ -217,12 +115,11 @@
     },
 
     {
-        "id": "blog-03",
+        "id": "blog-02",
         "MainTitle": "A website from a template?<br>Avoid these 5 things.",
         "MainText": "Templates are a quick and inexpensive way to introduce your brand to customers. If you don't have the time or budget to showcase your brand well, you can opt for a pre-programmed, pre-designed website, but there are some pitfalls to avoid if you want your website to be professional, functional, and consistent with your brand. Here are five key mistakes to watch out for when using a website template.",
         "MainImage": "03main.png",
         "tags": ["website", "template", "budget", "recommend"],
-        "CardText": "A cheap template screams low quality. Don’t let your website turn customers away.",
         "content": [
             {
                 "type": "title",
@@ -308,12 +205,11 @@
       },
 
       {
-        "id": "blog-04",
+        "id": "blog-03",
         "MainTitle": "Who is your audience? Don't burn money with bad research",
         "MainText": "In the digital age, a website is more than just a virtual storefront - it’s a critical representation of your brand. While opting for a cheap website may seem like a cost-saving move, it can severely impact your business credibility and customer trust. Here's why investing in a high-quality website is crucial and who stands to benefit the most.",
         "MainImage": "04main.png",
         "tags": ["website", "template", "budget", "recommend"],
-        "CardText": "Boost visibility, drive organic traffic, and grow smarter.",
         "content": [
                 {
                     "type": "title",
@@ -424,12 +320,11 @@
       },
 
       {
-        "id": "blog-05",
+        "id": "blog-04",
         "MainTitle": "Why SEO Is the #1 Growth Tool for Your Website in 2025",
         "MainText": "In a world where attention is currency, just having a website isn’t enough. You need to be seen. Whether you're a startup, local business, or scaling brand, SEO (Search Engine Optimization) is the most powerful tool to grow your online visibility, bring in high-quality traffic, and turn visitors into loyal customers.",
         "MainImage": "05main.png",
         "tags": ["website", "template", "budget", "recommend"],
-        "CardText": "Know exactly who you're talking to, not just guessing. Stop wasting budget...",
         "content": [
             {
                 "type": "title",

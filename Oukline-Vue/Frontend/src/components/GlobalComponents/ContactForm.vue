@@ -20,10 +20,10 @@
                     <label for="budget" class="title-font">Budget:</label>
                     <select id="budget" class="budget-selector" name="budget">
                         <option disabled hidden selected>Select your budget</option>
-                        <option value="500-1000"> - 1000€</option>
-                        <option value="500-1000">1000€ - 2000€</option>
-                        <option value="1000-3000">2000€ - 3000€</option>
-                        <option value="3000+">3000€ + </option>
+                        <option value="1,000-3,000">1,000€ - 3,000€</option>
+                        <option value="3,000-5,000">3,000€ - 5,000€</option>
+                        <option value="5,000-10,000">5000€ - 10,000€</option>
+                        <option value="10,000+">10,000€ + </option>
                     </select>
                 </div>
 
@@ -61,10 +61,10 @@
                     Do you prefer direct conversation? 
                     <img src="../../assets/icons/RightArrow.svg" alt="" class="box-down-icon">
                 </p>
-                <button class="form-button main-style-button switch-btn">
+                <a class="form-button main-style-button switch-btn" href="https://cal.com/ouklinestudio/15min"  target="_blank"  rel="noopener noreferrer">
                     <span class="switch-text switch-current">Book a call (FREE)</span>
                     <span class="switch-text switch-next">Book a call (FREE)</span>
-                </button>
+                </a>
             </div>                                                                                         
         </div>
     </div>
@@ -180,7 +180,7 @@
         border-radius: 3px;
         font-size: 14px;
         font-weight: 400;
-        color: #7C8088;
+        color: #fff; /* zmenena farba */
         background-color: #292929;
         cursor: pointer;
         background-image: url('../assets/icons/ArrowDown.svg');

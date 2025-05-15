@@ -1,7 +1,7 @@
 <template>
     <div class="bottom-space">
         <div class="video-box">
-            <video src="../../../assets/Herovideo.mp4" autoplay muted loop playsinline></video>
+            <video  ref="videoRef" src="../../../assets/Herovideo.mp4" autoplay muted loop playsinline  @click="toggleFullScreen"   controlslist="nodownload nofullscreen noremoteplayback"  disablepictureinpicture></video>
             <button class="video-button switch-btn">
                 <span class="switch-text switch-current">
                     <img src="../../../assets/icons/ArrowUP.svg" alt="" class="video-btn-img">
@@ -12,7 +12,7 @@
             </button>
         </div>
         <div class="inner-container box-end">
-            <a href="" class="hero-link">Show all projects</a>
+            <a class="hero-link" @click="goToProjects">Show all projects</a>
         </div>
         <div class="inner-container">
             <h1 class="hero-title">
@@ -29,7 +29,7 @@
                         <p><span class="text-style-light"></span> smart design and strategy.</p>
                     </div>
                 </div>
-                <button class="hero-button main-style-button switch-btn">
+                <button class="hero-button main-style-button switch-btn" @click="goToContact">
                     <span class="switch-text switch-current">Get a quote //</span>
                     <span class="switch-text switch-next">Get a quote //</span>
                 </button>
@@ -39,7 +39,25 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 
+const videoRef = ref(null)
+
+const toggleFullScreen = () => {
+  const videoEl = videoRef.value
+
+  if (!document.fullscreenElement) {
+    videoEl.requestFullscreen().catch(err => {
+      console.error(`Error attempting to enable full-screen mode: ${err.message}`)
+    })
+  } else {
+    document.exitFullscreen()
+  }
+}
+
+import { useButtonsNav } from '../../../ButtonsNav'
+const { goToContact } = useButtonsNav()
+const { goToProjects} = useButtonsNav()
 </script>
 
 <style scoped>
@@ -60,6 +78,7 @@
         justify-content: center;
         align-items: center;
         z-index: 1;
+        cursor: pointer;
     }
 
     /* Video Button */
@@ -88,6 +107,7 @@
     }
 
     .hero-link {
+        cursor: pointer;
         font-size: 18px;
         font-weight: 300;
         color: var(--main-color-black);

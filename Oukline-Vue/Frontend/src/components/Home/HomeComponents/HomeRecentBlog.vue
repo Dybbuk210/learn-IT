@@ -158,5 +158,9 @@ const imageUrl = computed(() => {
         .box-padding-gap {
             padding-bottom: 100px;
         }
+
+        .blog-button {
+            width: 100%;
+        }
     }
 </style>

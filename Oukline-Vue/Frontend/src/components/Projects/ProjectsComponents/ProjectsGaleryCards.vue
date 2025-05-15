@@ -1,5 +1,5 @@
 <template>
-  <div class="inner-container main-box">
+  <div class="inner-container main-box" id="allprojects">
     <h2 class="main-title">Gallery → Other creative projects</h2>
     <div class="break break-padding"></div>
 

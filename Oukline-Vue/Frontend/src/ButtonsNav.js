@@ -1,0 +1,25 @@
+// src/composables/ButtonsNav.js
+import { useRouter } from 'vue-router'
+
+export function useButtonsNav() {
+  const router = useRouter()
+
+  const goToContact = () => {
+    router.push({ path: '/', hash: '#contactform' })
+  }
+
+   const goToProjects = () => {
+    router.push({ path: '/projectsgalery', hash: '' })
+  }
+
+  /* vzor pre import 
+        @click="goToContact"  
+        import { useButtonsNav } from '../../ButtonsNav'
+        const { goToContact } = useButtonsNav()
+  */
+
+  return {
+    goToContact,
+    goToProjects
+  }
+}

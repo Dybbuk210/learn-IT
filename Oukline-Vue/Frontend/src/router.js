@@ -28,9 +28,31 @@ const router = createRouter({
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition
-    } else {
-      return { top: 0 }
     }
+
+    if (to.hash) {
+      // Štandardný posun
+      let offset = 100
+
+      // Výnimka pre konkrétne id
+      if (to.hash === '#services') {
+        offset = 0
+      }
+      if (to.hash === '#contactform') {
+        offset = 140
+      }
+      if (to.hash === '#clients') {
+        offset = -100
+      }
+
+      return {
+        el: to.hash,
+        top: offset,
+        behavior: 'smooth'
+      }
+    }
+
+    return { top: 0 }
   }
 })
 

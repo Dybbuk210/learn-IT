@@ -10,7 +10,7 @@
                 </p>
                 <a href="" class="up-link">David Mráz - Atheros</a>
             </div>
-            <button class="main-style-button switch-btn services-button ">
+            <button class="main-style-button switch-btn services-button" @click="goToContact">
                     <span class="button-text switch-text switch-current">
                         Join our satisfied partners
                         <img src="../../../assets/icons/RightArrowWhite.svg" alt="" class="button-icon">
@@ -25,6 +25,8 @@
 </template>
 
 <script setup>
+import { useButtonsNav } from '../../../ButtonsNav'
+const { goToContact } = useButtonsNav()
 </script>
 
 <style scoped>
@@ -32,7 +34,6 @@
         max-width: 50%;
         margin: 0 auto;
         row-gap: 70px;
-        padding-top: 30px;
         padding-bottom: 200px;
     }
 

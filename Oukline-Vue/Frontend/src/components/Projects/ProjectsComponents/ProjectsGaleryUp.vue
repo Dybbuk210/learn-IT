@@ -8,7 +8,7 @@
                 <p class="title-box-text">
                     Explore our recent work <span class="text-style-light">and the</span> results we’ve delivered <span class="text-style-light">for</span> clients <span class="text-style-light">across industries.</span>
                 </p>
-                <button class=".main-style-button switch-btn light-btn-style">
+                <button class=".main-style-button switch-btn light-btn-style" @click="goToContact">
                     <span class="switch-text switch-current">Start your project</span>
                     <span class="switch-text switch-next">Start your project</span>
                 </button>
@@ -107,6 +107,8 @@
 </template>
 
 <script setup>
+import { useButtonsNav } from '../../../ButtonsNav'
+const { goToContact } = useButtonsNav()
 </script>
 
 <style scoped>

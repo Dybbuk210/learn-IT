@@ -1,9 +1,9 @@
 <template>
-    <div class="inner-container main-container">
+    <div class="inner-container main-container" id="services">
         <div class="box-up">
             <div class="box-up-left">
                 <p class="box-up-text"><span class="text-style-light">We focus on</span> what we’re best at <span class="text-style-light">no fluff, just services that</span> move your brand forward.</p>
-                <button class="main-style-button switch-btn services-button ">
+                <button class="main-style-button switch-btn services-button" @click="goToProjects">
                     <span class="button-text switch-text switch-current">
                         See projects
                         <img src="../../../assets/icons/RightArrowWhite.svg" alt="" class="button-icon">
@@ -53,7 +53,8 @@
 </template>
 
 <script setup>
-
+import { useButtonsNav } from '../../../ButtonsNav'
+const { goToProjects} = useButtonsNav()
 </script>
 
 <style scoped>

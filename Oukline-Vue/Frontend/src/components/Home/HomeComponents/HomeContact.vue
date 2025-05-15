@@ -3,13 +3,13 @@
         <div class="contact-container">
             <div class="title-text">
                 <h2 class="contact-title"><span class="text-style-light">Simple, Transparent Pricing:</span> Customize your Project to
-                    match your needs.</h2>
+                    match your needs</h2>
                 <p class="contact-text">
                     Select your services, set your budget, <span class="text-style-light">and get
                     a solution</span> tailored to your goals → no surprises.
                 </p>
             </div>
-            <ContactFormTest />
+            <ContactFormTest id="contactform"></ContactFormTest>
         </div>
     </div>
 </template>
@@ -54,6 +54,14 @@
     @media (max-width: 420px) {
         .contact-container {
             width: 100%;
+        }
+
+        .title-text {
+            row-gap: 20px;
+        }
+
+        .contact-container {
+            row-gap: 45px;
         }
     }
 </style>

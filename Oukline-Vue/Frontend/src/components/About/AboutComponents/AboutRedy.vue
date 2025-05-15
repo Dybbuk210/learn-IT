@@ -5,8 +5,8 @@
             <h2 class="title"><span class="text-style-light">You can kick project off by filling out our</span><br> Contact form or Scheduling a call.</h2>
             <div class="box-buttons">
                 <button class=".main-style-button switch-btn second-btn-style">
-                    <span class="switch-text switch-current">Contact form</span>
-                    <span class="switch-text switch-next">Contact form</span>
+                    <span class="switch-text switch-current">Get a quote</span>
+                    <span class="switch-text switch-next">Get a quote</span>
                 </button>
                 <button class=".main-style-button switch-btn light-btn-style">
                     <span class="switch-text switch-current">Schedule a call</span>

@@ -27,7 +27,7 @@
                 </div>
                 <div class="card-info">
                     <h3 class="card-title">Filip Moniš - Development</h3>
-                    <p class="card-text">Full-stack Developerr</p>
+                    <p class="card-text">Full-stack Developer</p>
                 </div>
             </article>
 

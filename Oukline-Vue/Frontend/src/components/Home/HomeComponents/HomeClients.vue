@@ -1,5 +1,5 @@
 <template>
-    <div class="inner-container clients-container">
+    <div class="inner-container clients-container" id="clients">
         <div class="inner-box">
             <div class="box-up">
                 <h2 class="box-up-title">
@@ -237,6 +237,23 @@ onUnmounted(() => {
         .clients-container {
             padding-top: 100px;
             padding-bottom: 100px;
+        }
+
+        .box-up {
+            row-gap: 20px;
+        }
+
+        .inner-box {
+            row-gap: 50px;
+        }
+
+        .previos-btn, .next-btn {
+            display: none;
+        }
+
+        .slider-down {
+            justify-content: center;
+            padding-top: 30px;
         }
     }
 

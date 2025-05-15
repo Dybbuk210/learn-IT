@@ -1,20 +1,21 @@
 <template>
 <div class="sticky-header">
     <header class="inner-container">
-        <a href="" class="logo-box"><img src="../../assets/logo/Logo-B.svg" alt=""></a>
+        <router-link to="/" class="logo-box">
+            <img src="../../assets/logo/Logo-B.svg" alt="Logo">
+        </router-link>
         <div class="main-nav">
             <ul class="nav-bar-desktop">
-                <li><a href="" class="header-text-size">Services</a></li>
+                <li><router-link to="/#services" class="header-text-size">Services</router-link></li>
                 <li class="drop-down-li">
-                    <a href="" class="header-text-size">Projects</a>
+                    <router-link to="/projectsgalery" class="header-text-size">Projects</router-link>
                     <ul class="drop-down">
-                        <li><a href="" class="header-text-size">Studies</a></li>
-                        <li><a href="" class="header-text-size">Gallery</a></li>
+                        <li><router-link to="/projectsgalery/#allprojects" class="header-text-size">Gallery</router-link></li>
                     </ul>
                 </li>
-                <li><a href="" class="header-text-size">Pricing</a></li>
+                <li><router-link to="/#contactform" class="header-text-size">Pricing</router-link></li>
                 <li><router-link to="/about" class="header-text-size">About</router-link></li>
-                <li><a href="" class="header-text-size">Testimonials</a></li>
+                <li><router-link to="/#clients" class="header-text-size">Testimonials</router-link></li>
                 <li class="drop-down-li">
                     <router-link to="/bloggalery" class="header-text-size">Blog</router-link>
                     <ul class="drop-down">
@@ -24,10 +25,9 @@
             </ul>
             <div class="nav-break"></div>
 <!--             <button class="eng-sk header-text-size">En</button>   Zatiaľ deaktivovane -->
-            <button class="nav-button header-text-size switch-btn">
+            <button class="nav-button main-style-button header-text-size switch-btn" @click="goToContact">
                 <span class="button-text switch-text switch-current">
-                        Schedule a call
-                        <img src="../../assets/icons/RightArrow.svg" alt="" class="button-icon">
+                        Apply to collaborate
                     </span>
                     <span class="button-text switch-text switch-next">
                         Let's talk
@@ -45,7 +45,7 @@
             <div class="mobile-up">
                 <ul class="mobile-nav">
                     <li><a href="" class="mobile-nav-font">Services</a></li>
-                    <li><a href="" class="mobile-nav-font">Case studies</a></li>
+                    <li><a href="" class="mobile-nav-font">Projects</a></li>
                     <li><a href="" class="mobile-nav-font">Project gallery</a></li>
                     <li><a href="" class="mobile-nav-font">Pricing</a></li>
                     <li><a href="" class="mobile-nav-font">About</a></li>
@@ -108,6 +108,9 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('resize', handleResize)
 })
+
+import { useButtonsNav } from '../../ButtonsNav'
+const { goToContact } = useButtonsNav()
 </script>
 
 <style scoped>
@@ -117,7 +120,6 @@ onBeforeUnmount(() => {
         top: 0;
         z-index: 9999;
         background-color: #fff;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     }
 
     header, .main-nav {
@@ -189,14 +191,7 @@ onBeforeUnmount(() => {
     }
 
     .nav-button {
-        display: flex;
-        justify-content: center;
-        color: var(--main-color-black);
-        background-color: #F5F5F5;
-        font-weight: 400;
-        padding: 20px 79px;
-        border-radius: 3px;
-        column-gap: 10px;
+        padding: 20px 84px;
     }
 
     .nav-button-icon-box {

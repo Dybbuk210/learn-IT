@@ -10,9 +10,9 @@
                         into powerful visual experiences <span class="text-style-light">with precision and creativity.</span>
                     </p>
                     <ul class="about-socials">
-                        <li><a href="" class="social-link">twitter</a></li>
-                        <li><a href="" class="social-link">instagram</a></li>
-                        <li><a href="" class="social-link">linkedin</a></li>
+                        <li><a href="https://x.com/Ouklinestudio" target="_blank"  rel="noopener noreferrer" class="social-link">twitter</a></li>
+                        <li><a href="https://www.instagram.com/ouklinestudio/" target="_blank"  rel="noopener noreferrer" class="social-link">instagram</a></li>
+                        <li><a href="https://www.linkedin.com/company/ouklinestudio/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BvvjQ9%2BuCQL6eKyRb4CYKVA%3D%3D" target="_blank"  rel="noopener noreferrer" class="social-link">linkedin</a></li>
                     </ul>
                 </div>
             </div>
@@ -96,6 +96,10 @@
         color: var(--main-color-black);
     }
 
+    .social-link:hover {
+        border-bottom: solid 1px var(--main-color-black);
+    }
+
     .about-text {
         font-size: clamp(30px, 5vw, 40px);
         font-weight: 300;
@@ -105,6 +109,21 @@
     @media (max-width: 600px) {
         .about-container {
             padding-top: 100px;
+            padding-bottom: 55px;
+        }
+
+        .about-box {
+            row-gap: 55px;
         }
     }
+
+     @media (max-width: 420px) {
+        .box-up {
+            row-gap: 15px;
+        }
+
+        .box-up-text {
+            row-gap: 25px;
+        }
+     }
 </style>
