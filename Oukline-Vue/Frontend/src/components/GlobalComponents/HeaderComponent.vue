@@ -217,13 +217,14 @@ const { goToContact } = useButtonsNav()
     }
 
     
-    ul li {
+    ul li a {
     transition: border-bottom 0.4s ease;
     border-bottom: solid 1px transparent;
     }
 
-    ul li:hover {
-        border-bottom: solid 1px var(--main-color-black);
+    ul li > a:hover,
+    ul li > .router-link-active:hover {
+    border-bottom: solid 1px var(--main-color-black);
     }
 
     .logo-box {

@@ -2,7 +2,7 @@
     <div class="inner-container">
         <div class="main-box">
             <div class="img-box">
-                <img src="../../../assets/img/Interviews/Miguel Queirós.png" alt="">
+                <img src="../../../assets/img/Interviews/Miguel Queirós.jpg" alt="">
             </div>
             <div class="info-box">
                 <div class="info-up">
@@ -40,6 +40,8 @@
     }
 
     .img-box {
+        max-width: 450px;
+        height: auto;
         border-radius: 3px;
     }
 

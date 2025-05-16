@@ -2,6 +2,7 @@
     {
         "id": "reviews-01",
         "CardImg": "reviews01.png",
+        "CardImgB": "reviews01B.png",
         "CardText": "<span class=\"text-style-light\">Working with team was</span> such an amazing experience. <span class=\"text-style-light\">They are</span> incredibly skilled & reliable. <span class=\"text-style-light\">We received a</span> smooth, usable design prototype <span class=\"text-style-light\">even</span> before the deadline. <span class=\"text-style-light\">I can</span> highly recommend hiring them.",
         "CardName": "David Mráz - Atheros"
     },
@@ -14,6 +15,7 @@
     {
         "id": "reviews-03",
         "CardImg": "reviews03.png",
+        "CardImgB": "reviews03B.png",
         "CardText": "Our collaboration <span class=\"text-style-light\">has been and</span> continues to be exceptional. <span class=\"text-style-light\">Their</span> communication is seamless, <span class=\"text-style-light\">allowing us to</span> reach agreements effortlessly. <span class=\"text-style-light\">Additionally, the</span> speed and efficiency of our workflow are remarkable.",
         "CardName": "Danny Kouba - Design Freaks"
     },
@@ -32,6 +34,7 @@
        {
         "id": "reviews-06",
         "CardImg": "reviews06.png",
+        "CardImgB": "reviews06B.png",
         "CardText": "<span class=\"text-style-light\">I was very</span> happy with the collaboration. Communication was professional, <span class=\"text-style-light\">we refined my logo idea together, and I received</span> full support throughout.<br><span class=\"text-style-light\">I truly</span> recommend working <span class=\"text-style-light\">with the</span> creative team <span class=\"text-style-light\">at</span> Studio Oukline.",
         "CardName": "Petra - Yogayn"
     }

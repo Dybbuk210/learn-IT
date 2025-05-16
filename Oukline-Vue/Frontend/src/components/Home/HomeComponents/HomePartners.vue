@@ -25,17 +25,18 @@
                 </div>
                 <div class="galery-row3">
                     <img src="../../../assets/Partners/BBRS.svg" alt="">
-                    <img src="../../../assets/Partners/Stavbykk.svg" alt="">
-
                     <div class="img-box">
                         <img src="../../../assets/Partners/Smfirst.svg" alt="" class="img-width">
                     </div>
-                    <div class="img-box">
+                    <img src="../../../assets/Partners/Stavbykk.svg" alt="">
+                      <div class="img-box">
+                        <img src="../../../assets/Partners/PuschOnline.svg" alt="" class="img-width-2">
+                    </div>
+                    <img src="../../../assets/Partners/Yogayn.svg" alt="">
+                     <div class="img-box">
                         <img src="../../../assets/Partners/TuningStory.svg" alt="" class="img-width">
                     </div>
-
-                    <img src="../../../assets/Partners/Yogayn.svg" alt="">
-                    <img src="../../../assets/Partners/OakGroup.svg" alt="">
+                    <img src="../../../assets/Partners/OakGroup.svg" alt="" class="last-item">
                 </div>
             </div>
             <div class="btn-box">
@@ -46,16 +47,16 @@
                 </p>
                 </div>
                 <div class="btn-box-right">
-                    <button class="second-btn-style btn-width switch-btn">
-                        <span class="button-text switch-text switch-current">
-                            studio@oukline.com
-                            <img src="../../../assets/icons/PartnersBTNicon.svg" alt="" class="button-icon">
-                        </span>
-                        <span class="button-text switch-text switch-next">
-                            studio@oukline.com
-                            <img src="../../../assets/icons/PartnersBTNicon.svg" alt="" class="button-icon">
-                        </span>
-                    </button> 
+                 <a href="mailto:studio@oukline.com" class="second-btn-style btn-width switch-btn">
+                    <span class="button-text switch-text switch-current">
+                        studio@oukline.com
+                        <img src="../../../assets/icons/PartnersBTNicon.svg" alt="" class="button-icon">
+                    </span>
+                    <span class="button-text switch-text switch-next">
+                        studio@oukline.com
+                        <img src="../../../assets/icons/PartnersBTNicon.svg" alt="" class="button-icon">
+                    </span>
+                </a>
                 </div>
             </div>
         </div>
@@ -90,7 +91,7 @@
         font-weight: 400;
     }
 
-    .btn-box button {
+    .btn-box a {
         font-size: 17px;
         font-weight: 400;
     }
@@ -110,7 +111,7 @@
         align-items: center;
     }
 
-    .btn-box p, .btn-box button {
+    .btn-box p {
         display: flex;
     }
 
@@ -131,10 +132,16 @@
         margin-bottom: 50px;
     }
 
-    .galery-row1, .galery-row2, .galery-row3 {
+    .galery-row1, .galery-row2 {
         display: grid;
         column-gap: 80px;
         grid-template-columns: repeat(6, 1fr);
+    }
+
+    .galery-row3 {
+        display: grid;
+        column-gap: 80px;
+        grid-template-columns: repeat(7, 1fr);
     }
 
     .galery-row1 {
@@ -158,10 +165,13 @@
         height: 50%;
     }
 
+    .img-width-2 {
+        width: 70%;
+    }
+
     .btn-width{
-        display: flex;
         column-gap: 8px;
-        padding: 25px 112px;
+        padding: 10px 98px;
     }
 
     @media (max-width: 1200px) {
@@ -182,10 +192,16 @@
             grid-template-columns: repeat(3, 1fr);
             row-gap: 25px;
             column-gap: 30px;
+            justify-items: center;
         }
 
-        .galery-row3 {
-            row-gap: 5px;
+        .galery-row3 .last-item {
+            grid-column: 2 / 3; /* Posunie ho do prostredného stĺpca */
+        }
+
+        .img-width, .img-width-2 {
+            width: 100%;
+            height: 100%;
         }
     }
 
@@ -222,7 +238,7 @@
 
         .btn-width {
             width: 100%;
-            height: 50px;
+            padding: 25px 98px;
             justify-content: center;
             align-items: center;
         }

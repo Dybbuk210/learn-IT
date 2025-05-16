@@ -8,7 +8,7 @@
             </p>
             </div>
             <div class="btn-box-right">
-                <button class="second-btn-style btn-width switch-btn">
+                <a href="mailto:studio@oukline.com" class="second-btn-style btn-width switch-btn">
                     <span class="button-text switch-text switch-current">
                         studio@oukline.com
                         <img src="../../../assets/icons/PartnersBTNicon.svg" alt="" class="button-icon">
@@ -17,7 +17,7 @@
                         studio@oukline.com
                         <img src="../../../assets/icons/PartnersBTNicon.svg" alt="" class="button-icon">
                     </span>
-                </button> 
+                  </a> 
             </div>
         </div>
     </div>

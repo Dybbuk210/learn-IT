@@ -86,9 +86,20 @@
   </template>
 
 <script setup>
-import { onMounted, onBeforeUnmount, ref, watch } from 'vue'
+import { ref, computed, onMounted, onBeforeUnmount, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import { useButtonsNav } from '../../ButtonsNav'
+import blogData from '../../blogdata.json'
+import BlogCard from '../GlobalComponents/BlogCard.vue'
 
+const route = useRoute()
+const blog = computed(() => blogData.find(item => item.id === route.params.id))
+
+const getImageUrl = (path) => {
+  return new URL(`../../assets/img/Blog/${path}`, import.meta.url).href
+}
+
+// Funkcie pre navigáciu
 const { goToContact } = useButtonsNav()
 
 const showMobileMenu = ref(false)
@@ -136,7 +147,22 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('resize', handleResize)
 })
+
+const recommendedBlogs = computed(() => {
+  // Vyfiltruj blogy okrem aktuálneho
+  const otherBlogs = blogData.filter(item => item.id !== route.params.id)
+
+  // Zamiešaj poradie – Fisher–Yates shuffle
+  for (let i = otherBlogs.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[otherBlogs[i], otherBlogs[j]] = [otherBlogs[j], otherBlogs[i]]
+  }
+
+  // Vráť prvé 3
+  return otherBlogs.slice(0, 3)
+})
 </script>
+
 
 <style scoped>
     .main-box {

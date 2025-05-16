@@ -8,7 +8,7 @@
                     <div class="body-up">
                         <div class="img-button">
                             <div class="img-box">
-                                <img src="../../../assets/img/Interviews/Miguel Queirós.png" alt="">
+                                <img src="../../../assets/img/Interviews/Miguel Queirós.jpg" alt="">
                             </div>
                             <button class="card-button switch-btn">
                                 <span class="switch-text switch-current"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
@@ -22,36 +22,6 @@
                     </div>
                     <div class="body-down">
                         <h3 class="body-down-title"><span class="secondcolor">The secret is building</span> a personal brand.</h3>
-                    </div>
-                </div>
-                <div class="card-tags">
-                    <ul>
-                        <li>webdesgin</li>
-                        <li>framer</li>
-                        <li>digitalcreativity</li>
-                    </ul>
-                </div>
-            </article>
-
-            <article class="card">
-                <div class="card-body">
-                    <div class="body-up">
-                        <div class="img-button">
-                            <div class="img-box">
-                                <img src="../../../assets/img/Interviews/Janka Antalová.png" alt="">
-                            </div>
-                            <button class="card-button switch-btn">
-                                <span class="switch-text switch-current"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
-                                <span class="switch-text switch-next"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
-                            </button>
-                        </div>
-                        <div class="name-box">
-                            <h3 class="name">Janka Antalová</h3>
-                            <p class="skill">Designer & Creator</p>
-                        </div>
-                    </div>
-                    <div class="body-down">
-                        <h3 class="body-down-title"><span class="secondcolor">Hundreds of resumes.</span> One yes.</h3>
                     </div>
                 </div>
                 <div class="card-tags">

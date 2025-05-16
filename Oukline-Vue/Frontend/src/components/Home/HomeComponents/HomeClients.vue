@@ -17,6 +17,7 @@
                 <div class="slider-up">
                     <div class="slider-img">
                         <img :src="getImageUrl(reviews[currentIndex].CardImg)" alt="">
+                        <img v-if="reviews[currentIndex].CardImgB" :src="getImageUrl(reviews[currentIndex].CardImgB)" alt="">
                     </div>
                     <p class="slider-text" v-html="reviews[currentIndex].CardText"></p>
                     <h3 class="name-box">{{ reviews[currentIndex].CardName }}</h3>
@@ -152,7 +153,14 @@ onUnmounted(() => {
     }
 
     .slider-img {
+        display: flex;
         height: auto;
+    }
+
+     .slider-img img {
+        width: 60px;
+        height: auto;
+        box-shadow: 0px 10px 7px -4px rgba(0, 0, 0, 0.15);
     }
 
     .slider-up {
