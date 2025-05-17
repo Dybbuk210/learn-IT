@@ -3,7 +3,7 @@
         <div class="main-container">
             <div class="main-card">
                 <div class="main-img-box">
-                    <img src="../../../assets/img/Interviews/Miguel Queirós.png" alt="">
+                    <img src="../../../assets/img/Interviews/Miguel Queirós.jpg" alt="">
                 </div>
                 <h2 class="main-title"><span class="main-name">Miguel Queirós</span> - The secret is building a personal brand.</h2>
                 <p class="main-text">→ Designer & Framer Creator</p>

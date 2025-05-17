@@ -1,34 +1,36 @@
 <template>
     <div class="inner-container">
-        <div class="main-box">
-            <div class="img-box">
-                <img src="../../../assets/img/Interviews/Miguel Queirós.jpg" alt="">
-            </div>
-            <div class="info-box">
-                <div class="info-up">
-                    <div class="info-up-textbox">
-                        <h2 class="info-up-title">Miguel <br class="up-break">Queirós</h2>
-                        <p class="info-up-text"><img src="../../../assets/icons/TextArraySmall.svg" alt="" class="text-array-icon"> Designer & Framer Creator</p>
-                    </div>
-                    <div class="card-button-box">
-                         <div class="img-box-mobile">
-                            <img src="../../../assets/img/Interviews/Miguel Queirós.jpg" alt="">
+        <router-link :to="`/interview01`">
+            <div class="main-box">
+                <div class="img-box">
+                    <img src="../../../assets/img/Interviews/Miguel Queirós.jpg" alt="">
+                </div>
+                <div class="info-box">
+                    <div class="info-up">
+                        <div class="info-up-textbox">
+                            <h2 class="info-up-title">Miguel <br class="up-break">Queirós</h2>
+                            <p class="info-up-text"><img src="../../../assets/icons/TextArraySmall.svg" alt="" class="text-array-icon"> Designer & Framer Creator</p>
                         </div>
-                       <button class="card-button switch-btn">
-                            <span class="switch-text switch-current"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
-                            <span class="switch-text switch-next"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
-                        </button>
+                        <div class="card-button-box">
+                            <div class="img-box-mobile">
+                                <img src="../../../assets/img/Interviews/Miguel Queirós.jpg" alt="">
+                            </div>
+                        <button class="card-button switch-btn">
+                                <span class="switch-text switch-current"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
+                                <span class="switch-text switch-next"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
+                            </button>
+                        </div>
+                            <button class="card-button switch-btn desktop-button">
+                                <span class="switch-text switch-current"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
+                                <span class="switch-text switch-next"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
+                            </button>
+                        </div>
+                    <div class="info-down">
+                        <h2 class="info-down-title"><span class="text-style-light">The secret is building</span> <br class="down-break">a personal brand.</h2>
                     </div>
-                        <button class="card-button switch-btn desktop-button">
-                            <span class="switch-text switch-current"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
-                            <span class="switch-text switch-next"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
-                        </button>
-                    </div>
-                <div class="info-down">
-                    <h2 class="info-down-title"><span class="text-style-light">The secret is building</span> <br class="down-break">a personal brand.</h2>
                 </div>
             </div>
-        </div>
+        </router-link>
     </div>
 </template>
 

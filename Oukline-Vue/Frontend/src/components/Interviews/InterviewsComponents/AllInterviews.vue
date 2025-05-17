@@ -3,35 +3,37 @@
         <h2 class="main-title">All interviews</h2>
         <div class="break break-padding"></div> <!-- prázdny div služi len na effekt -->
         <div class="gallery">
-            <article class="card">
-                <div class="card-body">
-                    <div class="body-up">
-                        <div class="img-button">
-                            <div class="img-box">
-                                <img src="../../../assets/img/Interviews/Miguel Queirós.jpg" alt="">
+            <router-link :to="`/interview01`">
+                <article class="card">
+                    <div class="card-body">
+                        <div class="body-up">
+                            <div class="img-button">
+                                <div class="img-box">
+                                    <img src="../../../assets/img/Interviews/Miguel Queirós.jpg" alt="">
+                                </div>
+                                <button class="card-button switch-btn">
+                                    <span class="switch-text switch-current"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
+                                    <span class="switch-text switch-next"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
+                                </button>
                             </div>
-                            <button class="card-button switch-btn">
-                                <span class="switch-text switch-current"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
-                                <span class="switch-text switch-next"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
-                            </button>
+                            <div class="name-box">
+                                <h3 class="name">Miguel Queirós</h3>
+                                <p class="skill">Designer & Framer Creator</p>
+                            </div>
                         </div>
-                        <div class="name-box">
-                            <h3 class="name">Miguel Queirós</h3>
-                            <p class="skill">Designer & Framer Creator</p>
+                        <div class="body-down">
+                            <h3 class="body-down-title"><span class="secondcolor">The secret is building</span> a personal brand.</h3>
                         </div>
                     </div>
-                    <div class="body-down">
-                        <h3 class="body-down-title"><span class="secondcolor">The secret is building</span> a personal brand.</h3>
+                    <div class="card-tags">
+                        <ul>
+                            <li>webdesgin</li>
+                            <li>framer</li>
+                            <li>digitalcreativity</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="card-tags">
-                    <ul>
-                        <li>webdesgin</li>
-                        <li>framer</li>
-                        <li>digitalcreativity</li>
-                    </ul>
-                </div>
-            </article>
+                </article>
+            </router-link>
         </div>
         <div class="break break-padding"></div> <!-- prázdny div služi len na effekt -->
       <!--
@@ -67,6 +69,14 @@
         grid-template-columns: repeat(3, 1fr);
         column-gap: 35px;
         row-gap: 40px;
+    }
+
+    .name {
+        color: var(--main-color-black);
+    }
+
+    .skill {
+        color: var(--main-second-color);
     }
 
     ul {

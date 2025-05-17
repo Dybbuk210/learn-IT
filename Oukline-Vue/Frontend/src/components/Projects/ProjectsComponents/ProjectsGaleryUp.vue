@@ -15,27 +15,30 @@
             </div>
         </div>
         <div class="projects-cards">
-            <article class="projects-card">
-                <div class="img-box">
-                    <img src="../../../assets/img/ProjectsBigCards/wegtrans.png" alt="">
-                    <button class="card-button switch-btn">
-                        <span class="switch-text switch-current">
-                            <img src="../../../assets/icons/ArrowUP.svg" alt="" class="card-btn-img">
-                        </span>
-                        <span class="switch-text switch-next">
-                            <img src="../../../assets/icons/ArrowUP.svg" alt="" class="card-btn-img">
-                        </span>
-                    </button>
-                </div>
-                <div class="card-info">
-                    <div class="card-info-left">
-                        <h3>Weg Trans</h3>
-                        <p>Internatinal Transport</p>
+
+            <router-link :to="`/project01`">
+                <article class="projects-card">
+                    <div class="img-box">
+                        <img src="../../../assets/img/ProjectsBigCards/wegtrans.png" alt="">
+                        <button class="card-button switch-btn">
+                            <span class="switch-text switch-current">
+                                <img src="../../../assets/icons/ArrowUP.svg" alt="" class="card-btn-img">
+                            </span>
+                            <span class="switch-text switch-next">
+                                <img src="../../../assets/icons/ArrowUP.svg" alt="" class="card-btn-img">
+                            </span>
+                        </button>
                     </div>
-                    <p class="card-info-text">Brand identity, website, social media content, and office wallpapers.</p>
-                    <p class="card-info-date">2023</p>
-                </div>
-            </article>
+                    <div class="card-info">
+                        <div class="card-info-left">
+                            <h3>Weg Trans</h3>
+                            <p>Internatinal Transport</p>
+                        </div>
+                        <p class="card-info-text">Brand identity, website, social media content, and office wallpapers.</p>
+                        <p class="card-info-date">2023</p>
+                    </div>
+                </article>
+            </router-link>
 
             <article class="projects-card">
                 <div class="img-box">
