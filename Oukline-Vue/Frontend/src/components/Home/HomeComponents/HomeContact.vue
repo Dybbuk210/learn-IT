@@ -6,7 +6,7 @@
                     match your needs</h2>
                 <p class="contact-text">
                     Select your services, set your budget, <span class="text-style-light">and get
-                    a solution</span> tailored to your goals → no surprises.
+                    a solution</span> tailored to your goals <img src="../../../assets/icons/TextArraySmall.svg" alt="" class="text-array-icon"> no surprises.
                 </p>
             </div>
             <ContactFormTest id="contactform"></ContactFormTest>
@@ -43,6 +43,12 @@
         font-size: clamp(16px, 2vw, 25px);
         font-weight: 400;
         color: var(--main-color-black);
+    }
+
+    .text-array-icon {
+        width: 25px;
+        height: 25px;   
+        vertical-align: middle;
     }
 
     @media (max-width: 980px) {

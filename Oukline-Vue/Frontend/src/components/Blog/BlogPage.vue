@@ -187,7 +187,6 @@ const recommendedBlogs = computed(() => {
         color: var(--main-color-black);
         font-size: clamp(16px, 4vw, 20px);
         font-weight: 300;
-        max-width: 70%;
     }
 
     .main-points {

@@ -2,9 +2,9 @@
     {
       "id": "blog-01",
       "MainTitle": "Cheap website, cheap presentation. Who is worth investing in a website.",
-      "MainText": "In the digital age, a website is more than just a virtual storefront, it’s a critical representation of your brand. While opting for a cheap website may seem like a cost-saving move, it can severely impact your business credibility and customer trust. Here's why investing in a high quality website is crucial and who stands to benefit the most.",
-      "MainImage": "02main.png",
-      "tags": ["website", "template", "budget", "recommend"],
+      "MainText": "<span class=\"text-style-light\">In today’s digital world, your</span> website is your brand.<br> <span class=\"text-style-light\">Cheap websites may save money short-term, but they can</span> damage credibility and trust.<br> Investing in quality pays off — <span class=\"text-style-light\">for your</span> business <span class=\"text-style-light\">and your</span> audience.",
+      "MainImage": "01main.png",
+      "tags": ["professional website", "digital trust", "online presence", "online presence"],
       "content": [
             {
                 "type": "title",
@@ -48,7 +48,7 @@
                 },
             {
                 "type": "image",
-                "MainImage": "02second.png",
+                "MainImage": "01second.png",
                 "alt": "Blog secondary image"
                 },
             {
@@ -117,9 +117,9 @@
     {
         "id": "blog-02",
         "MainTitle": "A website from a template?<br>Avoid these 5 things.",
-        "MainText": "Templates are a quick and inexpensive way to introduce your brand to customers. If you don't have the time or budget to showcase your brand well, you can opt for a pre-programmed, pre-designed website, but there are some pitfalls to avoid if you want your website to be professional, functional, and consistent with your brand. Here are five key mistakes to watch out for when using a website template.",
-        "MainImage": "03main.png",
-        "tags": ["website", "template", "budget", "recommend"],
+        "MainText": "Website templates <span class=\"text-style-light\">can save time and money, but if you’re not careful, they</span> can hurt your brand. <span class=\"text-style-light\">To make your site</span> professional, functional, <span class=\"text-style-light\">and</span> on-brand, <span class=\"text-style-light\">avoid these</span> 5 common mistakes.",
+        "MainImage": "02main.png",
+        "tags": ["website", "template", "user experience", "cheap website"],
         "content": [
             {
                 "type": "title",
@@ -183,7 +183,7 @@
             },
             {
                 "type": "image",
-                "MainImage": "03second.png",
+                "MainImage": "02second.png",
                 "alt": "Blog secondary image"
             },
             {
@@ -206,125 +206,10 @@
 
       {
         "id": "blog-03",
-        "MainTitle": "Who is your audience? Don't burn money with bad research",
-        "MainText": "In the digital age, a website is more than just a virtual storefront - it’s a critical representation of your brand. While opting for a cheap website may seem like a cost-saving move, it can severely impact your business credibility and customer trust. Here's why investing in a high-quality website is crucial and who stands to benefit the most.",
-        "MainImage": "04main.png",
-        "tags": ["website", "template", "budget", "recommend"],
-        "content": [
-                {
-                    "type": "title",
-                    "class": "blog-title",
-                    "text": "The Risks of a Cheap Website"
-                },
-                {
-                    "type": "text",
-                    "class": "blog-text",
-                    "text": "Poor User Experience (UX)<br>Inexpensive websites often come with outdated designs, slow loading times, and limited functionality. Visitors are unlikely to stay if navigation is clunky or the site feels unprofessional, leading to higher bounce rates and lost opportunities."
-                },
-                {
-                    "type": "title",
-                    "class": "blog-title",
-                    "text": "Lack of Customization"
-                },
-                {
-                    "type": "text",
-                    "class": "blog-text",
-                    "text": "Cheap templates or DIY options limit your ability to tailor the site to your unique brand. Generic designs fail to differentiate you from competitors, making it harder to leave a lasting impression on your audience."
-                },
-                {
-                    "type": "title",
-                    "class": "blog-title",
-                    "text": "SEO and Performance Issues"
-                },
-                {
-                    "type": "text",
-                    "class": "blog-text",
-                    "text": "Budget websites may lack proper optimization for search engines, resulting in poor visibility online. Additionally, many low-cost platforms compromise speed and mobile responsiveness, which are critical for both user satisfaction and search rankings."
-                },
-                {
-                    "type": "title",
-                    "class": "blog-title",
-                    "text": "Hidden Costs"
-                },
-                {
-                    "type": "text",
-                    "class": "blog-text",
-                    "text": "While the initial investment might be low, cheap websites often come with hidden costs, including expensive upgrades, limited scalability, or frequent maintenance issues that require professional fixes."
-                },
-                {
-                    "type": "image",
-                    "MainImage": "04second.png",
-                    "alt": "Blog secondary image"
-                },
-                {
-                    "type": "title",
-                    "class": "blog-title",
-                    "text": "Why Invest in a Quality Website?"
-                },
-                {
-                    "type": "text",
-                    "class": "blog-text-second",
-                    "text": "Enhanced Credibility<br>Your website is often the first interaction customers have with your brand. A polished, modern design immediately builds trust and conveys professionalism."
-                },
-                {
-                    "type": "list",
-                    "ordered": true,
-                    "items": [
-                    {
-                        "title": "Improved User Engagement",
-                        "text": "Quality websites prioritize UX, with intuitive navigation, responsive design, and fast loading times. These elements ensure visitors stay longer and are more likely to convert into customers."
-                    },
-                    {
-                        "title": "Strong Branding",
-                        "text": "A custom website reflects your unique identity, incorporating cohesive visuals and messaging that resonate with your target audience. It's a powerful tool for brand differentiation."
-                    },
-                    {
-                        "title": "Long-Term Value",
-                        "text": "While the upfront cost may be higher, a professional website is built with scalability in mind, accommodating future growth without frequent overhauls or migrations."
-                    }
-                    ]
-                },
-                {
-                    "type": "title",
-                    "class": "blog-title",
-                    "text": "Who Should Invest in a High-Quality Website?"
-                },
-                {
-                    "type": "list",
-                    "ordered": true,
-                    "items": [
-                    {
-                        "title": "Small and Medium Businesses (SMBs)",
-                        "text": "For SMBs, a professional website is essential for competing against larger companies. It serves as a platform to showcase your products or services and build customer trust."
-                    },
-                    {
-                        "title": "E-Commerce Businesses",
-                        "text": "Online stores need robust functionality, secure payment systems, and a seamless user experience to drive sales. Cutting corners in these areas can lead to lost revenue and reputational damage."
-                    },
-                    {
-                        "title": "Professionals and Creatives",
-                        "text": "Whether you're a freelancer, artist, or consultant, your website acts as a portfolio that highlights your skills and achievements. A cheap site may not do justice to your talent."
-                    },
-                    {
-                        "title": "Startups and Entrepreneurs",
-                        "text": "A professional website can be a key differentiator for new businesses, helping establish credibility and attract investors or partners."
-                    }
-                    ]
-                },
-                {
-                    "type": "text",
-                    "class": "blog-text",
-                    "text": "While a cheap website might save money initially, the long-term drawbacks—poor performance, limited functionality, and reduced credibility—can cost you far more. Investing in a quality website ensures your online presence supports your business goals, enhances your brand, and provides a strong foundation for growth."
-                }
-        ]
-      },
-
-      {
-        "id": "blog-04",
         "MainTitle": "Why SEO Is the #1 Growth Tool for Your Website in 2025",
-        "MainText": "In a world where attention is currency, just having a website isn’t enough. You need to be seen. Whether you're a startup, local business, or scaling brand, SEO (Search Engine Optimization) is the most powerful tool to grow your online visibility, bring in high-quality traffic, and turn visitors into loyal customers.",
-        "MainImage": "05main.png",
-        "tags": ["website", "template", "budget", "recommend"],
+        "MainText": "<span class=\"text-style-light\">In today’s world, just</span> having a website isn’t enough — <span class=\"text-style-light\">you need to</span> be seen.<br> SEO <span class=\"text-style-light\">is the</span> key <span class=\"text-style-light\">to</span> visibility, quality traffic, <span class=\"text-style-light\">and</span> loyal customers.",
+        "MainImage": "03main.png",
+        "tags": ["organic traffic", "SEO", "SEO in 2025", "website growth"],
         "content": [
             {
                 "type": "title",
@@ -358,7 +243,7 @@
             },
             {
                 "type": "image",
-                "MainImage": "05second.png",
+                "MainImage": "03second.png",
                 "alt": "Blog secondary image"
             },
             {

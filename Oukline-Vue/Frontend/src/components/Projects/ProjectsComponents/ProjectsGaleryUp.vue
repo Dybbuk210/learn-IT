@@ -17,7 +17,7 @@
         <div class="projects-cards">
             <article class="projects-card">
                 <div class="img-box">
-                    <img src="../../../assets/img/test.png" alt="">
+                    <img src="../../../assets/img/ProjectsBigCards/wegtrans.png" alt="">
                     <button class="card-button switch-btn">
                         <span class="switch-text switch-current">
                             <img src="../../../assets/icons/ArrowUP.svg" alt="" class="card-btn-img">
@@ -39,7 +39,7 @@
 
             <article class="projects-card">
                 <div class="img-box">
-                    <img src="../../../assets/img/test.png" alt="">
+                    <img src="../../../assets/img/ProjectsBigCards/stavby.png" alt="">
                     <button class="card-button switch-btn">
                         <span class="switch-text switch-current">
                             <img src="../../../assets/icons/ArrowUP.svg" alt="" class="card-btn-img">
@@ -51,17 +51,17 @@
                 </div>
                 <div class="card-info">
                     <div class="card-info-left">
-                        <h3>Weg Trans</h3>
-                        <p>Internatinal Transport</p>
+                        <h3>STAVBY KK</h3>
+                        <p>Construction company</p>
                     </div>
-                    <p class="card-info-text">Brand identity, website, social media content, and office wallpapers.</p>
-                    <p class="card-info-date">2023</p>
+                    <p class="card-info-text">Visual identity for STAVBY KK, from logos to corporate materials.</p>
+                    <p class="card-info-date">2024</p>
                 </div>
             </article>
 
             <article class="projects-card">
                 <div class="img-box">
-                    <img src="../../../assets/img/test.png" alt="">
+                    <img src="../../../assets/img/ProjectsBigCards/klimy.png" alt="">
                     <button class="card-button switch-btn">
                         <span class="switch-text switch-current">
                             <img src="../../../assets/icons/ArrowUP.svg" alt="" class="card-btn-img">
@@ -73,17 +73,17 @@
                 </div>
                 <div class="card-info">
                     <div class="card-info-left">
-                        <h3>Weg Trans</h3>
-                        <p>Internatinal Transport</p>
+                        <h3>Úsporné Klímy</h3>
+                        <p>Air conditioning shop</p>
                     </div>
-                    <p class="card-info-text">Brand identity, website, social media content, and office wallpapers.</p>
+                    <p class="card-info-text">Social media posts and strategy for leader in selling<br> Air Conditions.</p>
                     <p class="card-info-date">2023</p>
                 </div>
             </article>
 
             <article class="projects-card">
                 <div class="img-box">
-                    <img src="../../../assets/img/test.png" alt="">
+                    <img src="../../../assets/img/ProjectsBigCards/yoga.png" alt="">
                     <button class="card-button switch-btn">
                         <span class="switch-text switch-current">
                             <img src="../../../assets/icons/ArrowUP.svg" alt="" class="card-btn-img">

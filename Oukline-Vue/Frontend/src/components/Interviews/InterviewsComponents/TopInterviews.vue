@@ -7,16 +7,25 @@
             <div class="info-box">
                 <div class="info-up">
                     <div class="info-up-textbox">
-                        <h2 class="info-up-title">Miguel <br>Queirós</h2>
-                        <p class="info-up-text">→ Designer & Framer Creator</p>
+                        <h2 class="info-up-title">Miguel <br class="up-break">Queirós</h2>
+                        <p class="info-up-text"><img src="../../../assets/icons/TextArraySmall.svg" alt="" class="text-array-icon"> Designer & Framer Creator</p>
                     </div>
+                    <div class="card-button-box">
+                         <div class="img-box-mobile">
+                            <img src="../../../assets/img/Interviews/Miguel Queirós.jpg" alt="">
+                        </div>
                        <button class="card-button switch-btn">
                             <span class="switch-text switch-current"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
                             <span class="switch-text switch-next"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
                         </button>
-                </div>
+                    </div>
+                        <button class="card-button switch-btn desktop-button">
+                            <span class="switch-text switch-current"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
+                            <span class="switch-text switch-next"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
+                        </button>
+                    </div>
                 <div class="info-down">
-                    <h2 class="info-down-title"><span class="text-style-light">The secret is building</span> <br>a personal brand.</h2>
+                    <h2 class="info-down-title"><span class="text-style-light">The secret is building</span> <br class="down-break">a personal brand.</h2>
                 </div>
             </div>
         </div>
@@ -71,7 +80,7 @@
 
     .info-up-title {
         color: var(--main-color-black);
-        font-size: 64px;
+        font-size: clamp(42px, 4vw, 64px);
         font-weight: 600;
         line-height: 1;
     }
@@ -105,11 +114,74 @@
 
   .info-down-title {
     color: var(--main-color-black);
-    font-size: 50px;
+    font-size: clamp(38px, 4vw, 50px);
     font-weight: 300;
   }
 
-  @media (max-width: 1200px) {
+  .img-box-mobile {
+    max-width: 100px;
+  }
+
+   .card-button-box {
+        justify-content: space-between;
+        display: none;
+    }
     
+    .text-array-icon {
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+        transform: translateY(-1px);
+    }
+
+  @media (max-width: 1110px) {
+        .down-break {
+            display: none;
+        }
+  }
+
+  @media (max-width: 950px) {
+        .img-box {
+            display: none;
+        }
+
+        .info-up {
+            flex-direction: column-reverse;
+            row-gap: 20px;
+        }
+
+        .up-break {
+            display: none;
+        }
+
+        .desktop-button {
+            display: none;
+        }
+
+        .card-button-box {
+            display: flex;
+        }
+  }
+
+  @media (max-width: 500px) {
+         .img-box-mobile {
+            max-width: 74px;
+        }
+
+        .info-box {
+            row-gap: 40px;
+        }
+
+        .info-up-title {
+            font-size: 25px;
+        }
+
+        .info-up-text {
+            font-size: 16px;
+        }
+
+        .info-down-title {
+            font-size: 28px;
+        }
   }
 </style>

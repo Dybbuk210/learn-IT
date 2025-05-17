@@ -1,6 +1,6 @@
 <template>
   <div class="inner-container main-box" id="allprojects">
-    <h2 class="main-title">Gallery → Other creative projects</h2>
+    <h2 class="main-title">Gallery <img src="../../../assets/icons/TextArrayLarge.svg" alt="" class="text-array-icon"> Other creative projects</h2>
     <div class="break break-padding"></div>
 
     <div class="cards">
@@ -201,6 +201,13 @@
 
 .card-banner {
   grid-column: span 3;
+}
+
+.text-array-icon {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    transform: translateY(-2px);
 }
 
 /* Responzivita - všetky karty sa zmenšia na mobile */

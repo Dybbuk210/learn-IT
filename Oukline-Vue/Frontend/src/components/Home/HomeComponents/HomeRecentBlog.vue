@@ -20,7 +20,7 @@
                         </div>
                     </div>
                     <div class="box-down-right">
-                        <button class="main-style-button switch-btn blog-button ">
+                        <button class="main-style-button switch-btn blog-button " @click="goToLatestBlog">
                             <span class="button-text switch-text switch-current">
                                 Read post               
                                 <img src="../../../assets/icons/RightArrowWhite.svg" alt="" class="button-icon">
@@ -41,6 +41,7 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue';
 import blogs from '../../../blogdata.json';
+import { useRouter } from 'vue-router'
 
 const latestBlog = ref(null);
 
@@ -52,6 +53,14 @@ const imageUrl = computed(() => {
   if (!latestBlog.value) return '';
   return new URL(`../../../assets/img/Blog/${latestBlog.value.MainImage}`, import.meta.url).href;
 });
+
+const router = useRouter()
+
+function goToLatestBlog() {
+  if (latestBlog.value) {
+    router.push(`/blog/${latestBlog.value.id}`)
+  }
+}
 </script>
 
 <style scoped>
