@@ -5,7 +5,7 @@ export function useButtonsNav() {
   const router = useRouter()
 
   const goToContact = () => {
-    router.push({ path: '/', hash: '#contactform' })
+    router.push({ path: '/formpage' })
   }
 
    const goToProjects = () => {

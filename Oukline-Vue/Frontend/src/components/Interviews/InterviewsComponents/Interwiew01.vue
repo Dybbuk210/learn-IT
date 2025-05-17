@@ -261,7 +261,6 @@ onMounted(() => {
     }
 
     .main-img-box {
-       
         max-width: 120px;
         padding: 4px 4px 0 4px;
         border-radius: 3px;

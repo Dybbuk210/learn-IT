@@ -1,193 +1,183 @@
 <template>
-    <div class="inner-container main-padding-top">
-        <router-link :to="`/interview01`">
-            <div class="main-box">
-                <div class="img-box">
-                    <img src="../../../assets/img/Interviews/Miguel Queirós.jpg" alt="">
-                </div>
-                <div class="info-box">
-                    <div class="info-up">
-                        <div class="info-up-textbox">
-                            <h2 class="info-up-title">Miguel <br class="up-break">Queirós</h2>
-                            <p class="info-up-text"><img src="../../../assets/icons/TextArraySmall.svg" alt="" class="text-array-icon"> Designer & Framer Creator</p>
-                        </div>
-                        <div class="card-button-box">
-                            <div class="img-box-mobile">
-                                <img src="../../../assets/img/Interviews/Miguel Queirós.jpg" alt="">
-                            </div>
-                        <button class="card-button switch-btn">
-                                <span class="switch-text switch-current"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
-                                <span class="switch-text switch-next"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
-                            </button>
-                        </div>
-                            <button class="card-button switch-btn desktop-button">
-                                <span class="switch-text switch-current"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
-                                <span class="switch-text switch-next"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>
-                            </button>
-                        </div>
-                    <div class="info-down">
-                        <h2 class="info-down-title"><span class="text-style-light">The secret is building</span> <br class="down-break">a personal brand.</h2>
-                    </div>
-                </div>
+  <div class="inner-container main-padding-top">
+    <router-link :to="`/interview01`">
+      <div class="main-box">
+        <!-- SVG pozadie -->
+        <div class="background-svg">
+          <img src="../../../assets/BackgroundCards/TopCard.svg" alt="">
+        </div>
+
+        <!-- Obsah karty -->
+        <div class="img-box">
+          <img src="../../../assets/img/Interviews/Miguel Queirós.jpg" alt="">
+        </div>
+
+        <div class="info-box">
+          <div class="info-up">
+            <div class="info-up-textbox">
+              <h2 class="info-up-title">Miguel <br class="up-break">Queirós</h2>
+              <p class="info-up-text">
+                <img src="../../../assets/icons/TextArraySmall.svg" alt="" class="text-array-icon">
+                Designer & Framer Creator
+              </p>
             </div>
-        </router-link>
-    </div>
+
+            <div class="card-button-box">
+              <div class="img-box-mobile">
+                <img src="../../../assets/img/Interviews/Miguel Queirós.jpg" alt="">
+              </div>
+              <button class="card-button switch-btn">
+                <span class="switch-text switch-current">
+                  <img src="../../../assets/icons/ArrowUpBlack.svg" alt="">
+                </span>
+                <span class="switch-text switch-next">
+                  <img src="../../../assets/icons/ArrowUpBlack.svg" alt="">
+                </span>
+              </button>
+            </div>
+
+            <button class="card-button switch-btn desktop-button">
+              <span class="switch-text switch-current">
+                <img src="../../../assets/icons/ArrowUpBlack.svg" alt="">
+              </span>
+              <span class="switch-text switch-next">
+                <img src="../../../assets/icons/ArrowUpBlack.svg" alt="">
+              </span>
+            </button>
+          </div>
+
+          <div class="info-down">
+            <h2 class="info-down-title">
+              <span class="text-style-light">The secret is building</span>
+              <br class="down-break">a personal brand.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </router-link>
+  </div>
 </template>
 
 <script setup>
 </script>
 
 <style scoped>
-    .main-padding-top {
-        padding-top: 100px;
-    }
+.main-padding-top {
+  padding-top: 100px;
+}
 
-    .main-box {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 26px;
-        background-color: #F9FAFB;
-        border: solid 1px #EDEDED;
-        column-gap: 50px;
-        row-gap: 25px;
-        border-radius: 3px;
-    }
+.main-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px 26px 26px 26px;
+  background-color: #F9FAFB;
+  border: solid 1px #EDEDED;
+  column-gap: 50px;
+  row-gap: 25px;
+  border-radius: 3px;
+  z-index: 1;
+}
 
-    .img-box {
-        max-width: 450px;
-        height: auto;
-        border-radius: 3px;
-    }
+.background-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
 
-    .info-box {
-        display: flex;
-        flex-direction: column;
-        row-gap: 92px;
-        flex: 1;
-        min-width: 0;
-    }
+.background-svg img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
-    .info-box-up {
-        display: flex;
-        justify-content: space-between;
-    }
+.img-box {
+  max-width: 450px;
+  height: auto;
+  border-radius: 3px;
+  position: relative;
+  z-index: 1;
+}
 
-    .info-up-textbox {
-        display: flex;
-        flex-direction: column;
-        row-gap: 15px;
-    }
+.info-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 92px;
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  z-index: 1;
+}
 
-    .info-up {
-        display: flex;
-        justify-content: space-between;
-    }
+.info-up {
+  display: flex;
+  justify-content: space-between;
+}
 
-    .info-up-title {
-        color: var(--main-color-black);
-        font-size: clamp(42px, 4vw, 64px);
-        font-weight: 600;
-        line-height: 1;
-    }
+.info-up-textbox {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
 
-    .info-up-text {
-        color: #000;
-        font-size: 20px;
-        font-weight: 300;
-    }
+.info-up-title {
+  color: var(--main-color-black);
+  font-size: clamp(42px, 4vw, 64px);
+  font-weight: 600;
+  line-height: 1;
+}
 
-    .card-button {
-        aspect-ratio: 1 / 1;
-        width: auto;
-        height: 100%;
-        border: 2px solid #151515;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-        padding: 25px;
-        box-sizing: border-box;
-        transform: rotate(45deg);
-  }
-  
-  .card-button img {
-        width: 29px;
-        height: 28px;
-        object-fit: contain;
-  }
+.info-up-text {
+  color: #000;
+  font-size: 20px;
+  font-weight: 300;
+}
 
-  .info-down-title {
-    color: var(--main-color-black);
-    font-size: clamp(38px, 4vw, 50px);
-    font-weight: 300;
-  }
+.card-button {
+  aspect-ratio: 1 / 1;
+  width: auto;
+  height: 100%;
+  border: 2px solid #151515;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 25px;
+  box-sizing: border-box;
+  transform: rotate(45deg);
+}
 
-  .img-box-mobile {
-    max-width: 100px;
-  }
+.card-button img {
+  width: 29px;
+  height: 28px;
+  object-fit: contain;
+}
 
-   .card-button-box {
-        justify-content: space-between;
-        display: none;
-    }
-    
-    .text-array-icon {
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-        transform: translateY(-1px);
-    }
+.info-down-title {
+  color: var(--main-color-black);
+  font-size: clamp(38px, 4vw, 50px);
+  font-weight: 300;
+}
 
-  @media (max-width: 1110px) {
-        .down-break {
-            display: none;
-        }
-  }
+.img-box-mobile {
+  max-width: 100px;
+}
 
-  @media (max-width: 950px) {
-        .img-box {
-            display: none;
-        }
+.card-button-box {
+  justify-content: space-between;
+  display: none;
+}
 
-        .info-up {
-            flex-direction: column-reverse;
-            row-gap: 20px;
-        }
-
-        .up-break {
-            display: none;
-        }
-
-        .desktop-button {
-            display: none;
-        }
-
-        .card-button-box {
-            display: flex;
-        }
-  }
-
-  @media (max-width: 500px) {
-         .img-box-mobile {
-            max-width: 74px;
-        }
-
-        .info-box {
-            row-gap: 40px;
-        }
-
-        .info-up-title {
-            font-size: 25px;
-        }
-
-        .info-up-text {
-            font-size: 16px;
-        }
-
-        .info-down-title {
-            font-size: 28px;
-        }
-  }
+.text-array-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  transform: translateY(-1px);
+}
 </style>
