@@ -17,7 +17,7 @@
         display: flex;
         flex-direction: column;
         row-gap: 60px;
-        padding-top: 60px;
+        padding-top: 100px;
         padding-bottom: 200px;
     }
 
@@ -58,6 +58,11 @@
 
         .title {
             font-size: 28px;
+        }
+
+        .text-array-icon {
+            width: 22px;
+            height: 22px;
         }
     }
 </style>

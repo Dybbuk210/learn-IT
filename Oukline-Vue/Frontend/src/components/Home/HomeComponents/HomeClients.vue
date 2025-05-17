@@ -160,7 +160,9 @@ onUnmounted(() => {
      .slider-img img {
         width: 60px;
         height: auto;
+        object-fit: cover;
         box-shadow: 0px 10px 7px -4px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
     }
 
     .slider-up {

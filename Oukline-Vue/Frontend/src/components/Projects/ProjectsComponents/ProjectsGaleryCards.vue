@@ -134,7 +134,6 @@
   display: flex;
   flex-direction: column;
   row-gap: 30px;
-  padding-bottom: 200px;
 }
 
 .main-title {
@@ -221,6 +220,17 @@
   .card-banner {
     grid-column: span 1;
     grid-row: span 1;
+  }
+
+  .card.offset-up,
+  .card.offset-up-2,
+  .card.offset-up-3,
+  .card.offset-up-4 {
+      transform: translateY(0px);
+  }
+
+  .main-box {
+    padding-bottom: 100px;
   }
 }
 </style>

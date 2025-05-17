@@ -41,7 +41,7 @@ const imageUrl = computed(() => {
         overflow: hidden;
         height: 480px;
         border-radius: 3px;
-        padding-top: 100px;
+        margin-top: 100px;
     }
 
     .top-img {
@@ -61,7 +61,7 @@ const imageUrl = computed(() => {
         bottom: 0;
         left: 0;
         right: 0;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0) 60%);
+        background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.2) 100%);
     }
 
     .inner-box {
@@ -112,10 +112,6 @@ const imageUrl = computed(() => {
     }
 
     @media (max-width: 500px) {
-        .main-box {
-            max-height: 340px;
-        }
-
         .inner-box {
             padding: 0px 18px 25px 18px ;
         }

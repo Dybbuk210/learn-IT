@@ -79,5 +79,14 @@ const { goToContact } = useButtonsNav()
             width: 100%;
             align-self: flex-start;
         }
+
+        .box-buttons a {
+            width: 100%;
+            align-self: center;
+        }
+
+        .box-buttons {
+            overflow: hidden;
+        }
     }
 </style>

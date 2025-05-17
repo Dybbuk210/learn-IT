@@ -54,7 +54,7 @@
                     <li><router-link to="/interviewgalery" class="mobile-nav-font" @click="closeMenu">Interviews</router-link></li>
                 </ul>
             </div>
-            <div class="mobile-down">
+            <div class="mobile-down" @click="goToContact"> <!-- opraviť JS pre zatvorenie po presmerovaní -->
                 <button class="light-btn-style switch-btn mobile-nav-button">
                     <span class="switch-text switch-current">Get a quote</span>
                     <span class="switch-text switch-next">Get a quote</span>

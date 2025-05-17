@@ -5,7 +5,7 @@
             <div class="main-img">
                 <img src="../../../assets/img/projects/wegtrans/Main-img.png" alt="">
             </div>
-            <p class="main-img text">Case study</p>
+            <p class="text">Case study</p>
         </div>
         <div class="main-title-box">
             <div class="main-titles">
@@ -71,7 +71,7 @@
     }
 
     .title-01, .title-02 {
-        font-size: 50px;
+        font-size: clamp(30px, 5vw, 50px);
         font-weight: 300;
     }
 
@@ -121,4 +121,35 @@
         padding-top: 150px;
         padding-bottom: 240px;
     }
+
+    @media (max-width: 600px) {
+    .main-img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .text-box {
+        padding-bottom: 55px;
+    }
+
+    .img-box-01 {
+        padding-bottom: 50px;
+    }
+
+    .img-flexbox {
+        padding-bottom: 55px;
+    }
+
+    .grid4 {
+        padding: 55px 0;
+    }
+
+     .grid3 {
+        padding: 55px 0;
+     }
+
+    .main-img img {
+        object-fit: cover;
+    }
+     }
 </style>

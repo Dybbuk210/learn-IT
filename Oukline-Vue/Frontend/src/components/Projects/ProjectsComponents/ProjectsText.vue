@@ -10,7 +10,7 @@
 <style scoped>
     .text-style {
         color: var(--main-color-black);
-        font-size: 40px;
+        font-size: clamp(30px, 5vw, 40px);
         font-weight: 300;
     }
 </style>

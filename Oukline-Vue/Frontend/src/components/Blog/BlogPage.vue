@@ -66,7 +66,7 @@
       <div class="recommended-blog-posts">
         <div class="posts-up">
           <h3 class="posts-title">Recommended blog posts</h3>
-          <button class="second-btn-style switch-btn posts-button">
+          <button class="second-btn-style switch-btn posts-button" @click="goToBlogs">
             <span class="button-text switch-text switch-current">
               View all posts
               <img src="../../assets/icons/RightArrowWhite.svg" alt="" class="button-icon">
@@ -99,8 +99,7 @@ const getImageUrl = (path) => {
   return new URL(`../../assets/img/Blog/${path}`, import.meta.url).href
 }
 
-// Funkcie pre navigáciu
-const { goToContact } = useButtonsNav()
+const { goToBlogs} = useButtonsNav()
 
 const showMobileMenu = ref(false)
 
@@ -338,6 +337,10 @@ const recommendedBlogs = computed(() => {
     @media (max-width: 840px) {
         .posts-down {
          grid-template-columns: repeat(1, 1fr);
+        }
+
+        .main-box {
+          padding-top: 0px;
         }
     }
 

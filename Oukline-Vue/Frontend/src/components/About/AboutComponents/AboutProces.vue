@@ -2,7 +2,7 @@
     <div class="inner-container main-box">
         <h2 class="title"><span class="text-style-light">We believe that</span> working with us should be Simple, Enjoyable, and Effective.</h2>
         <article class="card">
-            <h3 class="card-title">Here’s how it works <span><img src="../../../assets/icons/SliderArrow.svg" alt="" class="title-icon"></span></h3>
+            <h3 class="card-title">Here’s how it works <img src="../../../assets/icons/TextArrayLarge.svg" alt="" class="text-array-icon"></h3>
             <div class="card-text-box">
                 <p class="card-text">We kick things off with an introductory meeting to understand your ideas, needs, and goals. If you don’t have a project brief yet, no problem — we’ll help you create one. Once everything is clear, we prepare a cost estimate, and with your approval, the project begins.</p>
                 <p class="card-text">Our process is fast, client-focused, and easy to follow, even for those who aren’t familiar with the digital world. We’ll guide you through every step, so there’s no need to worry. Typically, we work with two rounds of feedback to finetune the project, and we require a 50% deposit upfront to get started.</p>
@@ -10,13 +10,13 @@
         </article>
         <h2 class="title"><span class="text-style-light">When we deliver the project</span>, it’s Not Goodbye.</h2>
         <article class="card">
-            <h3 class="card-title">Long-term partnerships <span><img src="../../../assets/icons/SliderArrow.svg" alt="" class="title-icon"></span></h3>
+            <h3 class="card-title">Long-term partnerships <img src="../../../assets/icons/TextArrayLarge.svg" alt="" class="text-array-icon"></h3>
             <div class="card-text-box">
                 <p class="card-text">We aim for building long-term partnerships, taking care of the project as it grows and evolves. That said, we’re just as happy to work on one time projects, giving them the same level of care and attention.</p>
             </div>
         </article>
         <article class="card">
-            <h3 class="card-title">Studio close up <span><img src="../../../assets/icons/SliderArrow.svg" alt="" class="title-icon"></span></h3>
+            <h3 class="card-title">Studio close up <img src="../../../assets/icons/TextArrayLarge.svg" alt="" class="text-array-icon"></h3>
             <div class="card-text-box">
                 <p class="card-text">Our team is made up of talented designers and developers, and thanks to our trusted partnerships, we collaborate with external experts like copywriters, analysts, and photographers whenever needed.</p>
                 <p class="card-text">While we’re based in Slovakia, we’re not tied to one place — we work globally, delivering exceptional results to clients around the world.</p>
@@ -49,12 +49,6 @@
         justify-content: space-between;
     }
 
-    .title-icon {
-        width: 25px;
-        height: auto;
-        transform: rotate(180deg);
-    }
-
     .card-text-box {
         max-width: 70%;
         display: flex;
@@ -76,6 +70,13 @@
         font-weight: 300;
     }
 
+       .text-array-icon {
+        width: 20px;
+        height: 20px;   
+        vertical-align: middle;
+         transform: translateY(2px);
+    }
+
     @media (max-width: 1200px) {
         .card {
             flex-direction: column;
@@ -94,6 +95,7 @@
     @media (max-width: 600px) {
         .main-box {
             padding-bottom: 100px;
+            row-gap: 60px;
         }
     }
 </style>

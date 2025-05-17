@@ -83,6 +83,11 @@
         .box-right{
             max-width: 80%;
         }
+
+        .main-box {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
     }
 
     @media (max-width: 600px) {

@@ -4,7 +4,7 @@
         <div class="inner-container box-padding-gap">
             <div class="box-up">
                 <h2 class="title">Recent blog post</h2>
-                <div class="img-box">
+                <div class="img-box" @click="goToLatestBlog">
                     <img :src="imageUrl" alt="" v-if="latestBlog" class="main-img" />
                 </div>
             </div>
@@ -107,6 +107,8 @@ function goToLatestBlog() {
 
     .box-down-ul ul {
         display: flex;
+        flex-wrap: wrap;
+        row-gap: 10px;
         column-gap: 5px;
     }
 
@@ -122,6 +124,7 @@ function goToLatestBlog() {
     }
 
     .img-box {
+        cursor: pointer;
         width: 100%;
         height: 400px;
         overflow: hidden;
@@ -162,6 +165,10 @@ function goToLatestBlog() {
 
         .box-down-left, .box-down-right {
             width: 100%;
+        }
+
+        .box-down-left {
+            row-gap: 10px;
         }
 
         .box-padding-gap {

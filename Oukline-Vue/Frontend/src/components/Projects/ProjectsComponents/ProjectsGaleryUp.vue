@@ -32,7 +32,7 @@
                     <div class="card-info">
                         <div class="card-info-left">
                             <h3>Weg Trans</h3>
-                            <p>Internatinal Transport</p>
+                            <p>International Transport</p>
                         </div>
                         <p class="card-info-text">Brand identity, website, social media content, and office wallpapers.</p>
                         <p class="card-info-date">2023</p>
@@ -102,9 +102,9 @@
                 <div class="card-info">
                     <div class="card-info-left">
                         <h3>YOGAYN BY PETRA</h3>
-                        <p>Internatinal Transport</p>
+                        <p>Yoga instructor</p>
                     </div>
-                    <p class="card-info-text">Brand identity, website, social media content, and office wallpapers.</p>
+                    <p class="card-info-text">Brand identity and social media content.</p>
                     <p class="card-info-date">2024</p>
                 </div>
             </article>
@@ -252,7 +252,7 @@ const { goToContact } = useButtonsNav()
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-size: clamp(30px, 5vw, 70px);
+    font-size: clamp(30px, 5vw, 50px);
     font-weight: 600;
     text-align: center;
     opacity: 0;
@@ -321,6 +321,11 @@ const { goToContact } = useButtonsNav()
     @media (max-width: 800px) {
         .projects-cards {
             grid-template-columns: repeat(1, 1fr);
+        }
+
+        .projects-card.coming-soon .img-box::after,
+        .projects-card.coming-soon .overlay-text {
+            opacity: 1;
         }
     }
 

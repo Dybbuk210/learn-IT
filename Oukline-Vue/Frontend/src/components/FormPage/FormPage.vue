@@ -81,8 +81,8 @@
 
     .main-img-box {
         max-width: 100px;
-        border: solid 3px #fff;
         border-radius: 3px;
+        padding: 4px 4px 0 4px;
         box-shadow: 0px 11px 34.6px rgba(0, 0, 0, 0.2);
     }
 

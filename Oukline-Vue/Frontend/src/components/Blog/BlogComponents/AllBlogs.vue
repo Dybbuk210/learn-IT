@@ -5,9 +5,11 @@
         <div class="blog-gallery">
             <BlogCard v-for="(blog, index) in blogData" :key="blog.id" :blog="blog" />
         </div>
-        <div class="break break-padding"></div> <!-- prázdny div služi len na effekt -->
-      <!--
-        Zatiaĺ nebude vužité
+        <!--
+        <div class="break break-padding"></div> 
+
+        Zatiaĺ nebude využité
+        
         <div class="galery-function">
             <button></button>
             <div class="pagginator"></div>

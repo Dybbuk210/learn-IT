@@ -35,9 +35,12 @@
                 </article>
             </router-link>
         </div>
-        <div class="break break-padding"></div> <!-- prázdny div služi len na effekt -->
-      <!--
+
+        <!--
+        <div class="break break-padding"></div>
+   
         Zatiaĺ nebude vužité
+
         <div class="galery-function">
             <button></button>
             <div class="pagginator"></div>
@@ -72,6 +75,7 @@
     }
 
     .name {
+        font-weight: 400;
         color: var(--main-color-black);
     }
 
@@ -159,4 +163,25 @@
     .secondcolor {
          color: var(--main-second-color);
     }
+
+    @media (max-width: 900px) {
+        .gallery {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+
+     @media (max-width: 600px) {
+         .break-padding {
+        padding-top: 0px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-box {
+        padding-bottom: 100px;
+    }
+     }
 </style>

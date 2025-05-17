@@ -71,7 +71,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0px 26px 26px 26px;
+  padding: 26px;
   background-color: #F9FAFB;
   border: solid 1px #EDEDED;
   column-gap: 50px;

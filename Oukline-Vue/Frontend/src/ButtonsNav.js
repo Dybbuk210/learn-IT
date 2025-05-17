@@ -12,6 +12,10 @@ export function useButtonsNav() {
     router.push({ path: '/projectsgalery', hash: '' })
   }
 
+    const goToBlogs = () => {
+    router.push({ path: '/bloggalery', hash: '' })
+  }
+
   /* vzor pre import 
         @click="goToContact"  
         import { useButtonsNav } from '../../ButtonsNav'
@@ -20,6 +24,7 @@ export function useButtonsNav() {
 
   return {
     goToContact,
-    goToProjects
+    goToProjects,
+    goToBlogs
   }
 }

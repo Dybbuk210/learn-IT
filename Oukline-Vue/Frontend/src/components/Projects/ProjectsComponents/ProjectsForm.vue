@@ -6,7 +6,7 @@
                     <h2 class="title-01">Interested in creating a</h2>
                     <h2 class="title-02">project like this with us?</h2>
                 </div>
-                <p class="text">Simply fill out our quick form<span class="text-style-light">, and we’ll get started on making</span> your vision a reality!</p>
+                <p class="text">Let’s talk! - tell us what you’re building, and we’ll jump in.</p>
             </div>
             <ContactForm />
         </div>
@@ -43,8 +43,8 @@
 
     .text {
         color: var(--main-color-black);
-        font-size: 25px;
-        font-weight: 300;
+        font-size: 22px;
+        font-weight: 400;
     }
 
     .title-01 {
