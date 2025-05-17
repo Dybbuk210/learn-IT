@@ -40,9 +40,10 @@
                 </article>
             </router-link>
 
-            <article class="projects-card">
+            <article class="projects-card coming-soon">
                 <div class="img-box">
                     <img src="../../../assets/img/ProjectsBigCards/stavby.png" alt="">
+                    <div class="overlay-text">COMING SOON</div>
                     <button class="card-button switch-btn">
                         <span class="switch-text switch-current">
                             <img src="../../../assets/icons/ArrowUP.svg" alt="" class="card-btn-img">
@@ -62,9 +63,10 @@
                 </div>
             </article>
 
-            <article class="projects-card">
+            <article class="projects-card coming-soon">
                 <div class="img-box">
                     <img src="../../../assets/img/ProjectsBigCards/klimy.png" alt="">
+                    <div class="overlay-text">COMING SOON</div>
                     <button class="card-button switch-btn">
                         <span class="switch-text switch-current">
                             <img src="../../../assets/icons/ArrowUP.svg" alt="" class="card-btn-img">
@@ -84,9 +86,10 @@
                 </div>
             </article>
 
-            <article class="projects-card">
+            <article class="projects-card coming-soon">
                 <div class="img-box">
                     <img src="../../../assets/img/ProjectsBigCards/yoga.png" alt="">
+                    <div class="overlay-text">COMING SOON</div>
                     <button class="card-button switch-btn">
                         <span class="switch-text switch-current">
                             <img src="../../../assets/icons/ArrowUP.svg" alt="" class="card-btn-img">
@@ -98,11 +101,11 @@
                 </div>
                 <div class="card-info">
                     <div class="card-info-left">
-                        <h3>Weg Trans</h3>
+                        <h3>YOGAYN BY PETRA</h3>
                         <p>Internatinal Transport</p>
                     </div>
                     <p class="card-info-text">Brand identity, website, social media content, and office wallpapers.</p>
-                    <p class="card-info-date">2023</p>
+                    <p class="card-info-date">2024</p>
                 </div>
             </article>
         </div>
@@ -234,6 +237,47 @@ const { goToContact } = useButtonsNav()
         font-weight: 300;
         color: var(--main-color-black);
     }
+
+        /* disabled card hover */
+    .projects-card.coming-soon .img-box {
+    position: relative;
+    overflow: hidden;
+    cursor: default; /* neukazuje, že je klikateľné */
+}
+
+/* Overlay text "COMING SOON" */
+.projects-card.coming-soon .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: clamp(30px, 5vw, 70px);
+    font-weight: 600;
+    text-align: center;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+/* Tmavý priehľadný filter cez obrázok */
+.projects-card.coming-soon .img-box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+/* Hover efekt */
+.projects-card.coming-soon:hover .img-box::after,
+.projects-card.coming-soon:hover .overlay-text {
+    opacity: 1;
+}
 
     @media (max-width: 1420px) {
         .card-info {
