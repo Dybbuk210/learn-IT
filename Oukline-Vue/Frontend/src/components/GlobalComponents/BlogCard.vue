@@ -96,6 +96,7 @@
   }
   
   .card-button {
+    align-self: flex-start;
     aspect-ratio: 1 / 1;
     width: auto;
     height: 100%;

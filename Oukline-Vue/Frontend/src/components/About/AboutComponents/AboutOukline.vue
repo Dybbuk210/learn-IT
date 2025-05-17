@@ -43,7 +43,7 @@
         width: 40px;
         height: 40px;
         vertical-align: middle;
-        transform: translateY(2px);
+        transform: translateY(-2px);
     }
 
     @media (max-width: 600px) {

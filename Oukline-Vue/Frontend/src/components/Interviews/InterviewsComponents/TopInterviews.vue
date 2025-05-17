@@ -1,5 +1,5 @@
 <template>
-    <div class="inner-container">
+    <div class="inner-container main-padding-top">
         <router-link :to="`/interview01`">
             <div class="main-box">
                 <div class="img-box">
@@ -38,6 +38,10 @@
 </script>
 
 <style scoped>
+    .main-padding-top {
+        padding-top: 100px;
+    }
+
     .main-box {
         display: flex;
         align-items: center;

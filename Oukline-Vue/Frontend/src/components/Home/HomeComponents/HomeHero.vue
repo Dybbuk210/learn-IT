@@ -1,7 +1,7 @@
 <template>
     <div class="bottom-space">
-        <div class="video-box">
-            <video  ref="videoRef" src="../../../assets/Herovideo.mp4" autoplay muted loop playsinline  @click="toggleFullScreen"   controlslist="nodownload nofullscreen noremoteplayback"  disablepictureinpicture></video>
+        <div class="video-box" @click="toggleFullScreen">
+            <video  ref="videoRef" src="../../../assets/Herovideo.mp4" autoplay muted loop playsinline controlslist="nodownload nofullscreen noremoteplayback"  disablepictureinpicture></video>
             <button class="video-button switch-btn">
                 <span class="switch-text switch-current">
                     <img src="../../../assets/icons/ArrowUP.svg" alt="" class="video-btn-img">
@@ -177,6 +177,7 @@ const { goToProjects} = useButtonsNav()
     
     .bottom-space {
         padding-bottom: 170px;
+        padding-top: 100px;
     }
 
     .hero-button {

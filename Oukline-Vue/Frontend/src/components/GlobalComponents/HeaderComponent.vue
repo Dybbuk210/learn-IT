@@ -60,9 +60,15 @@
                     <span class="switch-text switch-next">Get a quote</span>
                 </button>
                 <ul class="mobile-socials">
-                    <li><a href=""><img src="../../assets/footersocials/X.svg" alt=""></a></li>
-                    <li><a href=""><img src="../../assets/footersocials/instagram.svg" alt=""></a></li>
-                    <li><a href=""><img src="../../assets/footersocials/linkedin.svg" alt=""></a></li>
+                    <li><a href="https://x.com/Ouklinestudio" target="_blank"  rel="noopener noreferrer">
+                        <img src="../../assets/footersocials/X.svg" alt="">
+                    </a></li>
+                    <li><a href="https://www.instagram.com/ouklinestudio/" target="_blank"  rel="noopener noreferrer">
+                        <img src="../../assets/footersocials/instagram.svg" alt="">
+                    </a></li>
+                    <li><a href="https://www.linkedin.com/company/ouklinestudio/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BvvjQ9%2BuCQL6eKyRb4CYKVA%3D%3D" target="_blank"  rel="noopener noreferrer">
+                        <img src="../../assets/footersocials/linkedin.svg" alt="">
+                    </a></li>
                 </ul>
             </div>
         </div>
@@ -127,7 +133,7 @@ const { goToContact } = useButtonsNav()
 <style scoped>
     .sticky-header {
         width: 100%;
-        position: sticky;
+        position: fixed;
         top: 0;
         z-index: 9999;
         background-color: #fff;

@@ -1,12 +1,12 @@
 <template>
-    <div class="inner-container">
+    <div class="inner-container main-padding-top">
         <div class="main-container">
             <div class="main-card">
                 <div class="main-img-box">
                     <img src="../../../assets/img/Interviews/Miguel Queirós.jpg" alt="">
                 </div>
                 <h2 class="main-title"><span class="main-name">Miguel Queirós</span> - The secret is building a personal brand.</h2>
-                <p class="main-text">→ Designer & Framer Creator</p>
+                <p class="main-text"><img src="../../../assets/icons/TextArraySmall.svg" alt="" class="text-array-icon"> Designer & Framer Creator</p>
                 <ul class="tags">
                     <li class="tag">framer templates</li>
                     <li class="tag">personal brand</li>
@@ -17,19 +17,11 @@
             <div class="interview">
                 <article class="text-card">
                     <InterviewText>
-                        <InterviewStrongText>In today’s interview</InterviewStrongText>, we’ll introduce you to a
-                        <InterviewStrongText>talented and inspiring creator</InterviewStrongText> who has mastered the art of
-                        <InterviewStrongText>UX/UI design</InterviewStrongText> and building
-                        <InterviewStrongText>stunning web templates in Framer</InterviewStrongText>.
+                        In today’s interview, we’ll introduce you to a talented and inspiring creator who has mastered the art of UX/UI design and building stunning web templates in Framer.
                     </InterviewText>
 
                     <InterviewText>
-                        Discover his insights on whether <InterviewStrongText>selling templates</InterviewStrongText>
-                        is a <InterviewStrongText>profitable venture</InterviewStrongText>, how to
-                        <InterviewStrongText>grow and connect</InterviewStrongText> with your
-                        <InterviewStrongText>audience</InterviewStrongText>, and the
-                        <InterviewStrongText>challenges and rewards</InterviewStrongText> of blending
-                        <InterviewStrongText>design with development</InterviewStrongText>.
+                        Discover his insights on whether <InterviewStrongText>selling templates is a profitable venture, how to grow and connect with your audience, and the challenges and rewards of blending design with development.</InterviewStrongText>
                     </InterviewText>
                 </article>
 
@@ -43,16 +35,7 @@
                     </InterviewQuestion>
 
                     <InterviewText>
-                        <InterviewStrongText>Creativity</InterviewStrongText> has always been present in my life.
-                        It started with drawing when I was very young and quickly grew to a
-                        <InterviewStrongText>full-time obsession</InterviewStrongText> for me.
-                        That <InterviewStrongText>obsession and curiosity</InterviewStrongText> eventually led me to pursue
-                        other <InterviewStrongText>creative endeavors like design</InterviewStrongText>.
-                        I studied <InterviewStrongText>design and technology</InterviewStrongText> in college and after graduating
-                        I started building my own <InterviewStrongText>projects and social media presence</InterviewStrongText>.
-                        I eventually understood how important it is to
-                        <InterviewStrongText>learn different skills</InterviewStrongText> besides design and because of that,
-                        I joined the <InterviewStrongText>full-stack ideology of design, no-code, and creator economy</InterviewStrongText>.
+                        <InterviewStrongText>Creativity has always been present in my life.</InterviewStrongText> It started with drawing when I was very young and quickly grew to a full-time obsession for me. That obsession and curiosity eventually led me to pursue other creative endeavors like design. I studied design and technology in college and after graduating I started building my own projects and social media presence. I eventually understood how important it is to learn different skills besides design and because of that, I joined the full-stack ideology of design, no-code, and creator economy.
                     </InterviewText>
                 </article>
 
@@ -63,23 +46,7 @@
                     </InterviewQuestion>
 
                     <InterviewText>
-                        Yes, <InterviewStrongText>building a business and brand</InterviewStrongText> is extremely
-                        <InterviewStrongText>difficult and time-consuming</InterviewStrongText>. The
-                        <InterviewStrongText>global market</InterviewStrongText> brings a lot of
-                        <InterviewStrongText>competition</InterviewStrongText> but simultaneously opens so many
-                        <InterviewStrongText>opportunities</InterviewStrongText> for
-                        <InterviewStrongText>creators</InterviewStrongText> who want to
-                        <InterviewStrongText>build a career</InterviewStrongText> by
-                        <InterviewStrongText>leveraging their skills</InterviewStrongText>. For me, the secret is
-                        <InterviewStrongText>building a personal brand</InterviewStrongText>. The world is changing
-                        <InterviewStrongText>fast</InterviewStrongText>. Clients are searching for
-                        <InterviewStrongText>talent online</InterviewStrongText>, companies hire talent on
-                        <InterviewStrongText>social media platforms</InterviewStrongText>, and the way to
-                        <InterviewStrongText>stand out</InterviewStrongText> is by building this amazing asset called
-                        personal brand. Your <InterviewStrongText>brand, face, unique talents, personal views, and way of thinking</InterviewStrongText>
-                        are what sets you apart. To <InterviewStrongText>stand out online</InterviewStrongText> and
-                        <InterviewStrongText>leverage the digital gold rush</InterviewStrongText>, having a
-                        <InterviewStrongText>personal brand is a must</InterviewStrongText>.
+                        Yes, building a business and brand is extremely difficult and time-consuming. The global market brings a lot of competition but simultaneously opens so many opportunities for creators who want to build a career by leveraging their skills. <InterviewStrongText>For me, the secret is building a personal brand.</InterviewStrongText> The world is changing fast. Clients are searching for talent online, companies hire talent on social media platforms, and the way to stand out is by building this amazing asset called personal brand. Your brand, face, unique talents, personal views, and way of thinking are what sets you apart. To stand out online and leverage the digital gold rush, having a personal brand is a must.
                     </InterviewText>
                 </article>
 
@@ -91,18 +58,7 @@
                     </InterviewQuestion>
 
                     <InterviewText>
-                        For me <InterviewStrongText>Framer</InterviewStrongText> was my
-                        <InterviewStrongText>first choice</InterviewStrongText> because of the way it
-                        <InterviewStrongText>works</InterviewStrongText>. If you already have some experience with
-                        <InterviewStrongText>Figma</InterviewStrongText>, Framer will be
-                        <InterviewStrongText>so easy to work with</InterviewStrongText>. When I work with
-                        <InterviewStrongText>Framer</InterviewStrongText> I feel I’m working with a
-                        <InterviewStrongText>design tool</InterviewStrongText> and I love that! Besides,
-                        <InterviewStrongText>Framer continues to evolve daily</InterviewStrongText> and adds new
-                        <InterviewStrongText>features and options</InterviewStrongText> to help us designers build even more
-                        <InterviewStrongText>amazing stuff</InterviewStrongText>. New improvements with the
-                        <InterviewStrongText>CMS, plugins, and integrations</InterviewStrongText> make Framer a very
-                        <InterviewStrongText>attractive option for designers</InterviewStrongText>.
+                        For me Framer was my first choice because of the way it works. If you already have some experience with Figma, Framer will be so easy to work with. When I work with Framer I feel I'm working with a design tool and I love that! Besides, Framer continues to evolve daily and adds new features and options to help us designers build even more amazing stuff. New improvements with the CMS, plugins, and integrations make Framer a very attractive option for designers. 
                     </InterviewText>
                 </article>
 
@@ -113,18 +69,7 @@
                     </InterviewQuestion>
 
                     <InterviewText>
-                        At the moment, <InterviewStrongText>building my design business is my full-time occupation</InterviewStrongText>.
-                        But, I'm not stopping there because I see myself as
-                        <InterviewStrongText>more than just a designer</InterviewStrongText>. My ultimate goal is to be a
-                        <InterviewStrongText>digital solopreneur</InterviewStrongText> with a
-                        <InterviewStrongText>portfolio of different digital businesses</InterviewStrongText>. Right now, I have two ventures going on:
-                        <InterviewStrongText>my web design and Framer dev services</InterviewStrongText> and my
-                        <InterviewStrongText>template shop</InterviewStrongText>. In the future, I will
-                        <InterviewStrongText>expand to different projects and ideas</InterviewStrongText> by
-                        <InterviewStrongText>adding new skills to my stack</InterviewStrongText>. I want to keep
-                        <InterviewStrongText>building my brand</InterviewStrongText> around my
-                        <InterviewStrongText>curiosity</InterviewStrongText> and keep
-                        <InterviewStrongText>building products online</InterviewStrongText>.
+                       At the moment, building my design business is my full-time occupation. But, I'm not stopping there because I see myself as more than just a designer. <InterviewStrongText>My ultimate goal is to be a digital solopreneur with a portfolio of different digital businesses.</InterviewStrongText> Right now, I have two ventures going on: my web design and Framer dev services and my template shop. In the future, I will expand to different projects and ideas by adding new skills to my stack. I want to keep building my brand around my curiosity and keep building products online.
                     </InterviewText>
                 </article>
 
@@ -135,21 +80,8 @@
                     </InterviewQuestion>
 
                     <InterviewText>
-                        At the beginning of my career, I watched
-                        <InterviewStrongText>countless hours of Figma, Photoshop, and Illustrator</InterviewStrongText>.
-                        These 3 were the first tools
-                        <InterviewStrongText>I stacked as a designer</InterviewStrongText> and I still use them a lot today (especially Figma).
-                        But the most important thing is
-                        <InterviewStrongText>building things while you learn</InterviewStrongText>, so for me what helped me evolve fast was
-                        <InterviewStrongText>creating every day</InterviewStrongText> even when I didn't
-                        <InterviewStrongText>master the tool</InterviewStrongText>. By
-                        <InterviewStrongText>creating every day and sharing your journey on social media</InterviewStrongText>
-                        (X, Behance, Dribbble) you start
-                        <InterviewStrongText>building a portfolio of work to attract clients</InterviewStrongText>.
-                        <InterviewStrongText>Reading</InterviewStrongText> is also a big part of my journey.
-                        There is one book I recommend to everyone: it’s called the almanack of Naval Ravikant.
-                        This book has <InterviewStrongText>nothing to do with design</InterviewStrongText> but it had the
-                        <InterviewStrongText>biggest impact</InterviewStrongText> on my journey so far.
+                        At the beginning of my career, I watched countless hours of Figma, Photoshop, and Illustrator. These 3 were the first tools I stacked as a designer and I still use them a lot today (especially Figma ). But the most important thing is building things while you learn, so for me what helped me evolve fast was creating every day even when I didn't master the tool.<br>
+                        By creating every day and sharing your journey on social media ( X, Behance, Dribbble ) you start building a portfolio of work to attract clients. <InterviewStrongText>Reading is also a big part of my journey. There is one book I recommend to everyone: it's called the almanack of Naval Ravikant. This book has nothing to do with design but it had the biggest impact on my journey so far.</InterviewStrongText>
                     </InterviewText>
                 </article>
 
@@ -160,22 +92,10 @@
                     </InterviewQuestion>
 
                     <InterviewText>
-                        Yes I have. When I was just starting out a few years ago it was
-                        <InterviewStrongText>scary</InterviewStrongText>. I had
-                        <InterviewStrongText>zero knowledge of business, content creation, or social media</InterviewStrongText>.
-                        The only thing I had was a
-                        <InterviewStrongText>passion and obsession</InterviewStrongText> about
-                        <InterviewStrongText>learning design</InterviewStrongText> and
-                        <InterviewStrongText>becoming better at my craft</InterviewStrongText>. Because of that
-                        <InterviewStrongText>obsession</InterviewStrongText>, I understood how important it is to
-                        <InterviewStrongText>learn and share your work with the world</InterviewStrongText>.
-                        <InterviewStrongText>Follow your interests with everything you have</InterviewStrongText>,
-                        <InterviewStrongText>stack different knowledge and learn the tools</InterviewStrongText>.
-                        <InterviewStrongText>Design</InterviewStrongText> is a very
-                        <InterviewStrongText>interesting field</InterviewStrongText> of work and if you
-                        <InterviewStrongText>really love it, you should pursue it</InterviewStrongText>.
-                        Even more now with all of these
-                        <InterviewStrongText>amazing tools</InterviewStrongText> we have.
+                        Yes I have. When I was just starting out a few years ago it was scary. I had zero knowledge of business, content creation, or social media. The only thing I had was a passion and obsession about learning design and becoming better at my craft. Because of that obsession.<br>
+                        I understood how important it is to learn and share your work with the world. Follow your interests with everything you have, stack  different knowledge and learn the tools.<br>
+                        <InterviewStrongText>Design is a very interesting field of work and if you really love it, you should pursue it.</InterviewStrongText><br>
+                        Even more now with all of these amazing tools we have.
                     </InterviewText>
                 </article>
 
@@ -191,19 +111,7 @@
                     </InterviewQuestion>
 
                     <InterviewText>
-                        Yes the <InterviewStrongText>world is changing fast</InterviewStrongText> and we must
-                        <InterviewStrongText>adapt even faster</InterviewStrongText>. With the rise of
-                        <InterviewStrongText>AI technology</InterviewStrongText>, a lot of things are going to change soon.
-                        With that, we must keep our minds open and keep learning daily. As a designer, I already use a lot of
-                        <InterviewStrongText>AI tools</InterviewStrongText> to help me with my work. Tools like
-                        <InterviewStrongText>ChatGPT, ClaudeAI, and midjourney</InterviewStrongText> are so
-                        <InterviewStrongText>valuable</InterviewStrongText> if we know how to use them. That is why I believe that the
-                        <InterviewStrongText>future belongs to creators</InterviewStrongText> who possess a
-                        <InterviewStrongText>wide range of skills</InterviewStrongText> and
-                        <InterviewStrongText>don’t get stuck</InterviewStrongText> in a specific field.
-                        Learning skills like <InterviewStrongText>design, digital marketing, AI tools, content creation,
-                        community, communication, 3D & motion design, copywriting, and brand building</InterviewStrongText>
-                        will be <InterviewStrongText>major keys</InterviewStrongText> in the future.
+                       Yes the world is changing fast and we must adapt even faster. With the rise of AI technology, a lot of things are going to change soon. With that, we must keep our minds open and keep learning daily. As a designer, I already use a lot of AI tools to help me with my work. Tools like ChatGPT, ClaudeAI, and midjourney are so valuable if we know how to use them. That is why I believe that the future belongs to creators who possess a wide range of skills and don't get stuck in a specific field. Learning skills like design, digital marketing, AI tools, content creation, community, communication, 3D & motion design, copywriting, and brand building  will be major keys in the future.
                     </InterviewText>
                 </article>
 
@@ -213,14 +121,7 @@
                     </InterviewQuestion>
 
                     <InterviewText>
-                        <InterviewStrongText>AI tools are very useful</InterviewStrongText>. Right now the main tools I use to help me with my work are
-                        <InterviewStrongText>ChatGPT</InterviewStrongText> for
-                        <InterviewStrongText>content ideas, copywriting, and information</InterviewStrongText>.
-                        I use <InterviewStrongText>ClaudeAI</InterviewStrongText> for
-                        <InterviewStrongText>custom code</InterviewStrongText> and I use
-                        <InterviewStrongText>midjourney to generate images and visual assets</InterviewStrongText>.
-                        If you are interested in using <InterviewStrongText>AI tools</InterviewStrongText>,
-                        <InterviewStrongText>start with these and learn along the way</InterviewStrongText>.
+                        AI tools are very useful. Right now the main tools I use to help me with my work are ChatGPT for content ideas, copywriting, and information. <InterviewStrongText>I use ClaudeAI for custom code and I use midjourney to generate images and visual assets.</InterviewStrongText> If you are interested in using AI tools, start with these and learn along the way.
                     </InterviewText>
                 </article>
 
@@ -231,13 +132,7 @@
                     </InterviewQuestion>
 
                     <InterviewText>
-                        At the moment, my life is a little <InterviewStrongText>unbalanced</InterviewStrongText>.
-                        The reason is that I believe that to <InterviewStrongText>build and achieve great things in your career</InterviewStrongText>,
-                        you must <InterviewStrongText>make sacrifices and put in the necessary hours</InterviewStrongText> on your craft.
-                        I still find time to do things I <InterviewStrongText>enjoy</InterviewStrongText> a lot outside of work like reading,
-                        <InterviewStrongText>going to the gym</InterviewStrongText>, and
-                        <InterviewStrongText>doing digital art</InterviewStrongText> but the majority of my time is spent
-                        <InterviewStrongText>working and learning to become better</InterviewStrongText>.
+                       At the moment, my life is a little unbalanced. The reason is that I believe that to build and achieve great things in your career, you must make sacrifices and put in the necessary hours on your craft. I still find time to do things I enjoy a lot outside of work like reading, going to the gym, and doing digital art but the majority of my time is spent working and learning to become better.
                     </InterviewText>
                 </article>
 
@@ -247,14 +142,7 @@
                     </InterviewQuestion>
 
                     <InterviewText>
-                        My plans for the near future are all about work and business.
-                        <InterviewStrongText>2025 will be a big year</InterviewStrongText> for me.
-                        I want to <InterviewStrongText>expand and grow my design agency</InterviewStrongText>
-                        to be able to work with bigger clients. I want to
-                        <InterviewStrongText>grow my digital products to 10K per month</InterviewStrongText>,
-                        I want to <InterviewStrongText>learn 3 or 4 new tools</InterviewStrongText> like Spline, Rive, and Shopify and
-                        I want to <InterviewStrongText>release a small course</InterviewStrongText> for new designers and creators and hopefully
-                        <InterviewStrongText>share everything I know</InterviewStrongText> with others and help them succeed.
+                       My plans for the near future are all about work and business. 2025 will be a big year for me. <InterviewStrongText>I want to expand and grow my design agency to be able to work with bigger clients. I want to grow my digital  products to 10K per month, I want to learn 3 or 4 new tools like Spline, Rive, and Shopify and I want to release a small course for new designers and creators and hopefully share everything I know with others and help them succeed.</InterviewStrongText>
                     </InterviewText>
                 </article>
 
@@ -265,12 +153,7 @@
                     </InterviewQuestion>
 
                     <InterviewText>
-                        <InterviewStrongText>Focus is so important</InterviewStrongText> if you want to succeed in this world.
-                        The only social media app that I use often is X. I don't use Instagram or TikTok,
-                        I wake up early to hit the gym and after the gym, I get straight into work.
-                        <InterviewStrongText>I don't have my phone near me</InterviewStrongText> and this
-                        <InterviewStrongText>routine helps me stay sharp and focused</InterviewStrongText> on my work.
-                        <InterviewStrongText>Listening to deep music or podcasts</InterviewStrongText> also helps me stay focused.
+                        Focus is so important if you want to succeed in this world. The only social media app that I use often is X. I don't use Instagram or TikTok, I wake up early to hit the gym and after the gym, I get straight into work.I don't have my phone near me and this routine helps me stay sharp and focused on my work. Listening to deep music or podcasts also helps me stay focused.
                     </InterviewText>
                 </article>
 
@@ -280,11 +163,7 @@
                     </InterviewQuestion>
 
                     <InterviewText>
-                        I'm really proud of my <InterviewStrongText>product collection</InterviewStrongText> so far.
-                        Last year, I started learning <InterviewStrongText>Framer</InterviewStrongText> and
-                        my <InterviewStrongText>career changed completely</InterviewStrongText>.
-                        After learning this tool, <InterviewStrongText>new opportunities opened up</InterviewStrongText> for me
-                        and I’m very proud of what I’ve been creating at <InterviewStrongText>quickfold.supply</InterviewStrongText>.
+                        I'm really proud of my product collection so far. Last year, I started learning Framer and my career changed completely. After learning this tool, new opportunities opened up for me and <InterviewStrongText>I'm very proud of what I've been creating at quickfold.supply</InterviewStrongText>
                     </InterviewText>
                 </article>
 
@@ -296,16 +175,16 @@
                     </InterviewQuestion>
 
                     <InterviewText>
-                        You have <InterviewStrongText>unlimited potential</InterviewStrongText>,
-                        the <InterviewStrongText>best version of yourself is waiting for you</InterviewStrongText>,
-                        go meet that person.
+                       <InterviewStrongText>You have unlimited potential, the best version of yourself is waiting for you, go meet that person.</InterviewStrongText>
                     </InterviewText>
                 </article>
                 
                 <div class="socials-up">
                     <h3 class="socialtitle">You can find and support Miguel here:</h3>
-                    <p class="links">→ x.com/DopeOblivion</p>
-                    <p class="links">→ quickfold.supply</p>
+                    <div class="socials-up-links">
+                        <a class="links" href="https://x.com/DopeOblivion" target="_blank"  rel="noopener noreferrer"><img src="../../../assets/icons/TextArraySmall.svg" alt="" class="text-array-icon-second"> x.com/DopeOblivion</a>
+                        <a class="links" href="https://www.quickfold.supply/" target="_blank"  rel="noopener noreferrer"><img src="../../../assets/icons/TextArraySmall.svg" alt="" class="text-array-icon-second"> quickfold.supply</a>
+                    </div>
                 </div>
 
                 <div class="socials-down">
@@ -358,6 +237,10 @@ onMounted(() => {
 </script>
 
 <style scoped>
+    .main-padding-top {
+        padding-top: 100px;
+    }
+
     .main-container {
         width: 60%;
         margin: 0 auto;
@@ -378,13 +261,17 @@ onMounted(() => {
     }
 
     .main-img-box {
+       
         max-width: 120px;
-        border: solid 2px #fff;
+        padding: 4px 4px 0 4px;
+        border-radius: 3px;
+        background-color: #fff;
+        box-shadow: 0px 11px 34.6px rgba(0, 0, 0, 0.2);
     }
 
     .main-title {
         color: var(--main-color-black);
-        font-size: 50px;
+         font-size: clamp(32px, 5vw, 50px);
         font-weight: 300;
     }
 
@@ -400,7 +287,9 @@ onMounted(() => {
 
     .tags {
         display: flex;
+        flex-wrap: wrap;
         column-gap: 10px;
+        row-gap: 10px;
         padding-top: 10px;
     }
 
@@ -467,14 +356,53 @@ onMounted(() => {
   row-gap: 20px;
 }
 
+.socials-up {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.socials-up-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    color: var(--main-second-color);
+    cursor: pointer;
+}
+
+.links:hover {
+    color: var(--main-color-black);
+}
+
 .socials-down {
     display: none;
 }
+
+   .text-array-icon {
+        width: 16px;
+        height: 16px;   
+        vertical-align: middle;
+        transform: translateY(-2px);
+    }
+
+    .text-array-icon-second {
+        width: 10px;
+        height: 10px;   
+        vertical-align: middle;
+    }
 
 @media (max-width: 1240px) {
   .posts-down {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media (max-width: 900px) {
+    .main-container {
+        width: 100%;
+    }
 }
 
 @media (max-width: 840px) {

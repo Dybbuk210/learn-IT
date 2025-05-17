@@ -116,7 +116,7 @@ const { goToContact } = useButtonsNav()
 
 <style scoped>
     .main-box {
-        padding-top: 55px;
+        padding-top: 155px;
         padding-bottom: 200px;
     }
 

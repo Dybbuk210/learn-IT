@@ -9,6 +9,7 @@
 
 <style scoped>
     .strong-style {
+        font-size: clamp(14px, 5vw, 18px);
         font-weight: 500;
     }
 </style>

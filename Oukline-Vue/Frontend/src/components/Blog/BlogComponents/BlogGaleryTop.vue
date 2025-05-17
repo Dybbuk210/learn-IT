@@ -1,5 +1,5 @@
 <template>
-    <div class="inner-container main-box" v-if="latestBlog">
+     <router-link :to="`/blog/${latestBlog.id}`" class="inner-container main-box" v-if="latestBlog">
       <img :src="imageUrl" :alt="latestBlog.MainTitle" class="top-img">
       <div class="overlay">
         <div class="inner-box">
@@ -13,7 +13,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </router-link>
   </template>
 
 <script setup>
@@ -34,12 +34,14 @@ const imageUrl = computed(() => {
 
 <style scoped>
     .main-box {
+        cursor: pointer;
         display: flex;
         flex-direction: column;
         position: relative;
         overflow: hidden;
         height: 480px;
         border-radius: 3px;
+        padding-top: 100px;
     }
 
     .top-img {

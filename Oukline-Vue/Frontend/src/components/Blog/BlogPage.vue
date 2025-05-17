@@ -1,5 +1,5 @@
 <template>
-    <div class="inner-container">
+    <div class="inner-container main-padding-top">
   
       <div class="main-box">
         <div class="box-up">
@@ -165,6 +165,10 @@ const recommendedBlogs = computed(() => {
 
 
 <style scoped>
+  .main-padding-top {
+    padding-top: 100px;
+  }
+
     .main-box {
         width: 60%;
         margin: 0 auto;
