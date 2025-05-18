@@ -14,7 +14,7 @@
             </div>
 
             <div class="box-slider">
-                <div class="slider-up">
+                <div class="slider-up" @touchstart="handleTouchStart" @touchend="handleTouchEnd">
                     <div class="slider-img">
                         <img :src="getImageUrl(reviews[currentIndex].CardImg)" alt="">
                         <img v-if="reviews[currentIndex].CardImgB" :src="getImageUrl(reviews[currentIndex].CardImgB)" alt="">
@@ -49,7 +49,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+/* import { ref, onMounted, onUnmounted } from 'vue'
 import reviews from '../../../reviews.json' // uprav cestu podľa svojho projektu
 
 const currentIndex = ref(0)
@@ -101,6 +101,87 @@ onMounted(() => {
 })
 
 // Zastavenie pri odchode
+onUnmounted(() => {
+  clearInterval(interval)
+}) */
+
+import { ref, onMounted, onUnmounted } from 'vue'
+import reviews from '../../../reviews.json' // uprav cestu podľa potreby
+
+const currentIndex = ref(0)
+let interval = null
+
+// Spustí autoplay
+const startAutoplay = () => {
+  if (interval) return
+  interval = setInterval(() => {
+    next(false) // neobnoví reset, lebo to je automatické
+  }, 5000)
+}
+
+// Zastaví autoplay a spustí ho znova po čase
+const resetAutoplay = (delay = 5000) => {
+  clearInterval(interval)
+  interval = null
+  setTimeout(() => {
+    startAutoplay()
+  }, delay)
+}
+
+// Posun dopredu
+const next = (manual = true) => {
+  currentIndex.value = (currentIndex.value + 1) % reviews.length
+  if (manual) resetAutoplay()
+}
+
+// Posun dozadu
+const prev = () => {
+  currentIndex.value = (currentIndex.value - 1 + reviews.length) % reviews.length
+  resetAutoplay()
+}
+
+// Skok na konkrétny index (paginator)
+const goTo = (index) => {
+  currentIndex.value = index
+  resetAutoplay()
+}
+
+// Získa cestu k obrázku
+const getImageUrl = (img) => {
+  return new URL(`../../../assets/img/Reviews/${img}`, import.meta.url).href
+}
+
+// SWIPE: hodnoty dotyku
+const touchStartX = ref(0)
+const touchEndX = ref(0)
+
+const handleTouchStart = (e) => {
+  touchStartX.value = e.changedTouches[0].screenX
+}
+
+const handleTouchEnd = (e) => {
+  touchEndX.value = e.changedTouches[0].screenX
+  handleSwipe()
+}
+
+// Vyhodnotenie smeru swipe
+const handleSwipe = () => {
+  const delta = touchStartX.value - touchEndX.value
+  const swipeThreshold = 50 // minimálny pohyb v px
+
+  if (delta > swipeThreshold) {
+    next()
+  } else if (delta < -swipeThreshold) {
+    prev()
+  }
+}
+
+// Po načítaní komponentu spusti autoplay
+onMounted(() => {
+  startAutoplay()
+})
+
+// Pri opustení komponentu vypni autoplay
 onUnmounted(() => {
   clearInterval(interval)
 })

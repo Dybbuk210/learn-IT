@@ -58,7 +58,7 @@
 </template>
 
 <script setup>
-    import ContactForm from '../GlobalComponents/ContactForm.vue'
+    import ContactForm from '../GlobalComponents/ContactFormTest.vue'
 </script>
 
 <style scoped>
@@ -224,13 +224,17 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .text-up {
         font-size: 16px;
     }
 
     .text-down {
         font-size: 14px;
+    }
+
+    section {
+        padding-bottom: 0;
     }
 }
 </style>

@@ -25,7 +25,7 @@
             </ul>
             <div class="nav-break"></div>
 <!--             <button class="eng-sk header-text-size">En</button>   Zatiaľ deaktivovane -->
-            <button class="nav-button main-style-button header-text-size switch-btn" @click="goToContact">
+            <button class="nav-button main-style-button header-text-size switch-btn" @click="handleContactClick">
                 <span class="button-text switch-text switch-current">
                         Apply to collaborate
                     </span>
@@ -54,11 +54,8 @@
                     <li><router-link to="/interviewgalery" class="mobile-nav-font" @click="closeMenu">Interviews</router-link></li>
                 </ul>
             </div>
-            <div class="mobile-down" @click="goToContact"> <!-- opraviť JS pre zatvorenie po presmerovaní -->
-                <button class="light-btn-style switch-btn mobile-nav-button">
-                    <span class="switch-text switch-current">Get a quote</span>
-                    <span class="switch-text switch-next">Get a quote</span>
-                </button>
+            <div class="mobile-down">
+                <div class="mobile-break"></div> <!-- div slúži len pre vizuálne zobrazenie -->
                 <ul class="mobile-socials">
                     <li><a href="https://x.com/Ouklinestudio" target="_blank"  rel="noopener noreferrer">
                         <img src="../../assets/footersocials/X.svg" alt="">
@@ -88,6 +85,13 @@ const toggleMenu = () => {
 
 const closeMenu = () => {
   showMobileMenu.value = false
+}
+
+const { goToContact } = useButtonsNav()
+
+const handleContactClick = () => {
+  if (showMobileMenu.value) closeMenu()
+  goToContact()
 }
 
 watch(showMobileMenu, (isOpen) => {
@@ -125,8 +129,6 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('resize', handleResize)
 })
-
-const { goToContact } = useButtonsNav()
 </script>
 
 
@@ -250,10 +252,11 @@ const { goToContact } = useButtonsNav()
     }
 
     .burger-open {
+        width: 20px;
+        height: 20px;
         display: none;
     }
 
-/* test */
 .mobile-menu {
   display: flex;
   justify-content: center;
@@ -283,7 +286,7 @@ const { goToContact } = useButtonsNav()
     width: 92%;
     display: flex;
     flex-direction: column;
-    row-gap: 60px;
+    row-gap: 45px;
 }
 
 .mobile-nav-font {
@@ -307,18 +310,24 @@ const { goToContact } = useButtonsNav()
 
 .mobile-socials {
     display: flex;
-    column-gap: 25px;
+    column-gap: 20px;
 }
 
 .mobile-down {
     display: flex;
     align-items: center;
     flex-direction: column;
-    row-gap: 35px;
+    row-gap: 45px;
 }
 
 .mobile-nav-button {
     width: 100%;
+}
+
+.mobile-break {
+    width: 100%;
+    border-bottom: solid 1px #fff;
+    opacity: 20%;
 }
 /* end testu */
 

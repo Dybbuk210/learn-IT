@@ -7,7 +7,7 @@
                                 <img src="../../assets/logo/Logo-W.svg" alt="" class="logo-box">
                         </router-link>
                     <div class="footer-break hide-on-mobile"></div>
-                    <p>Based in Slovakia / Acting globally</p>
+                    <p>Based in Slovakia / Acting globally <img src="../../assets/icons/Planeta.svg" alt="" class="text-array-icon"></p>
                 </div>
                 <div class="footer-up-right footer-flex">
 
@@ -35,7 +35,7 @@
             </div>
             <div class="footer-down footer-flex">
                 <p>© Oukline 2025. All rights reserved.</p>
-                <a href="" class="footer-link">studio@oukline.com</a>
+                <a href="mailto:studio@oukline.com" class="footer-link">studio@oukline.com</a>
             </div>
         </div>
     </section>
@@ -145,6 +145,14 @@ const { goToContact } = useButtonsNav()
         height: 22px;
         border-right: solid 2px #FFFFFF66;
         align-self: center;
+    }
+
+    .text-array-icon {
+        width: 24px;
+        height: 24px;   
+        vertical-align: middle;
+        transform: translateY(-2px);
+        padding-left: 6px;
     }
 
     @media (max-width: 800px) {

@@ -77,12 +77,18 @@
 
       <div class="form-down-box">
         <p class="box-down-text">
-          Do you prefer direct conversation?
+          Not a fan of forms? No worries, email us here
           <img src="../../assets/icons/RightArrow.svg" alt="" class="box-down-icon" />
         </p>
-        <a class="form-button main-style-button switch-btn" href="https://cal.com/ouklinestudio/15min" target="_blank" rel="noopener noreferrer">
-          <span class="switch-text switch-current">Book a call (FREE)</span>
-          <span class="switch-text switch-next">Book a call (FREE)</span>
+        <a href="mailto:studio@oukline.com" class="main-style-button btn-width switch-btn form-button">
+            <span class="button-text switch-text switch-current">
+                studio@oukline.com
+                <img src="../../assets/icons/PartnersBTNicon.svg" alt="" class="button-icon">
+            </span>
+            <span class="button-text switch-text switch-next">
+                studio@oukline.com
+                <img src="../../assets/icons/PartnersBTNicon.svg" alt="" class="button-icon">
+            </span>
         </a>
       </div>
     </div>
@@ -196,7 +202,7 @@ const resetForm = () => {
     .box-down-text {
         display: flex;  
         align-items: center;
-        font-size: calc(1.1vw + 0.2rem);
+        font-size: 20px;
         font-weight: 400;
         column-gap: 18px;
         white-space: nowrap;
@@ -208,8 +214,9 @@ const resetForm = () => {
     }
 
     .form-button {
-        width: calc(50% - 18px);
-        padding: 27px 0;    
+      color: #fff;
+      width: calc(50% - 18px);
+      padding: 27px 82px;
     }
 
     .services-box-label {
