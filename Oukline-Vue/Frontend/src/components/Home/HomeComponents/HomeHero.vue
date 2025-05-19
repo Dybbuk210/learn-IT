@@ -24,7 +24,7 @@
                     <p class="text-up">Introduction:</p>
                     <div class="text-down">
                         <p><span class="text-style-light">Helping</span> modern brands</p>
-                        <span class="text-down-img"><img src="../../../assets/icons/SmallStar.svg" alt=""></span>
+                        <span class="text-down-img"><img src="../../../assets/icons/SmallStar.svg" alt="Favorite icon"></span>
                         <p><span class="text-style-light">stand out with</span></p>
                         <p><span class="text-style-light"></span> smart design and strategy.</p>
                     </div>

@@ -16,8 +16,8 @@
             <div class="box-slider">
                 <div class="slider-up" @touchstart="handleTouchStart" @touchend="handleTouchEnd">
                     <div class="slider-img">
-                        <img :src="getImageUrl(reviews[currentIndex].CardImg)" alt="">
-                        <img v-if="reviews[currentIndex].CardImgB" :src="getImageUrl(reviews[currentIndex].CardImgB)" alt="">
+                        <img :src="getImageUrl(reviews[currentIndex].CardImg)" :alt="reviews[currentIndex].CardName">
+                        <img v-if="reviews[currentIndex].CardImgB" :src="getImageUrl(reviews[currentIndex].CardImgB)" :alt="reviews[currentIndex].CardName">
                     </div>
                     <p class="slider-text" v-html="reviews[currentIndex].CardText"></p>
                     <h3 class="name-box">{{ reviews[currentIndex].CardName }}</h3>
@@ -26,7 +26,7 @@
                     <!-- KONTROLY -->
                     <div class="slider-down">
                     <button class="previos-btn" @click="prev">
-                        <img src="../../../assets/icons/SliderArrow.svg" alt="" class="slider-btn-left"> Previous
+                        <img src="../../../assets/icons/SliderArrow.svg" alt="Arrow icon" class="slider-btn-left"> Previous
                     </button>
 
                     <div class="pagginator-box">
@@ -40,7 +40,7 @@
                     </div>
 
                     <button class="next-btn" @click="next">
-                        Next <img src="../../../assets/icons/SliderArrow.svg" alt="" class="slider-btn-right">
+                        Next <img src="../../../assets/icons/SliderArrow.svg" alt="Arrow icon" class="slider-btn-right">
                     </button>
                 </div>
             </div>
@@ -49,62 +49,6 @@
 </template>
 
 <script setup>
-/* import { ref, onMounted, onUnmounted } from 'vue'
-import reviews from '../../../reviews.json' // uprav cestu podľa svojho projektu
-
-const currentIndex = ref(0)
-let interval = null
-
-// Funkcia: spustí autoplay
-const startAutoplay = () => {
-  if (interval) return
-  interval = setInterval(() => {
-    next(false) // posunie bez ďalšieho resetu
-  }, 5000)
-}
-
-// Funkcia: pozastaví autoplay a znova ho spustí po delay (napr. 5 sekúnd)
-const resetAutoplay = (delay = 5000) => {
-  clearInterval(interval)
-  interval = null
-  setTimeout(() => {
-    startAutoplay()
-  }, delay)
-}
-
-// Posun doprava
-const next = (manual = true) => {
-  currentIndex.value = (currentIndex.value + 1) % reviews.length
-  if (manual) resetAutoplay()
-}
-
-// Posun doľava
-const prev = () => {
-  currentIndex.value = (currentIndex.value - 1 + reviews.length) % reviews.length
-  resetAutoplay()
-}
-
-// Klik na konkrétny bod
-const goTo = (index) => {
-  currentIndex.value = index
-  resetAutoplay()
-}
-
-// Vygeneruje cestu k obrázku
-const getImageUrl = (img) => {
-  return new URL(`../../../assets/img/Reviews/${img}`, import.meta.url).href
-}
-
-// Spustenie po načítaní komponentu
-onMounted(() => {
-  startAutoplay()
-})
-
-// Zastavenie pri odchode
-onUnmounted(() => {
-  clearInterval(interval)
-}) */
-
 import { ref, onMounted, onUnmounted } from 'vue'
 import reviews from '../../../reviews.json' // uprav cestu podľa potreby
 

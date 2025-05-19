@@ -6,22 +6,22 @@
                 <button class="main-style-button switch-btn services-button" @click="goToProjects">
                     <span class="button-text switch-text switch-current">
                         See projects
-                        <img src="../../../assets/icons/RightArrowWhite.svg" alt="" class="button-icon">
+                        <img src="../../../assets/icons/RightArrowWhite.svg" alt="Arrow icon" class="button-icon">
                     </span>
                     <span class="button-text switch-text switch-next">
                         See projects
-                        <img src="../../../assets/icons/RightArrowWhite.svg" alt="" class="button-icon">
+                        <img src="../../../assets/icons/RightArrowWhite.svg" alt="Arrow icon" class="button-icon">
                     </span>
                 </button> 
              </div>
             <div class="box-up-title">
-                <img src="../../../assets/SERVICES.svg" alt="">
+                <img src="../../../assets/SERVICES.svg" alt="Services heading">
             </div>
         </div>
         <div class="box-down">
             <article class="service-card">
                 <div class="img-box">
-                    <img src="../../../assets/icons/ServicesCard/Card 01.svg" alt="">
+                    <img src="../../../assets/icons/ServicesCard/Card 01.svg" alt="Create icon">
                 </div>
                 <h3>UX/UI Design</h3>
                 <p>
@@ -31,7 +31,7 @@
 
             <article class="service-card">
                 <div class="img-box">
-                    <img src="../../../assets/icons/ServicesCard/Card 02.svg" alt="">
+                    <img src="../../../assets/icons/ServicesCard/Card 02.svg" alt="Technology icon">
                 </div>
                 <h3>Development</h3>
                 <p>
@@ -41,7 +41,7 @@
 
             <article class="service-card">
                 <div class="img-box">
-                    <img src="../../../assets/icons/ServicesCard/Card 03.svg" alt="">
+                    <img src="../../../assets/icons/ServicesCard/Card 03.svg" alt="Identity icon">
                 </div>
                 <h3>Brand Identity</h3>
                 <p>

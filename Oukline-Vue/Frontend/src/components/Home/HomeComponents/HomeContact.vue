@@ -6,7 +6,7 @@
                     match your needs</h2>
                 <p class="contact-text">
                     Select your services, set your budget, <span class="text-style-light">and get
-                    a solution</span> tailored to your goals <img src="../../../assets/icons/TextArrayLarge.svg" alt="" class="text-array-icon"> no surprises.
+                    a solution</span> tailored to your goals <img src="../../../assets/icons/TextArrayLarge.svg" alt="Arrow icon" class="text-array-icon"> no surprises.
                 </p>
             </div>
             <ContactFormTest id="contactform"></ContactFormTest>

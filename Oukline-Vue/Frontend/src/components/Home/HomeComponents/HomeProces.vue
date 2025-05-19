@@ -4,18 +4,18 @@
             <div class="btn-box-left">
             <p>
                 Be part of our creative process
-                <span class="btn-icon"><img src="../../../assets/icons/RightArrow.svg" alt=""></span>
+                <span class="btn-icon"><img src="../../../assets/icons/RightArrow.svg" alt="Arrow icon"></span>
             </p>
             </div>
             <div class="btn-box-right">
                 <a href="mailto:studio@oukline.com" class="second-btn-style btn-width switch-btn">
                     <span class="button-text switch-text switch-current">
                         studio@oukline.com
-                        <img src="../../../assets/icons/PartnersBTNicon.svg" alt="" class="button-icon">
+                        <img src="../../../assets/icons/PartnersBTNicon.svg" alt="Clipboard icon" class="button-icon">
                     </span>
                     <span class="button-text switch-text switch-next">
                         studio@oukline.com
-                        <img src="../../../assets/icons/PartnersBTNicon.svg" alt="" class="button-icon">
+                        <img src="../../../assets/icons/PartnersBTNicon.svg" alt="Clipboard icon" class="button-icon">
                     </span>
                   </a> 
             </div>

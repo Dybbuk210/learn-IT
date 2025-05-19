@@ -78,16 +78,16 @@
       <div class="form-down-box">
         <p class="box-down-text">
           Not a fan of forms? No worries, email us here
-          <img src="../../assets/icons/RightArrow.svg" alt="" class="box-down-icon" />
+          <img src="../../assets/icons/RightArrow.svg" alt="Arrow icon" class="box-down-icon" />
         </p>
         <a href="mailto:studio@oukline.com" class="main-style-button btn-width switch-btn form-button">
             <span class="button-text switch-text switch-current">
                 studio@oukline.com
-                <img src="../../assets/icons/PartnersBTNicon.svg" alt="" class="button-icon">
+                <img src="../../assets/icons/PartnersBTNicon.svg" alt="Clipboard icon" class="button-icon">
             </span>
             <span class="button-text switch-text switch-next">
                 studio@oukline.com
-                <img src="../../assets/icons/PartnersBTNicon.svg" alt="" class="button-icon">
+                <img src="../../assets/icons/PartnersBTNicon.svg" alt="Clipboard icon" class="button-icon">
             </span>
         </a>
       </div>

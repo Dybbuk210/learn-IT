@@ -2,7 +2,7 @@
 <div class="sticky-header">
     <header class="inner-container">
         <router-link to="/" class="logo-box">
-            <img src="../../assets/logo/Logo-B.svg" alt="Logo">
+            <img src="../../assets/logo/Logo-B.svg" alt="Company logo – Oukline">
         </router-link>
         <div class="main-nav">
             <ul class="nav-bar-desktop">
@@ -58,13 +58,13 @@
                 <div class="mobile-break"></div> <!-- div slúži len pre vizuálne zobrazenie -->
                 <ul class="mobile-socials">
                     <li><a href="https://x.com/Ouklinestudio" target="_blank"  rel="noopener noreferrer">
-                        <img src="../../assets/footersocials/X.svg" alt="">
+                        <img src="../../assets/footersocials/X.svg" alt="X social media icon">
                     </a></li>
                     <li><a href="https://www.instagram.com/ouklinestudio/" target="_blank"  rel="noopener noreferrer">
-                        <img src="../../assets/footersocials/instagram.svg" alt="">
+                        <img src="../../assets/footersocials/instagram.svg" alt="Instagram icon">
                     </a></li>
                     <li><a href="https://www.linkedin.com/company/ouklinestudio/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BvvjQ9%2BuCQL6eKyRb4CYKVA%3D%3D" target="_blank"  rel="noopener noreferrer">
-                        <img src="../../assets/footersocials/linkedin.svg" alt="">
+                        <img src="../../assets/footersocials/linkedin.svg" alt="LinkedIn icon">
                     </a></li>
                 </ul>
             </div>

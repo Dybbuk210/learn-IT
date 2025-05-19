@@ -3,7 +3,7 @@
         <div class="main-box">
             <div class="main-box-up">
                 <div class="img-box">
-                    <img src="../../../assets/img/Mainrecense.png" alt="">
+                    <img src="../../../assets/img/Mainrecense.png" alt="Company member and Logo - Atheros">
                 </div>
                 <p class="up-text">
                     <span class="text-style-light">Working with team was</span> such an amazing experience. <span class="text-style-light">They are</span> incredibly skilled & reliable. <span class="text-style-light">We received a</span> smooth, usable design prototype <span class="text-style-light">even</span> before the deadline. <span class="text-style-light">I can</span> highly recommend hiring them.
@@ -13,11 +13,11 @@
             <button class="main-style-button switch-btn services-button" @click="goToContact">
                     <span class="button-text switch-text switch-current">
                         Join our satisfied partners
-                        <img src="../../../assets/icons/RightArrowWhite.svg" alt="" class="button-icon">
+                        <img src="../../../assets/icons/RightArrowWhite.svg" alt="Arrow icon" class="button-icon">
                     </span>
                     <span class="button-text switch-text switch-next">
                         Join our satisfied partners
-                        <img src="../../../assets/icons/RightArrowWhite.svg" alt="" class="button-icon">
+                        <img src="../../../assets/icons/RightArrowWhite.svg" alt="Arrow icon" class="button-icon">
                     </span>
             </button> 
         </div>

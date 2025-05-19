@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // 5. Príprava emailu
-    $to = "dybbuk210@gmail.com"; // ← Tu zadaj svoju e-mailovú adresu
+    $to = "studio@oukline.com"; // ← Tu zadaj svoju e-mailovú adresu
     $subject = "Nová správa z portfólia";
 
     $headers = "From: portfolio@filipmonis.online\r\n";

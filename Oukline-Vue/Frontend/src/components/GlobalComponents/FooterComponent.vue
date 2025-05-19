@@ -4,27 +4,27 @@
             <div class="footer-up footer-flex">
                 <div class="footer-up-left footer-flex">
                         <router-link to="/">
-                                <img src="../../assets/logo/Logo-W.svg" alt="" class="logo-box">
+                                <img src="../../assets/logo/Logo-W.svg" alt="Company logo – Oukline" class="logo-box">
                         </router-link>
                     <div class="footer-break hide-on-mobile"></div>
-                    <p>Based in Slovakia / Acting globally <img src="../../assets/icons/Planeta.svg" alt="" class="text-array-icon"></p>
+                    <p>Based in Slovakia / Acting globally <img src="../../assets/icons/Planeta.svg" alt="Earth icon" class="text-array-icon"></p>
                 </div>
                 <div class="footer-up-right footer-flex">
 
                         <ul>
                             <li>
                                 <a href="https://x.com/Ouklinestudio" target="_blank"  rel="noopener noreferrer">
-                                    <img src="../../assets/footersocials/X.svg" alt="">
+                                    <img src="../../assets/footersocials/X.svg" alt="X social media icon">
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/ouklinestudio/" target="_blank"  rel="noopener noreferrer">
-                                    <img src="../../assets/footersocials/instagram.svg" alt="">
+                                    <img src="../../assets/footersocials/instagram.svg" alt="Instagram icon">
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.linkedin.com/company/ouklinestudio/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BvvjQ9%2BuCQL6eKyRb4CYKVA%3D%3D" target="_blank"  rel="noopener noreferrer">
-                                    <img src="../../assets/footersocials/linkedin.svg" alt="">
+                                    <img src="../../assets/footersocials/linkedin.svg" alt="LinkedIn icon">
                                 </a>
                             </li>
                         </ul>

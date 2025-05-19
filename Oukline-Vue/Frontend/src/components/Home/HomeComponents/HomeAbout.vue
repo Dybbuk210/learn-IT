@@ -6,7 +6,7 @@
                 <div class="box-up-text">
                     <p>
                         <span class="text-style-light">We transforms</span> ideas 
-                        <span class="icon-box"><img src="../../../assets/icons/AboutOukline.svg" alt="" class="text-icon"></span> 
+                        <span class="icon-box"><img src="../../../assets/icons/AboutOukline.svg" alt="Oukline logo icon – OUK" class="text-icon"></span> 
                         into powerful visual experiences <span class="text-style-light">with precision and creativity.</span>
                     </p>
                     <ul class="about-socials">

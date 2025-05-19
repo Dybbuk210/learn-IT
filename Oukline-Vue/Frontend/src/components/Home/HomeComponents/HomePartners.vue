@@ -2,59 +2,59 @@
     <section>
         <div class="inner-container container">
             <div>
-                <img src="../../../assets/icons/OUKicon.svg" alt="">
+                <img src="../../../assets/icons/OUKicon.svg" alt="Oukline logo icon – OUK">
             </div>
             <p class="text-up">Trusted by Industry Leaders</p>
             <p class="text-down"><span class="text-style-light">Celebrating the</span> success <span class="text-style-light">of our</span> collaborations</p>
             <div class="partners-galery">
                 <div class="galery-row1">
-                    <img src="../../../assets/Partners/WegTrans.svg" alt="">
-                    <img src="../../../assets/Partners/UsporneKlimy.svg" alt="">
-                    <img src="../../../assets/Partners/Wegrent.svg" alt="">
-                    <img src="../../../assets/Partners/Levels.svg" alt="">
-                    <img src="../../../assets/Partners/SharksFX.svg" alt="">
-                    <img src="../../../assets/Partners/DeviraReality.svg" alt="">
+                    <img src="../../../assets/Partners/WegTrans.svg" alt="WEGTrans logo">
+                    <img src="../../../assets/Partners/UsporneKlimy.svg" alt="Úsporné Klímy logo">
+                    <img src="../../../assets/Partners/Wegrent.svg" alt="Wegrent logo">
+                    <img src="../../../assets/Partners/Levels.svg" alt="Levels logo">
+                    <img src="../../../assets/Partners/SharksFX.svg" alt="Sharks FX logo">
+                    <img src="../../../assets/Partners/DeviraReality.svg" alt="Devira Reality logo">
                 </div>
                 <div class="galery-row2">
-                    <img src="../../../assets/Partners/FlyVista.svg" alt="">
-                    <img src="../../../assets/Partners/TechEssence.svg" alt="">
-                    <img src="../../../assets/Partners/Willcheck.svg" alt="">
-                    <img src="../../../assets/Partners/LisovanyZaStudena.svg" alt="">
-                    <img src="../../../assets/Partners/SlovenskeGranule.svg" alt="">
-                    <img src="../../../assets/Partners/GreyTCarWasch.svg" alt="">
+                    <img src="../../../assets/Partners/FlyVista.svg" alt="FlyVista logo">
+                    <img src="../../../assets/Partners/TechEssence.svg" alt="Tech Essence logo">
+                    <img src="../../../assets/Partners/Willcheck.svg" alt="Willcheck Investment logo">
+                    <img src="../../../assets/Partners/LisovanyZaStudena.svg" alt="Olej Lisovaný za Studena logo">
+                    <img src="../../../assets/Partners/SlovenskeGranule.svg" alt="Slovenské Granule logo">
+                    <img src="../../../assets/Partners/GreyTCarWasch.svg" alt="GreyT Car Wash logo">
                 </div>
                 <div class="galery-row3">
-                    <img src="../../../assets/Partners/BBRS.svg" alt="">
+                    <img src="../../../assets/Partners/BBRS.svg" alt="BBRS logo">
                     <div class="img-box">
-                        <img src="../../../assets/Partners/Smfirst.svg" alt="" class="img-width">
+                        <img src="../../../assets/Partners/Smfirst.svg" alt="Smfirst logo" class="img-width">
                     </div>
-                    <img src="../../../assets/Partners/Stavbykk.svg" alt="">
+                    <img src="../../../assets/Partners/Stavbykk.svg" alt="Stavby KK logo">
                       <div class="img-box">
-                        <img src="../../../assets/Partners/PuschOnline.svg" alt="" class="img-width-2">
+                        <img src="../../../assets/Partners/PuschOnline.svg" alt="PushOnline logo" class="img-width-2">
                     </div>
-                    <img src="../../../assets/Partners/Yogayn.svg" alt="">
+                    <img src="../../../assets/Partners/Yogayn.svg" alt="Yogayn by Sofi logo">
                      <div class="img-box">
-                        <img src="../../../assets/Partners/TuningStory.svg" alt="" class="img-width">
+                        <img src="../../../assets/Partners/TuningStory.svg" alt="TuningStory logo" class="img-width">
                     </div>
-                    <img src="../../../assets/Partners/OakGroup.svg" alt="" class="last-item">
+                    <img src="../../../assets/Partners/OakGroup.svg" alt="OakGroup logo" class="last-item">
                 </div>
             </div>
             <div class="btn-box">
                 <div class="btn-box-left">
                 <p>
                     Join our satisfied partners 
-                    <span class="btn-icon"><img src="../../../assets/icons/RightArrow.svg" alt=""></span>
+                    <span class="btn-icon"><img src="../../../assets/icons/RightArrow.svg" alt="Arrow icon"></span>
                 </p>
                 </div>
                 <div class="btn-box-right">
                  <a href="mailto:studio@oukline.com" class="second-btn-style btn-width switch-btn">
                     <span class="button-text switch-text switch-current">
                         studio@oukline.com
-                        <img src="../../../assets/icons/PartnersBTNicon.svg" alt="" class="button-icon">
+                        <img src="../../../assets/icons/PartnersBTNicon.svg" alt="Clipboard icon" class="button-icon">
                     </span>
                     <span class="button-text switch-text switch-next">
                         studio@oukline.com
-                        <img src="../../../assets/icons/PartnersBTNicon.svg" alt="" class="button-icon">
+                        <img src="../../../assets/icons/PartnersBTNicon.svg" alt="Clipboard icon" class="button-icon">
                     </span>
                 </a>
                 </div>
@@ -77,6 +77,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 8px;
+        overflow: hidden;
     }
 
     .text-up {
@@ -170,8 +172,10 @@
     }
 
     .btn-width{
+        overflow: hidden;
         column-gap: 8px;
-        padding: 10px 98px;
+        padding: 10px 102px;
+        border-radius: 3px;
     }
 
     @media (max-width: 1200px) {
@@ -205,7 +209,7 @@
         }
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 550px) {
         .text-up {
             font-size: 16px;
         }

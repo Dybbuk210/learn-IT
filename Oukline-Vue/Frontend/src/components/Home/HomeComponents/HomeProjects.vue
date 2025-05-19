@@ -2,7 +2,7 @@
     <div class="inner-container main-box">
         <div class="title-box">
             <div class="title-box-img">
-                <img src="../../../assets/PROJECTS.svg" alt="">
+                <img src="../../../assets/PROJECTS.svg" alt="PROJECTS heading">
             </div>
             <div class="title-box-right">
                 <p class="title-box-text">
@@ -19,13 +19,13 @@
             <router-link :to="`/project01`">
                 <article class="projects-card">
                     <div class="img-box">
-                        <img src="../../../assets/img/ProjectsBigCards/wegtrans.png" alt="">
+                        <img src="../../../assets/img/ProjectsBigCards/wegtrans.png" alt="wegtrans project card">
                         <button class="card-button switch-btn">
                             <span class="switch-text switch-current">
-                                <img src="../../../assets/icons/ArrowUP.svg" alt="" class="card-btn-img">
+                                <img src="../../../assets/icons/ArrowUP.svg" alt="Arrow icon" class="card-btn-img">
                             </span>
                             <span class="switch-text switch-next">
-                                <img src="../../../assets/icons/ArrowUP.svg" alt="" class="card-btn-img">
+                                <img src="../../../assets/icons/ArrowUP.svg" alt="Arrow icon" class="card-btn-img">
                             </span>
                         </button>
                     </div>
@@ -42,14 +42,14 @@
 
             <article class="projects-card coming-soon">
                 <div class="img-box">
-                    <img src="../../../assets/img/ProjectsBigCards/stavby.png" alt="">
+                    <img src="../../../assets/img/ProjectsBigCards/stavby.png" alt="STAVBY KK project card">
                     <div class="overlay-text">COMING SOON</div>
                     <button class="card-button switch-btn">
                         <span class="switch-text switch-current">
-                            <img src="../../../assets/icons/ArrowUP.svg" alt="" class="card-btn-img">
+                            <img src="../../../assets/icons/ArrowUP.svg" alt="Arrow icon" class="card-btn-img">
                         </span>
                         <span class="switch-text switch-next">
-                            <img src="../../../assets/icons/ArrowUP.svg" alt="" class="card-btn-img">
+                            <img src="../../../assets/icons/ArrowUP.svg" alt="Arrow icon" class="card-btn-img">
                         </span>
                     </button>
                 </div>
@@ -65,14 +65,14 @@
 
             <article class="projects-card coming-soon">
                 <div class="img-box">
-                    <img src="../../../assets/img/ProjectsBigCards/klimy.png" alt="">
+                    <img src="../../../assets/img/ProjectsBigCards/klimy.png" alt="Úsporné Klímy project card">
                     <div class="overlay-text">COMING SOON</div>
                     <button class="card-button switch-btn">
                         <span class="switch-text switch-current">
-                            <img src="../../../assets/icons/ArrowUP.svg" alt="" class="card-btn-img">
+                            <img src="../../../assets/icons/ArrowUP.svg" alt="Arrow icon" class="card-btn-img">
                         </span>
                         <span class="switch-text switch-next">
-                            <img src="../../../assets/icons/ArrowUP.svg" alt="" class="card-btn-img">
+                            <img src="../../../assets/icons/ArrowUP.svg" alt="Arrow icon" class="card-btn-img">
                         </span>
                     </button>
                 </div>
@@ -88,14 +88,14 @@
 
             <article class="projects-card coming-soon">
                 <div class="img-box">
-                    <img src="../../../assets/img/ProjectsBigCards/yoga.png" alt="">
+                    <img src="../../../assets/img/ProjectsBigCards/yoga.png" alt="YOGAYN BY PETRA project card">
                     <div class="overlay-text">COMING SOON</div>
                     <button class="card-button switch-btn">
                         <span class="switch-text switch-current">
-                            <img src="../../../assets/icons/ArrowUP.svg" alt="" class="card-btn-img">
+                            <img src="../../../assets/icons/ArrowUP.svg" alt="Arrow icon" class="card-btn-img">
                         </span>
                         <span class="switch-text switch-next">
-                            <img src="../../../assets/icons/ArrowUP.svg" alt="" class="card-btn-img">
+                            <img src="../../../assets/icons/ArrowUP.svg" alt="Arrow icon" class="card-btn-img">
                         </span>
                     </button>
                 </div>
@@ -112,7 +112,7 @@
         <div class="box-down">
             <p class="box-down-text">
                 How can your project look like? 
-                <img src="../../../assets/icons/RightArrow.svg" alt="" class="box-down-icon">
+                <img src="../../../assets/icons/RightArrow.svg" alt="Arrow icon" class="box-down-icon">
             </p>
             <button class="second-btn-style box-down-btn switch-btn" @click="goToProjects">
                 <span class="switch-text switch-current">See recent work</span>

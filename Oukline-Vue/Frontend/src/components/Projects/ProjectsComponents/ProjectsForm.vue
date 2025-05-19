@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-    import ContactForm from '../../GlobalComponents/ContactForm.vue';
+    import ContactForm from '../../GlobalComponents/ContactFormTest.vue';
 </script>
 
 <style scoped>
