@@ -47,7 +47,7 @@
                 </p>
                 </div>
                 <div class="btn-box-right">
-                 <a href="mailto:studio@oukline.com" class="second-btn-style btn-width switch-btn">
+                <a href="mailto:studio@oukline.com" class="second-btn-style btn-width switch-btn">
                     <span class="button-text switch-text switch-current">
                         studio@oukline.com
                         <img src="../../../assets/icons/PartnersBTNicon.svg" alt="Clipboard icon" class="button-icon">
@@ -70,14 +70,13 @@
     section {
         width: 100%;
         background-color: #F9FAFB;
-        padding: 55px 0px;
     }
 
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 8px;
+        padding: 55px 0;
         overflow: hidden;
     }
 
@@ -176,6 +175,11 @@
         column-gap: 8px;
         padding: 10px 102px;
         border-radius: 3px;
+    }
+
+    .btn-box {
+        min-height: 50px;
+         overflow: hidden;
     }
 
     @media (max-width: 1200px) {

@@ -15,7 +15,7 @@
 
       <article class="card">
         <div class="img-box">
-          <img src="../../../assets/img/ProjectsCards/SlovenskéGranule.png" alt="">
+          <img src="../../../assets/img/ProjectsCards/SlovenskeGranule.png" alt="">
         </div>
         <div class="card-info">
           <p>Slovenské Granule / e-commerce / 2020</p>
@@ -78,7 +78,7 @@
 
       <article class="card card-tall offset-up-3">
         <div class="img-box">
-          <img src="../../../assets/img/ProjectsCards/ÚspornéKlímy.png" alt="">
+          <img src="../../../assets/img/ProjectsCards/UsporneKlimy.png" alt="">
         </div>
         <div class="card-info">
           <p>Úsporné Klímy / Air conditioning shop / 2023</p>

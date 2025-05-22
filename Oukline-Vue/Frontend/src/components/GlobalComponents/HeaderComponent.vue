@@ -8,18 +8,18 @@
             <ul class="nav-bar-desktop">
                 <li><router-link to="/#services" class="header-text-size">Services</router-link></li>
                 <li class="drop-down-li">
-                    <router-link to="/projectsgalery" class="header-text-size">Projects</router-link>
+                    <router-link to="/projects" class="header-text-size">Projects</router-link>
                     <ul class="drop-down">
-                        <li><router-link to="/projectsgalery/#allprojects" class="header-text-size">Gallery</router-link></li>
+                        <li><router-link to="/projects/#allprojects" class="header-text-size">Gallery</router-link></li>
                     </ul>
                 </li>
                 <li><router-link to="/#contactform" class="header-text-size">Pricing</router-link></li>
                 <li><router-link to="/about" class="header-text-size">About</router-link></li>
                 <li><router-link to="/#clients" class="header-text-size">Testimonials</router-link></li>
                 <li class="drop-down-li">
-                    <router-link to="/bloggalery" class="header-text-size">Blog</router-link>
+                    <router-link to="/blogs" class="header-text-size">Blog</router-link>
                     <ul class="drop-down">
-                        <li><router-link to="/interviewgalery" class="header-text-size">Interviews</router-link></li>
+                        <li><router-link to="/interviews" class="header-text-size">Interviews</router-link></li>
                     </ul>
                 </li>
             </ul>
@@ -45,13 +45,13 @@
             <div class="mobile-up">
                 <ul class="mobile-nav">
                     <li><router-link to="/#services" class="mobile-nav-font" @click="closeMenu">Services</router-link></li>
-                    <li><router-link to="/projectsgalery" class="mobile-nav-font" @click="closeMenu">Projects</router-link></li>
-                    <li><router-link to="/projectsgalery/#allprojects" class="mobile-nav-font" @click="closeMenu">Project gallery</router-link></li>
+                    <li><router-link to="/projects" class="mobile-nav-font" @click="closeMenu">Projects</router-link></li>
+                    <li><router-link to="/projects/#allprojects" class="mobile-nav-font" @click="closeMenu">Project gallery</router-link></li>
                     <li><router-link to="/#contactform" class="mobile-nav-font" @click="closeMenu">Pricing</router-link></li>
                     <li><router-link to="/about" class="mobile-nav-font" @click="closeMenu">About</router-link></li>
                     <li><router-link to="/#clients" class="mobile-nav-font" @click="closeMenu">Testimonials</router-link></li>
-                    <li><router-link to="/bloggalery" class="mobile-nav-font" @click="closeMenu">Blog</router-link></li>
-                    <li><router-link to="/interviewgalery" class="mobile-nav-font" @click="closeMenu">Interviews</router-link></li>
+                    <li><router-link to="/blogs" class="mobile-nav-font" @click="closeMenu">Blog</router-link></li>
+                    <li><router-link to="/interviews" class="mobile-nav-font" @click="closeMenu">Interviews</router-link></li>
                 </ul>
             </div>
             <div class="mobile-down">

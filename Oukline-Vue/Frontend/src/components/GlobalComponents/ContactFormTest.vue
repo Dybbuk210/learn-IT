@@ -128,15 +128,15 @@ const submitForm = async () => {
   }
 
   try {
-    const response = await fetch('http://localhost/Oukline-Vue/Backend/form.php', {
+    const response = await fetch('/form.php', {
       method: 'POST',
       body: formData
     })
 
     const text = await response.text()
-    console.log('RESPONSE TEXT:', text) // 👈 tu vidíš, čo ti odpovedá PHP
+    console.log('RESPONSE TEXT:', text)
 
-    if (response.ok && text.trim() === "success") {
+    if (response.ok && text.trim() === 'success') {
       formSent.value = true
       resetForm()
     } else {
@@ -150,7 +150,7 @@ const submitForm = async () => {
 const resetForm = () => {
   form.value = {
     website: '',
-    form_load_time: Date.now(),
+    form_load_time: Date.now(), // 🔁 nastav znova čas
     services: [],
     budget: '',
     user_name: '',
@@ -159,6 +159,7 @@ const resetForm = () => {
   }
 }
 </script>
+
 
 <style scoped>
     .contact-form, .form-group, .services-box {

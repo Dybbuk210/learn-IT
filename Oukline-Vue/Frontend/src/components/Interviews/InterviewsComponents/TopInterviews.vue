@@ -9,7 +9,7 @@
 
         <!-- Obsah karty -->
         <div class="img-box">
-          <img src="../../../assets/img/Interviews/Miguel Queirós.jpg" alt="">
+          <img src="../../../assets/img/Interviews/MiguelQueiros.jpg" alt="">
         </div>
 
         <div class="info-box">
@@ -24,7 +24,7 @@
 
             <div class="card-button-box">
               <div class="img-box-mobile">
-                <img src="../../../assets/img/Interviews/Miguel Queirós.jpg" alt="">
+                <img src="../../../assets/img/Interviews/MiguelQueiros.jpg" alt="">
               </div>
               <button class="card-button switch-btn">
                 <span class="switch-text switch-current">

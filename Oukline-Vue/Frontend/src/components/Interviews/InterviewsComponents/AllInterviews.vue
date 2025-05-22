@@ -9,7 +9,7 @@
                         <div class="body-up">
                             <div class="img-button">
                                 <div class="img-box">
-                                    <img src="../../../assets/img/Interviews/Miguel Queirós.jpg" alt="">
+                                    <img src="../../../assets/img/Interviews/MiguelQueiros.jpg" alt="">
                                 </div>
                                 <button class="card-button switch-btn">
                                     <span class="switch-text switch-current"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>

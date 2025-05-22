@@ -5,15 +5,15 @@ export function useButtonsNav() {
   const router = useRouter()
 
   const goToContact = () => {
-    router.push({ path: '/formpage' })
+    router.push({ path: '/intro' })
   }
 
    const goToProjects = () => {
-    router.push({ path: '/projectsgalery', hash: '' })
+    router.push({ path: '/projects', hash: '' })
   }
 
     const goToBlogs = () => {
-    router.push({ path: '/bloggalery', hash: '' })
+    router.push({ path: '/blogs', hash: '' })
   }
 
   /* vzor pre import 

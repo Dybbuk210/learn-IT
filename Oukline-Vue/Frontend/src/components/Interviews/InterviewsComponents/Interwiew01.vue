@@ -3,7 +3,7 @@
         <div class="main-container">
             <div class="main-card">
                 <div class="main-img-box">
-                    <img src="../../../assets/img/Interviews/Miguel Queirós.jpg" alt="">
+                    <img src="../../../assets/img/Interviews/MiguelQueiros.jpg" alt="">
                 </div>
                 <h2 class="main-title"><span class="main-name">Miguel Queirós</span> - The secret is building a personal brand.</h2>
                 <p class="main-text"><img src="../../../assets/icons/TextArraySmall.svg" alt="" class="text-array-icon"> Designer & Framer Creator</p>
@@ -25,7 +25,7 @@
                     </InterviewText>
                 </article>
 
-                <img src="../../../assets/img/Interviews/Miguel Queirós01.png" alt="">
+                <img src="../../../assets/img/Interviews/MiguelQueiros01.png" alt="">
 
                 <article class="text-card">
                     <InterviewQuestion>
@@ -99,7 +99,7 @@
                     </InterviewText>
                 </article>
 
-                <img src="../../../assets/img/Interviews/Miguel Queirós02.png" alt="">
+                <img src="../../../assets/img/Interviews/MiguelQueiros02.png" alt="">
 
                 <article class="text-card">
                     <InterviewQuestion>
@@ -201,7 +201,7 @@
         <div class="recommended-blog-posts">
             <div class="posts-up">
                 <h3 class="posts-title">Recommended blog posts</h3>
-                <button class="second-btn-style switch-btn posts-button">
+                <button class="second-btn-style switch-btn posts-button" @click="goToBlogs">
                     <span class="button-text switch-text switch-current">
                     View all posts
                     <img src="../../../assets/icons/RightArrowWhite.svg" alt="" class="button-icon">
@@ -227,8 +227,10 @@ import InterviewStrongText from './InterviewStrongText.vue';
 import BlogCard from '../../GlobalComponents/BlogCard.vue'
 import { onMounted, ref } from 'vue'
 import blogData from '../../../blogdata.json'
+import { useButtonsNav } from '../../../ButtonsNav'
 
 const recommendedBlogs = ref([])
+const { goToBlogs} = useButtonsNav()
 
 onMounted(() => {
   const shuffled = blogData.sort(() => 0.5 - Math.random())
