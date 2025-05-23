@@ -19,7 +19,7 @@
             <router-link :to="`/WegTrans`">
                 <article class="projects-card">
                     <div class="img-box">
-                        <img src="../../../assets/img/ProjectsBigCards/wegtrans.png" alt="wegtrans project card">
+                        <img src="../../../assets/img/ProjectsBigCards/wegtrans.webp" alt="wegtrans project card">
                         <button class="card-button switch-btn">
                             <span class="switch-text switch-current">
                                 <img src="../../../assets/icons/ArrowUP.svg" alt="Arrow icon" class="card-btn-img">
@@ -42,7 +42,7 @@
 
             <article class="projects-card coming-soon">
                 <div class="img-box">
-                    <img src="../../../assets/img/ProjectsBigCards/stavby.png" alt="STAVBY KK project card">
+                    <img src="../../../assets/img/ProjectsBigCards/stavby.webp" alt="STAVBY KK project card">
                     <div class="overlay-text">COMING SOON</div>
                     <button class="card-button switch-btn">
                         <span class="switch-text switch-current">
@@ -65,7 +65,7 @@
 
             <article class="projects-card coming-soon">
                 <div class="img-box">
-                    <img src="../../../assets/img/ProjectsBigCards/klimy.png" alt="Úsporné Klímy project card">
+                    <img src="../../../assets/img/ProjectsBigCards/klimy.webp" alt="Úsporné Klímy project card">
                     <div class="overlay-text">COMING SOON</div>
                     <button class="card-button switch-btn">
                         <span class="switch-text switch-current">
@@ -88,7 +88,7 @@
 
             <article class="projects-card coming-soon">
                 <div class="img-box">
-                    <img src="../../../assets/img/ProjectsBigCards/yoga.png" alt="YOGAYN BY PETRA project card">
+                    <img src="../../../assets/img/ProjectsBigCards/yoga.webp" alt="YOGAYN BY PETRA project card">
                     <div class="overlay-text">COMING SOON</div>
                     <button class="card-button switch-btn">
                         <span class="switch-text switch-current">
