@@ -3,7 +3,7 @@
 
         <div class="main-img-box">
             <div class="main-img">
-                <img src="../../../assets/img/projects/wegtrans/Main-img.png" alt="">
+                <img src="../../../assets/img/projects/wegtrans/Main-img.webp" alt="">
             </div>
             <p class="text">Case study</p>
         </div>
@@ -15,29 +15,29 @@
             <p class="date">2023</p>
         </div>
         <div class="grid-4img">
-            <img src="../../../assets/img/projects/wegtrans/4grid-01.png" alt="">
-            <img src="../../../assets/img/projects/wegtrans/4grid-02.png" alt="">
-            <img src="../../../assets/img/projects/wegtrans/4grid-03.png" alt="">
-            <img src="../../../assets/img/projects/wegtrans/4grid-04.png" alt="">
+            <img src="../../../assets/img/projects/wegtrans/4grid-01.webp" alt="">
+            <img src="../../../assets/img/projects/wegtrans/4grid-02.webp" alt="">
+            <img src="../../../assets/img/projects/wegtrans/4grid-03.webp" alt="">
+            <img src="../../../assets/img/projects/wegtrans/4grid-04.webp" alt="">
         </div>
         <div class="text-box">
             <ProjectsText>For Weg Trans, we developed a complete branding package, a website, and social media assets. The client sought a unique, playful design, and through clear goals and regular communication, the project progressed seamlessly.</ProjectsText>
             <ProjectsText>We began with branding, delivering a logo and comprehensive brand guidelines that exceeded the client’s expectations.</ProjectsText>
         </div>
         <div class="img-box-01">
-            <img src="../../../assets/img/projects/wegtrans/9grid.png" alt="">
+            <img src="../../../assets/img/projects/wegtrans/9grid.webp" alt="">
         </div>
         <div class="img-flexbox">
-            <img src="../../../assets/img/projects/wegtrans/2row-logo.png" alt="">
-            <img src="../../../assets/img/projects/wegtrans/3colums-img.png" alt="">
+            <img src="../../../assets/img/projects/wegtrans/2row-logo.webp" alt="">
+            <img src="../../../assets/img/projects/wegtrans/3colums-img.webp" alt="">
         </div>
         <ProjectsText>The website features a creative, playful design with custom illustrations tailored to the client’s vision. While adapting these elements for mobile was challenging, a simplified, responsive approach ensured both usability and client satisfaction.</ProjectsText>
         <div class="grid4">
-            <img src="../../../assets/img/projects/wegtrans/4grid-img.png" alt="">
+            <img src="../../../assets/img/projects/wegtrans/4grid-img.webp" alt="">
         </div>
         <ProjectsText>Pleased with our work, the client asked us to continue by creating social media posts and custom wallpapers for their team.</ProjectsText>
         <div class="grid3">
-            <img src="../../../assets/img/projects/wegtrans/3grid.png" alt="">
+            <img src="../../../assets/img/projects/wegtrans/3grid.webp" alt="">
         </div>
 
         <ProjectsForm />

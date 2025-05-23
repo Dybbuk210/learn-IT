@@ -32,7 +32,7 @@
                       <div class="img-box">
                         <img src="../../../assets/Partners/PuschOnline.svg" alt="PushOnline logo" class="img-width-2">
                     </div>
-                    <img src="../../../assets/Partners/Yogayn.svg" alt="Yogayn by Sofi logo">
+                    <img src="../../../assets/Partners/Yogayn.svg" alt="Yogayn by Sofi logo" class="ado-spekuluje">
                      <div class="img-box">
                         <img src="../../../assets/Partners/TuningStory.svg" alt="TuningStory logo" class="img-width">
                     </div>
@@ -179,7 +179,12 @@
 
     .btn-box {
         min-height: 50px;
-         overflow: hidden;
+        overflow: hidden;
+    }
+
+    .ado-spekuluje {
+        transform: scale(1.3);
+        transform-origin: center;
     }
 
     @media (max-width: 1200px) {

@@ -16,7 +16,7 @@
         </div>
         <div class="projects-cards">
 
-            <router-link :to="`/project01`">
+            <router-link :to="`/WegTrans`">
                 <article class="projects-card">
                     <div class="img-box">
                         <img src="../../../assets/img/ProjectsBigCards/wegtrans.png" alt="wegtrans project card">

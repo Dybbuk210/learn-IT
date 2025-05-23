@@ -3,7 +3,7 @@
         <div class="cards">
             <article class="card">
                 <div class="img-box">
-                    <img src="../../assets/img/teamcards/Alex.png" alt="Alex Varga – Founding Partner, Director & UX/UI Designer">
+                    <img src="../../assets/img/teamcards/Alex.webp" alt="Alex Varga – Founding Partner, Director & UX/UI Designer">
                 </div>
                 <div class="card-info">
                     <h3 class="card-title">Alex Varga - Founding Partner</h3>
@@ -13,7 +13,7 @@
 
             <article class="card">
                 <div class="img-box">
-                    <img src="../../assets/img/teamcards/Ado.png" alt="Adrián Gombala – Founding Partner, UX/UI Designer and Brand Designe">
+                    <img src="../../assets/img/teamcards/Ado.webp" alt="Adrián Gombala – Founding Partner, UX/UI Designer and Brand Designe">
                 </div>
                 <div class="card-info">
                     <h3 class="card-title">Adrián Gombala - Founding Partner</h3>
@@ -23,7 +23,7 @@
 
             <article class="card">
                 <div class="img-box">
-                    <img src="../../assets/img/teamcards/Filip.png" alt="Filip Moniš – Full-stack Developer">
+                    <img src="../../assets/img/teamcards/Filip.webp" alt="Filip Moniš – Full-stack Developer">
                 </div>
                 <div class="card-info">
                     <h3 class="card-title">Filip Moniš - Development</h3>
@@ -33,7 +33,7 @@
 
             <article class="card">
                 <div class="img-box">
-                    <img src="../../assets/img/teamcards/Samuel.png" alt="Samuel Šaloky – Front-end Developer">
+                    <img src="../../assets/img/teamcards/Samuel.webp" alt="Samuel Šaloky – Front-end Developer">
                 </div>
                 <div class="card-info">
                     <h3 class="card-title">Samuel Saloky - Development</h3>

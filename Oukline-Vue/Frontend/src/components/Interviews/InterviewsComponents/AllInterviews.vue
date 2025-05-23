@@ -3,13 +3,13 @@
         <h2 class="main-title">All interviews</h2>
         <div class="break break-padding"></div> <!-- prázdny div služi len na effekt -->
         <div class="gallery">
-            <router-link :to="`/interview01`">
+            <router-link :to="`/Miguel-Queiros`">
                 <article class="card">
                     <div class="card-body">
                         <div class="body-up">
                             <div class="img-button">
                                 <div class="img-box">
-                                    <img src="../../../assets/img/Interviews/MiguelQueiros.jpg" alt="">
+                                    <img src="../../../assets/img/Interviews/MiguelQueiros.webp" alt="">
                                 </div>
                                 <button class="card-button switch-btn">
                                     <span class="switch-text switch-current"><img src="../../../assets/icons/ArrowUpBlack.svg" alt=""></span>

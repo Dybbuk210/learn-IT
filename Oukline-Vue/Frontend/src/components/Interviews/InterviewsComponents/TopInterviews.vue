@@ -1,6 +1,6 @@
 <template>
   <div class="inner-container main-padding-top">
-    <router-link :to="`/interview01`">
+    <router-link :to="`/Miguel-Queiros`">
       <div class="main-box">
         <!-- SVG pozadie -->
         <div class="background-svg">
@@ -9,7 +9,7 @@
 
         <!-- Obsah karty -->
         <div class="img-box">
-          <img src="../../../assets/img/Interviews/MiguelQueiros.jpg" alt="">
+          <img src="../../../assets/img/Interviews/MiguelQueiros.webp" alt="">
         </div>
 
         <div class="info-box">
@@ -24,7 +24,7 @@
 
             <div class="card-button-box">
               <div class="img-box-mobile">
-                <img src="../../../assets/img/Interviews/MiguelQueiros.jpg" alt="">
+                <img src="../../../assets/img/Interviews/MiguelQueiros.webp" alt="">
               </div>
               <button class="card-button switch-btn">
                 <span class="switch-text switch-current">

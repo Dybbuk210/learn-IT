@@ -17,7 +17,7 @@
                 </div>
             </div>
             <p class="about-text">
-                We’re a focused, experienced team delivering meaningful results<br class="text-break"> through <img src="../../../assets/icons/TextArrayLarge.svg" alt="" class="text-array-icon"> UX/UI design, branding, and development. 
+                We’re a focused, experienced team delivering meaningful results<br class="text-break"> through <img src="../../../assets/icons/TextArrayLarge.svg" alt="Array icon" class="text-array-icon"> UX/UI design, branding, and development. 
                 Our work is built on clarity, function, and creativity — tailored to each brand’s 
                 goals to drive growth, build trust, and create lasting impact.
             </p>

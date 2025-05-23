@@ -5,7 +5,7 @@ import AboutPage from './components/About/AboutPage.vue'
 import BlogGaleryPage from './components/Blog/BlogGaleryPage.vue'
 import BlogPostPage from './components/Blog/BlogPage.vue'
 import InterviewGalery from './components/Interviews/InterviewsGalery.vue'
-import Interview01 from './components/Interviews/InterviewsComponents/Interwiew01.vue'
+import MiguelQueiros from './components/Interviews/InterviewsComponents/Miguel-Queiros.vue'
 import ProjectsGalery from './components/Projects/ProjectsGalery.vue'
 import Project01 from './components/Projects/ProjectsComponents/ProjectPage01.vue'
 import FormPage from './components/FormPage/FormPage.vue'
@@ -49,7 +49,7 @@ const routes = [
       canonical: 'https://oukline.com/interviews'
     }
   },
-  { path: '/interview01', component: Interview01 },
+  { path: '/Miguel-Queiros', component: MiguelQueiros },
   {
     path: '/projects',
     component: ProjectsGalery,
@@ -59,7 +59,7 @@ const routes = [
       canonical: 'https://oukline.com/projects'
     }
   },
-  { path: '/project01', component: Project01 },
+  { path: '/WegTrans', component: Project01 },
   {
     path: '/intro',
     component: FormPage,

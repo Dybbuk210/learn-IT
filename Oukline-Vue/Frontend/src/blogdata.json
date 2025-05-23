@@ -1,9 +1,9 @@
 [
     {
-      "id": "blog-01",
+      "id": "Cheap-website-cheap-presentation-Who-is-worth-investing-in-a-website",
       "MainTitle": "Cheap website, cheap presentation. Who is worth investing in a website.",
       "MainText": "<span class=\"text-style-light\">In today’s digital world, your</span> website is your brand.<br> <span class=\"text-style-light\">Cheap websites may save money short-term, but they can</span> damage credibility and trust.<br> Investing in quality pays off — <span class=\"text-style-light\">for your</span> business <span class=\"text-style-light\">and your</span> audience.",
-      "MainImage": "01main.png",
+      "MainImage": "01main.webp",
       "tags": ["professional website", "digital trust", "online presence", "online presence"],
       "content": [
             {
@@ -48,7 +48,7 @@
                 },
             {
                 "type": "image",
-                "MainImage": "01second.png",
+                "MainImage": "01second.webp",
                 "alt": "Blog secondary image"
                 },
             {
@@ -115,10 +115,10 @@
     },
 
     {
-        "id": "blog-02",
+        "id": "A-website-from-a-template-Avoid-these-5-things",
         "MainTitle": "A website from a template?<br>Avoid these 5 things.",
         "MainText": "Website templates <span class=\"text-style-light\">can save time and money, but if you’re not careful, they</span> can hurt your brand. <span class=\"text-style-light\">To make your site</span> professional, functional, <span class=\"text-style-light\">and</span> on-brand, <span class=\"text-style-light\">avoid these</span> 5 common mistakes.",
-        "MainImage": "02main.png",
+        "MainImage": "02main.webp",
         "tags": ["website", "template", "user experience", "cheap website"],
         "content": [
             {
@@ -183,7 +183,7 @@
             },
             {
                 "type": "image",
-                "MainImage": "02second.png",
+                "MainImage": "02second.webp",
                 "alt": "Blog secondary image"
             },
             {
@@ -205,10 +205,10 @@
       },
 
       {
-        "id": "blog-03",
+        "id": "Why-SEO-Is-the-#1-Growth-Tool-for-Your-Website-in-2025",
         "MainTitle": "Why SEO Is the #1 Growth Tool for Your Website in 2025",
         "MainText": "<span class=\"text-style-light\">In today’s world, just</span> having a website isn’t enough — <span class=\"text-style-light\">you need to</span> be seen.<br> SEO <span class=\"text-style-light\">is the</span> key <span class=\"text-style-light\">to</span> visibility, quality traffic, <span class=\"text-style-light\">and</span> loyal customers.",
-        "MainImage": "03main.png",
+        "MainImage": "03main.webp",
         "tags": ["organic traffic", "SEO", "SEO in 2025", "website growth"],
         "content": [
             {
@@ -243,7 +243,7 @@
             },
             {
                 "type": "image",
-                "MainImage": "03second.png",
+                "MainImage": "03second.webp",
                 "alt": "Blog secondary image"
             },
             {

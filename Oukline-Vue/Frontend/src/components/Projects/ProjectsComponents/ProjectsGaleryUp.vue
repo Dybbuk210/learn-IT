@@ -16,10 +16,10 @@
         </div>
         <div class="projects-cards">
 
-            <router-link :to="`/project01`">
+            <router-link :to="`/WegTrans`">
                 <article class="projects-card">
                     <div class="img-box">
-                        <img src="../../../assets/img/ProjectsBigCards/wegtrans.png" alt="">
+                        <img src="../../../assets/img/ProjectsBigCards/wegtrans.webp" alt="">
                         <button class="card-button switch-btn">
                             <span class="switch-text switch-current">
                                 <img src="../../../assets/icons/ArrowUP.svg" alt="" class="card-btn-img">
@@ -42,7 +42,7 @@
 
             <article class="projects-card coming-soon">
                 <div class="img-box">
-                    <img src="../../../assets/img/ProjectsBigCards/stavby.png" alt="">
+                    <img src="../../../assets/img/ProjectsBigCards/stavby.webp" alt="">
                     <div class="overlay-text">COMING SOON</div>
                     <button class="card-button switch-btn">
                         <span class="switch-text switch-current">
@@ -65,7 +65,7 @@
 
             <article class="projects-card coming-soon">
                 <div class="img-box">
-                    <img src="../../../assets/img/ProjectsBigCards/klimy.png" alt="">
+                    <img src="../../../assets/img/ProjectsBigCards/klimy.webp" alt="">
                     <div class="overlay-text">COMING SOON</div>
                     <button class="card-button switch-btn">
                         <span class="switch-text switch-current">
@@ -88,7 +88,7 @@
 
             <article class="projects-card coming-soon">
                 <div class="img-box">
-                    <img src="../../../assets/img/ProjectsBigCards/yoga.png" alt="">
+                    <img src="../../../assets/img/ProjectsBigCards/yoga.webp" alt="">
                     <div class="overlay-text">COMING SOON</div>
                     <button class="card-button switch-btn">
                         <span class="switch-text switch-current">

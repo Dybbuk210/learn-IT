@@ -6,7 +6,7 @@
     <div class="cards">
       <article class="card">
         <div class="img-box">
-          <img src="../../../assets/img/ProjectsCards/WegRent.png" alt="">
+          <img src="../../../assets/img/ProjectsCards/WegRent.webp" alt="">
         </div>
         <div class="card-info">
           <p>WegRent / Car rental logo / 2023</p>
@@ -15,7 +15,7 @@
 
       <article class="card">
         <div class="img-box">
-          <img src="../../../assets/img/ProjectsCards/SlovenskeGranule.png" alt="">
+          <img src="../../../assets/img/ProjectsCards/SlovenskeGranule.webp" alt="">
         </div>
         <div class="card-info">
           <p>Slovenské Granule / e-commerce / 2020</p>
@@ -24,7 +24,7 @@
 
       <article class="card">
         <div class="img-box">
-          <img src="../../../assets/img/ProjectsCards/Worqel.png" alt="">
+          <img src="../../../assets/img/ProjectsCards/Worqel.webp" alt="">
         </div>
         <div class="card-info">
           <p>Worqel / job founder / SaaS / 2020</p>
@@ -33,7 +33,7 @@
 
       <article class="card offset-up">
         <div class="img-box">
-          <img src="../../../assets/img/ProjectsCards/Sweetland.png" alt="">
+          <img src="../../../assets/img/ProjectsCards/Sweetland.webp" alt="">
         </div>
         <div class="card-info">
           <p>Sweetland / Patisserie socials / 2023</p>
@@ -42,7 +42,7 @@
 
       <article class="card card-wide">
         <div class="img-box">
-          <img src="../../../assets/img/ProjectsCards/WegTrans01.png" alt="">
+          <img src="../../../assets/img/ProjectsCards/WegTrans01.webp" alt="">
         </div>
         <div class="card-info">
           <p>WegTrans / Freight forwarding / 2023</p>
@@ -51,7 +51,7 @@
 
       <article class="card offset-up">
         <div class="img-box">
-          <img src="../../../assets/img/ProjectsCards/YOGAYNbyPetra01.png" alt="">
+          <img src="../../../assets/img/ProjectsCards/YOGAYNbyPetra01.webp" alt="">
         </div>
         <div class="card-info">
           <p>YOGAYN by Petra / Yoga studio / Logo / 2024</p>
@@ -60,7 +60,7 @@
 
       <article class="card offset-up-2">
         <div class="img-box">
-          <img src="../../../assets/img/ProjectsCards/Galaxys.png" alt="">
+          <img src="../../../assets/img/ProjectsCards/Galaxys.webp" alt="">
         </div>
         <div class="card-info">
           <p>Galaxys / Game development / 2022</p>
@@ -69,7 +69,7 @@
 
       <article class="card offset-up-2">
         <div class="img-box">
-          <img src="../../../assets/img/ProjectsCards/Nuvo.png" alt="">
+          <img src="../../../assets/img/ProjectsCards/Nuvo.webp" alt="">
         </div>
         <div class="card-info">
           <p>Nuvo / All for mobile / 2023</p>
@@ -78,7 +78,7 @@
 
       <article class="card card-tall offset-up-3">
         <div class="img-box">
-          <img src="../../../assets/img/ProjectsCards/UsporneKlimy.png" alt="">
+          <img src="../../../assets/img/ProjectsCards/UsporneKlimy.webp" alt="">
         </div>
         <div class="card-info">
           <p>Úsporné Klímy / Air conditioning shop / 2023</p>
@@ -87,7 +87,7 @@
 
       <article class="card offset-up-2">
         <div class="img-box">
-          <img src="../../../assets/img/ProjectsCards/STAVBY KK.png" alt="">
+          <img src="../../../assets/img/ProjectsCards/STAVBY-KK.webp" alt="">
         </div>
         <div class="card-info">
           <p>STAVBY KK / Construction company / App icon / 2024</p>
@@ -96,7 +96,7 @@
 
       <article class="card offset-up-2">
         <div class="img-box">
-          <img src="../../../assets/img/ProjectsCards/3deCreative.png" alt="">
+          <img src="../../../assets/img/ProjectsCards/3deCreative.webp" alt="">
         </div>
         <div class="card-info">
           <p>3de creative / Bespoke kitchens and interiors / 2022</p>
@@ -105,7 +105,7 @@
 
       <article class="card offset-up-2">
         <div class="img-box">
-          <img src="../../../assets/img/ProjectsCards/YOGAYNbyPetra02.png" alt="">
+          <img src="../../../assets/img/ProjectsCards/YOGAYNbyPetra02.webp" alt="">
         </div>
         <div class="card-info">
           <p>YOGAYN by Petra / Yoga studio / Social Media / 2024</p>
@@ -114,7 +114,7 @@
 
       <article class="card offset-up-4">
         <div class="img-box">
-          <img src="../../../assets/img/ProjectsCards/WegTrans02.png" alt="">
+          <img src="../../../assets/img/ProjectsCards/WegTrans02.webp" alt="">
         </div>
         <div class="card-info">
           <p>WegTrans / Freight forwarding / 2023</p>
