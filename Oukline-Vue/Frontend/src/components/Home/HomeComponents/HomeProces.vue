@@ -37,6 +37,7 @@
 
 .btn-box {
   display: flex;
+  justify-content: center;
   width: 100%;
   column-gap: 17px;
 }

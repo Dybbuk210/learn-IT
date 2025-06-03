@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+  /* pôvodné riadky */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  height: 100%;
+  width: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.inner-container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
