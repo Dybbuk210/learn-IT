@@ -1,15 +1,15 @@
 <template>
     <div class="main-container">
 
-        <div class="inner-container">
+        <div class="fixed-header">
             <img class="vrana-a" src="../assets/vrana.svg" alt="">
             <div class="buttons-box">
                 <div class="logo-box">
                     <img src="../assets/lutiologo.svg" alt="">
                 </div>
-                <div class="swich-buttons"> <!-- podla toho ktori je aktivny ten ma swich-button-active -->
-                    <button id="poskitovatel" class="swich-button">Poskytovateľ</button> <!-- tento button po kliknuti zmeni .json na poskitovatel.json  -->
-                    <button id="zakaznik" class="swich-button swich-button-active">Zákazník</button> <!-- tento button po kliknuti zmeni .json na zakaznik.json  -->
+                <div class="swich-buttons">
+                    <button id="poskitovatel" class="swich-button">Poskytovateľ</button>
+                    <button id="zakaznik" class="swich-button swich-button-active">Zákazník</button>
                 </div>
             </div>
         </div>
@@ -20,9 +20,9 @@
         <div class="inner-container">    
             <div class="title-box">
                 <h1>
-                    <span class="main-title-up">Získajte</span> <!-- main-title-a -->
+                    <span class="main-title-up">Získajte</span>
                     <div class="main-title-down-box">
-                        <span class="main-title-down">viac zákazníkov</span> <!-- main-title-b -->
+                        <span class="main-title-down">viac zákazníkov</span>
                     </div>
                 </h1>
                 <form class="email-form">
@@ -114,7 +114,18 @@
 <style scoped>
     .main-container {
         position: relative;
-        padding: 50px 0 60px 0;
+        padding: 220px 0 60px 0;
+    }
+
+    .fixed-header {
+        width: 100%;
+        position: fixed;
+        padding-top: 50px;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
 
     .vrana-a {
