@@ -1,0 +1,116 @@
+{
+  "poskytovatel": {
+    "main-title-a": "Získajte",
+    "main-title-b": "viac zákazníkov",
+    "main-img": "../assets/poskitovatel/main-img.webp",
+    "galery-title": "S nami je to jednoduchšie",
+    "galery-01-img": "../assets/poskitovatel/galery01.webp",
+    "galery-01-title": "Premeňte<br> odbornosť na zisk",
+    "galery-02-img": "../assets/poskitovatel/galery02.webp",
+    "galery-02-title": "Rozšírte<br> svoju klientelu",
+    "galery-02-text": "Lutio Vám pomáha získavať zákazníkov",
+    "galery-03-img": "../assets/poskitovatel/galery03.webp",
+    "galery-03-title": "Budujte si meno",
+    "galery-03-text": "Pozitívne recenzie hovoria za vás",
+    "galery-04-img": "../assets/poskitovatel/galery04.webp",
+    "galery-04-title": "Žiadny šéf,<br> pracujte pre seba",
+    "step-01-img": "../assets/poskitovatel/card01.webp",
+    "step-01-icon": "../assets/poskitovatel/time.svg",
+    "step-01-subtitle": "Hotovo do 3 minút!",
+    "step-01-title": "Vytvorte si účet",
+    "step-01-text": "Registrácia je rýchla a jednoduchá. Vďaka vyplneniu siedmych krokov si zabezpečíte neprehliadnuteľný a zaujímavý profil.",
+    "step-02-img": "../assets/poskitovatel/card02.webp",
+    "step-02-icon": "../assets/poskitovatel/file.svg",
+    "step-02-subtitle": "Rýchlo a prehľadne",
+    "step-02-title": "Vytvárajte objednávky",
+    "step-02-text": "Po dohode so zákazníkom vytvoríte objednávku cez<br> formulár vo svojom profile. Zaberie to len pár sekúnd.",
+    "step-03-img": "../assets/poskitovatel/card03.webp",
+    "step-03-icon": "../assets/poskitovatel/money.svg",
+    "step-03-subtitle": "Stabilný príjem vďaka Lutio",
+    "step-03-title": "Prijímajte platby",
+    "step-03-text": "Pracujte po svojom a nechajte si za<br> prácu spravodlivo zaplatiť.",
+    "section-b-title": "Zabudnite na starý spôsob podnikania",
+    "section-b-text": "Našou víziou je vytvárať miesto kde vás môžu zákazníci nájsť<br class=\"desktop-break\"> rýchlo a jednoducho. Lutio je Vaša jediná platforma, kde sa môžete profesionálne odprezentovať zákazníkom.",
+    "section-b-text-mobile-a": "Našou víziou je vytvárať miesto kde vás môžu zákazníci nájsť rýchlo a jednoducho.",
+    "section-b-text-mobile-b": "Lutio je Vaša jediná platforma, kde sa môžete  profesionálne odprezentovať zákazníkom.",
+    "questions": [
+      {
+        "question": "Čo je Lutio?",
+        "answer": "Lutio je prvá profesionálna platforma, ktorá prepája zákazníkov s poskytovateľmi služieb. Vďaka Lutio zákazníci nájdu overených odborníkov rýchlo a jednoducho."
+      },
+      {
+        "question": "Prečo by som mal vyskúšať Lutio?",
+        "answer": "Vďaka Lutio už nepotrebujete platiť za vlastné web stránky ani za reklamy aby ste získali zákazníkov. Zákazníci Vás nájdu na jednom mieste."
+      },
+      {
+        "question": "Je Lutio zadarmo?",
+        "answer": "Lutio je momentálne pre všetkých zadarmo. Využívajte všetky výhody, získavajte zákazníkov a zarábajte vďaka dobre odvedenej práci."
+      },
+      {
+        "question": "Čo môžem očakávať po vytvorení účtu?",
+        "answer": "Po úspešnom vytvorení profilu Vás uvidia zákazníci v okolí mesta, ktoré ste zadali a môžete začať zarábať. Odporúčame kompletne vyplniť profil a pridať fotografie aby Váš profil bol zaujímavejší ako je profil konkurenta."
+      },
+      {
+        "question": "Môžem kedykoľvek zrušiť účet?",
+        "answer": "Áno. Váš účet si môžete kedykoľvek zrušiť. Stačí napísať na podporu a my Vám účet zrušíme."
+      },
+      {
+        "question": "Viem Lutio využívať aj na počítači?",
+        "answer": "Momentálne je Lutio plne funkčné ako mobilná aplikácia. Na verzii pre počítač už usilovne pracujeme, takže čoskoro sa môžete tešiť na využívanie Lutio na svojom počítači."
+      }
+    ]
+  },
+
+
+  "zakaznik": {
+    "main-title-a": "",
+    "main-title-b": "",
+    "main-img": "",
+    "galery-title": "",
+    "galery-01-img": "",
+    "galery-01-title": "",
+    "galery-02-img": "",
+    "galery-02-title": "",
+    "galery-02-text": "",
+    "galery-03-img": "",
+    "galery-03-title": "",
+    "galery-03-text": "",
+    "galery-04-img": "",
+    "galery-04-title": "",
+    "step-01-img": "",
+    "step-01-icon": "",
+    "step-01-subtitle": "",
+    "step-01-title": "",
+    "step-01-text": "",
+    "section-b-title": "",
+    "section-b-text": "",
+    "section-b-text-mobile-a": "",
+    "section-b-text-mobile-b": "",
+    "questions": [
+      {
+        "question": "Čo je Lutio?",
+        "answer": "Lutio je prvá profesionálna platforma, ktorá prepája zákazníkov s poskytovateľmi služieb. Vďaka Lutio zákazníci nájdu overených odborníkov rýchlo a jednoducho."
+      },
+      {
+        "question": "Prečo by som mal vyskúšať Lutio?",
+        "answer": "Vďaka Lutio nájdete overených odborníkov v priebehu niekoľkých sekúnd. Pri rozhodovaní Vám pomáhajú recenzie, takže sa nemusíte báť spoľahlivosti odborníka."
+      },
+      {
+        "question": "Je Lutio zadarmo?",
+        "answer": "Lutio je pre zákazníkov úplne zadarmo. Využívajte profesionálnu platformu a vyhľadávajte odborníkov kdekoľvek a kedykoľvek."
+      },
+      {
+        "question": "Čo môžem očakávať po vytvorení účtu?",
+        "answer": "Po úspešnom vytvorení profilu môžete naplno využívať Lutio a vyhľadávať poskytovateľov služieb. Ak sa rozhodnete stať poskytovateľom, jednoducho v nastaveniach kliknete na ,,Začať zarábať,,."
+      },
+      {
+        "question": "Môžem kedykoľvek zrušiť účet?",
+        "answer": "Áno. Váš účet si môžete kedykoľvek zrušiť. Stačí napísať na podporu a my Vám účet zrušíme."
+      },
+      {
+        "question": "Viem Lutio využívať aj na počítači?",
+        "answer": "Momentálne je Lutio plne funkčné ako mobilná aplikácia. Na verzii pre počítač už usilovne pracujeme, takže čoskoro sa môžete tešiť na využívanie Lutio na svojom počítači. "
+      }
+    ]
+  }
+}

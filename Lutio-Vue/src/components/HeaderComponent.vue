@@ -1,7 +1,7 @@
 <template>
     <div class="main-container">
 
-        <div class="inner-container">
+        <div class="fixed-header">
             <img class="vrana-a" src="../assets/vrana.svg" alt="">
             <div class="buttons-box">
                 <div class="logo-box">
@@ -36,71 +36,57 @@
         </div>
         <div class="partners">
             <div class="grid-a-wrapper">
-                <div class="grid-a">
-                    <img src="../assets/partneri/autokk.svg" alt="">
-                    <img src="../assets/partneri/downhiletrue.svg" alt="">
-                    <img src="../assets/partneri/Oukline.svg" alt="">
-                    <img src="../assets/partneri/promotimo.svg" alt="">
-                    <img src="../assets/partneri/sperkovnicka.svg" alt="">
-                    <img src="../assets/partneri/stmoschky.svg" alt="">
-                    <img src="../assets/partneri/tuning.svg" alt="">
-                    <img src="../assets/partneri/usporneklimy.svg" alt="">
-                    <img src="../assets/partneri/Vector.svg" alt="">
-                    <img src="../assets/partneri/yogayn.svg" alt="">
-                    <img src="../assets/partneri/autokk.svg" alt="">
-                    <img src="../assets/partneri/downhiletrue.svg" alt="">
-                    <img src="../assets/partneri/Oukline.svg" alt="">
-                    <img src="../assets/partneri/promotimo.svg" alt="">
-                    <img src="../assets/partneri/sperkovnicka.svg" alt="">
-                    <img src="../assets/partneri/stmoschky.svg" alt="">
-                    <img src="../assets/partneri/tuning.svg" alt="">
-                    <img src="../assets/partneri/usporneklimy.svg" alt="">
-                    <img src="../assets/partneri/Vector.svg" alt="">
-                    <img src="../assets/partneri/yogayn.svg" alt="">
-                    <img src="../assets/partneri/autokk.svg" alt="">
-                    <img src="../assets/partneri/downhiletrue.svg" alt="">
-                    <img src="../assets/partneri/Oukline.svg" alt="">
-                    <img src="../assets/partneri/promotimo.svg" alt="">
-                    <img src="../assets/partneri/sperkovnicka.svg" alt="">
-                    <img src="../assets/partneri/stmoschky.svg" alt="">
-                    <img src="../assets/partneri/tuning.svg" alt="">
-                    <img src="../assets/partneri/usporneklimy.svg" alt="">
-                    <img src="../assets/partneri/Vector.svg" alt="">
-                    <img src="../assets/partneri/yogayn.svg" alt="">
+                <div class="slider-track scroll-left">
+                    <div class="grid-a">
+                        <img class="partner-logo" src="../assets/partneri/autokk.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/downhiletrue.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/Oukline.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/promotimo.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/sperkovnicka.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/stmoschky.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/tuning.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/usporneklimy.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/Vector.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/yogayn.svg" alt="">
+
+                        <img class="partner-logo" src="../assets/partneri/autokk.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/downhiletrue.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/Oukline.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/promotimo.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/sperkovnicka.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/stmoschky.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/tuning.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/usporneklimy.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/Vector.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/yogayn.svg" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="grid-b-wrapper">   
-                <div class="grid-b">
-                    <img src="../assets/partneri/autokk.svg" alt="">
-                    <img src="../assets/partneri/Vector.svg" alt="">
-                    <img src="../assets/partneri/downhiletrue.svg" alt="">
-                    <img src="../assets/partneri/yogayn.svg" alt="">
-                    <img src="../assets/partneri/sperkovnicka.svg" alt="">
-                    <img src="../assets/partneri/stmoschky.svg" alt="">
-                    <img src="../assets/partneri/Oukline.svg" alt="">
-                    <img src="../assets/partneri/tuning.svg" alt="">
-                    <img src="../assets/partneri/promotimo.svg" alt="">
-                    <img src="../assets/partneri/usporneklimy.svg" alt="">
-                    <img src="../assets/partneri/autokk.svg" alt="">
-                    <img src="../assets/partneri/Vector.svg" alt="">
-                    <img src="../assets/partneri/downhiletrue.svg" alt="">
-                    <img src="../assets/partneri/yogayn.svg" alt="">
-                    <img src="../assets/partneri/sperkovnicka.svg" alt="">
-                    <img src="../assets/partneri/stmoschky.svg" alt="">
-                    <img src="../assets/partneri/Oukline.svg" alt="">
-                    <img src="../assets/partneri/tuning.svg" alt="">
-                    <img src="../assets/partneri/promotimo.svg" alt="">
-                    <img src="../assets/partneri/usporneklimy.svg" alt="">
-                    <img src="../assets/partneri/autokk.svg" alt="">
-                    <img src="../assets/partneri/Vector.svg" alt="">
-                    <img src="../assets/partneri/downhiletrue.svg" alt="">
-                    <img src="../assets/partneri/yogayn.svg" alt="">
-                    <img src="../assets/partneri/sperkovnicka.svg" alt="">
-                    <img src="../assets/partneri/stmoschky.svg" alt="">
-                    <img src="../assets/partneri/Oukline.svg" alt="">
-                    <img src="../assets/partneri/tuning.svg" alt="">
-                    <img src="../assets/partneri/promotimo.svg" alt="">
-                    <img src="../assets/partneri/usporneklimy.svg" alt="">
+            <div class="grid-b-wrapper"> 
+                <div class="slider-track scroll-right">  
+                    <div class="grid-b">
+                        <img class="partner-logo" src="../assets/partneri/autokk.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/Vector.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/downhiletrue.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/yogayn.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/sperkovnicka.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/stmoschky.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/Oukline.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/tuning.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/promotimo.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/usporneklimy.svg" alt="">
+
+                        <img class="partner-logo" src="../assets/partneri/autokk.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/Vector.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/downhiletrue.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/yogayn.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/sperkovnicka.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/stmoschky.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/Oukline.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/tuning.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/promotimo.svg" alt="">
+                        <img class="partner-logo" src="../assets/partneri/usporneklimy.svg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -114,7 +100,17 @@
 <style scoped>
     .main-container {
         position: relative;
-        padding: 50px 0 60px 0;
+        padding: 220px 0 60px 0;
+    }
+
+    .fixed-header {
+        width: 100%;
+        position: fixed;
+        padding-top: 50px;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        z-index: 1000;
     }
 
     .vrana-a {
@@ -290,42 +286,62 @@
         column-gap: 60px;
     }
 
-    /* Obal pre animovaný rad log */
-    .grid-a-wrapper,
-    .grid-b-wrapper {
-        overflow: hidden;
+    .partner-logo {
         width: 100%;
+        height: 100%;
     }
 
-    /* Animovaný rad log */
-    .grid-a,
-    .grid-b {
-        display: flex;
-        column-gap: 60px;
-        width: max-content;
-    }
+    
 
-    /* Animácia - grid-a ide zľava doprava */
-    .grid-a {
-        animation: scroll-left 100s linear infinite;
-    }
 
-    /* Animácia - grid-b ide sprava doľava */
-    .grid-b {
-        animation: scroll-right 100s linear infinite;
-    }
+.grid-a-wrapper,
+.grid-b-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
 
-    /* Kľúčové snímky pre posúvanie doľava */
-    @keyframes scroll-left {
-        0%   { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
-    }
+/* track = ten čo sa hýbe */
+.slider-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
 
-    /* Kľúčové snímky pre posúvanie doprava */
-    @keyframes scroll-right {
-        0%   { transform: translateX(-50%); }
-        100% { transform: translateX(0); }
-    }
+/* animácia doľava (zľava → doprava) */
+.scroll-left {
+  animation: scroll-left 30s linear infinite;
+}
+
+/* animácia doprava (sprava → doľava) */
+.scroll-right {
+  animation: scroll-right 40s linear infinite;
+}
+
+.grid-a,
+.grid-b {
+  display: flex;
+  column-gap: 60px;
+  align-items: center;
+}
+
+/* KEYFRAMES */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 
 
 
@@ -359,6 +375,14 @@
     }
 
     @media (max-width: 420px) {
+        .fixed-header {
+            padding-top: 25px;
+        }
+
+        .buttons-box {
+            row-gap: 20px;
+        }
+
         .array-svg {
             display: none;
         }

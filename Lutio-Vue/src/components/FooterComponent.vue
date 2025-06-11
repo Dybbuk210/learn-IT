@@ -14,7 +14,7 @@
                     <li><a class="footer-social" href="">Facebook</a></li>
                     <li><a class="footer-social" href="">Instagram</a></li>
                     <li><a class="footer-social" href="">LinkedIn</a></li>
-                    <li class="mobile-hidden    "><a class="footer-social" href="">info@lutio.sk</a></li>
+                    <li><a class="footer-social" href="">info@lutio.eu</a></li>
                 </ul>
                 <div class="break-line"></div>
                 <p class="down-box-text">© Lutio 2025. All rights reserved.</p>
@@ -98,7 +98,7 @@
 
     .footer-social {
         color: #FFF;
-        font-size: 16px;
+        font-size: clamp(14px, 5vw, 16px);
         font-weight: 400;
     }
 
@@ -147,20 +147,28 @@
         }
 
         .footer-content {
-            width: 96%;
-        }
-
-        .mobile-hidden {
-            display: none;
+            width: 92%;
         }
 
         .footer-socials {
             justify-content: space-between;
-            column-gap: 0;
+            column-gap: 10px;
         }
 
         .down-box-text {
             display: none;
+        }
+
+        .title-right {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .footer-socials {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
         }
     }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="main.container">
         <div class="main-img">
-                <img src="../assets/poskitovatel/section-a-main.webp" alt=""> <!-- main-img -->
+                <img src="../assets/poskitovatel/main-img.webp" alt=""> <!-- main-img -->
         </div>
         <div class="inner-container">
 
@@ -47,7 +47,7 @@
                         <div class="down-card-box">
                             <div class="card-subtitle">
                                 <div class="subtitle-img">
-                                    <img src="../assets/time.svg" alt=""> <!-- step-01-icon -->
+                                    <img src="../assets/poskitovatel/icon01.svg" alt=""> <!-- step-01-icon -->
                                 </div>
                                 <p class="subtitle-text">Hotovo do 3 minút!</p> <!-- step-01-subtitle -->
                             </div>
@@ -62,7 +62,7 @@
                         <div class="down-card-box">
                             <div class="card-subtitle">
                                 <div class="subtitle-img">
-                                    <img src="../assets/file.svg" alt=""> <!-- step-02-icon -->
+                                    <img src="../assets/poskitovatel/icon02.svg" alt=""> <!-- step-02-icon -->
                                 </div>
                                 <p class="subtitle-text">Rýchlo a prehľadne</p> <!-- step-02-subtitle -->
                             </div>
@@ -76,11 +76,11 @@
                         <div class="down-card-box">
                             <div class="card-subtitle">
                                 <div class="subtitle-img">
-                                    <img src="../assets/money.svg" alt=""> <!-- step-03-icon -->
+                                    <img src="../assets/poskitovatel/icon03.svg" alt=""> <!-- step-03-icon -->
                                 </div>
                                 <p class="subtitle-text">Stabilný príjem vďaka Lutio</p> <!-- step-03-subtitle -->
                             </div>
-                            <h3 class="down-card-title">Prijímajte platby </h3> <!-- step-03-title -->
+                            <h3 class="down-card-title">Prijímajte platby</h3> <!-- step-03-title -->
                             <p class="down-card-text">Pracujte po svojom a nechajte si za<br> prácu spravodlivo zaplatiť.</p> <!-- step-03-text -->
                         </div>
                     </article>
@@ -214,7 +214,6 @@
     .card-subtitle {
         display: flex;
         column-gap: 8px;
-        padding-bottom: 8px;
     }
 
     .subtitle-img {
@@ -251,8 +250,8 @@
         font-size: 14px;
         font-weight: 600;
         line-height: 22px;
-        margin-top: 45px;
-        padding: 10px 20px;
+        margin-top: 25px;
+        padding: 14px 24px;
         border-radius: 100px;
         background: linear-gradient(0deg, #09001D 0%, #302C38 100%);
         box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.30);

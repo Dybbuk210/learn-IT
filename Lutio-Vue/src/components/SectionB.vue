@@ -4,13 +4,13 @@
 
             <div class="text-box box-width">
                 <h2 class="text-box-title">Zabudnite na starý spôsob podnikania</h2> <!-- section-b-title -->
-                <p class="text-box-text desktop-text">Našou víziou je vytvárať miesto kde vás môžu zákazníci nájsť rýchlo a jednoducho. Lutio je Vaša jediná platforma, kde sa môžete profesionálne odprezentovať zákazníkom.</p> <!-- section-b-text -->
+                <p class="text-box-text desktop-text">Našou víziou je vytvárať miesto kde vás môžu zákazníci nájsť<br class="desktop-break"> rýchlo a jednoducho. Lutio je Vaša jediná platforma, kde sa môžete profesionálne odprezentovať zákazníkom.</p> <!-- section-b-text -->
                 <p class="text-box-text mobile-text">Našou víziou je vytvárať miesto kde vás môžu zákazníci nájsť rýchlo a jednoducho.</p> <!-- section-b-text-mobile-a -->
                 <p class="text-box-text mobile-text">Lutio je Vaša jediná platforma, kde sa môžete  profesionálne odprezentovať zákazníkom.</p> <!-- section-b-text-mobile-b -->
             </div>
         </div>    
         <div class="image-box">
-            <img src="../assets/poskitovatel/section-b.webp" alt="">
+            <img src="../assets/section-b.webp" alt="">
         </div>
         <div class="inner-container">
 
@@ -45,7 +45,7 @@
                 <p class="down-box-text">V prípade, že máte <span class="second-color">akékoľvek otázky, nápady</span> alebo <span class="second-color">záujem o spoluprácu</span>, budeme radi, <span class="second-color">ak sa nám ozvete.</span></p>
                 <div class="down-box-link-box">
                     <p class="linkbox-text">
-                        Ozvite sa nám na<br class="mobile-break"> <a class="linkbox-link" href="">info@lutio.sk <img class="array-icon" src="../assets/header-array.svg" alt=""></a>
+                        Ozvite sa nám na <a class="linkbox-link" href="">info@lutio.eu <img class="array-icon" src="../assets/header-array.svg" alt=""></a>
                     </p>
                 </div>
             </div>
@@ -241,10 +241,37 @@ function toggleCard() {
     opacity: 1;
     }
     
+    @media (max-width: 1200px) {
+        .box-width {
+            width: 60%;
+        }
+    }
 
-    @media (max-width: 800px) {
+     @media (max-width: 1100px) {
+        .desktop-break {
+            display: none;
+        }
+     }
+
+     @media (max-width: 1000px) {
         .box-width {
             width: 80%;
+        }
+     }
+
+    @media (max-width: 800px) {
+        .desktop-break {
+            display: block;
+        }
+        
+        .array-icon {
+            display: none;
+        }
+    }
+
+    @media (max-width: 665px) {
+        .desktop-break {
+            display: none;
         }
     }
 
@@ -280,6 +307,11 @@ function toggleCard() {
 
         .desktop-text {
             display: none;
+        }
+
+        .linkbox-text {
+            flex-direction: column;
+            align-items: center;
         }
 
         .mobile-break, .mobile-text {
