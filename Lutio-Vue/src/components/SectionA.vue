@@ -96,63 +96,33 @@ import { ref, watchEffect } from 'vue'
 
 const props = defineProps(['data'])
 
-// Hlavný obrázok
 const mainImg = ref('')
-
-// Galéria obrázky
 const galery01 = ref('')
 const galery02 = ref('')
 const galery03 = ref('')
 const galery04 = ref('')
-
-// Step obrázky
 const stepImg1 = ref('')
 const stepImg2 = ref('')
 const stepImg3 = ref('')
-
-// Step ikony
 const stepIcon1 = ref('')
 const stepIcon2 = ref('')
 const stepIcon3 = ref('')
 
-watchEffect(async () => {
+watchEffect(() => {
   if (props.data) {
-    // main
-    const main = await import(/* @vite-ignore */ props.data['main-img'])
-    mainImg.value = main.default
+    const basePath = '/img/'
 
-    // galery
-    const g1 = await import(/* @vite-ignore */ props.data['galery-01-img'])
-    galery01.value = g1.default
-
-    const g2 = await import(/* @vite-ignore */ props.data['galery-02-img'])
-    galery02.value = g2.default
-
-    const g3 = await import(/* @vite-ignore */ props.data['galery-03-img'])
-    galery03.value = g3.default
-
-    const g4 = await import(/* @vite-ignore */ props.data['galery-04-img'])
-    galery04.value = g4.default
-
-    // steps images
-    const s1 = await import(/* @vite-ignore */ props.data['step-01-img'])
-    stepImg1.value = s1.default
-
-    const s2 = await import(/* @vite-ignore */ props.data['step-02-img'])
-    stepImg2.value = s2.default
-
-    const s3 = await import(/* @vite-ignore */ props.data['step-03-img'])
-    stepImg3.value = s3.default
-
-    // steps icons
-    const i1 = await import(/* @vite-ignore */ props.data['step-01-icon'])
-    stepIcon1.value = i1.default
-
-    const i2 = await import(/* @vite-ignore */ props.data['step-02-icon'])
-    stepIcon2.value = i2.default
-
-    const i3 = await import(/* @vite-ignore */ props.data['step-03-icon'])
-    stepIcon3.value = i3.default
+    mainImg.value = basePath + props.data['main-img']
+    galery01.value = basePath + props.data['galery-01-img']
+    galery02.value = basePath + props.data['galery-02-img']
+    galery03.value = basePath + props.data['galery-03-img']
+    galery04.value = basePath + props.data['galery-04-img']
+    stepImg1.value = basePath + props.data['step-01-img']
+    stepImg2.value = basePath + props.data['step-02-img']
+    stepImg3.value = basePath + props.data['step-03-img']
+    stepIcon1.value = basePath + props.data['step-01-icon']
+    stepIcon2.value = basePath + props.data['step-02-icon']
+    stepIcon3.value = basePath + props.data['step-03-icon']
   }
 })
 </script>
