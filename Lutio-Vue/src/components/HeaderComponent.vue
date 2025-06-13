@@ -7,27 +7,30 @@
                 <div class="logo-box">
                     <img src="../assets/lutiologo.svg" alt="">
                 </div>
-                <div class="swich-buttons"> <!-- podla toho ktori je aktivny ten ma swich-button-active -->
-                    <button id="poskitovatel" class="swich-button">Poskytovateľ</button> <!-- tento button po kliknuti zmeni .json na poskitovatel.json  -->
-                    <button id="zakaznik" class="swich-button swich-button-active">Zákazník</button> <!-- tento button po kliknuti zmeni .json na zakaznik.json  -->
+                <div class="swich-buttons">
+                    <button class="swich-button" :class="{ 'swich-button-active': selectedType === 'poskytovatel' }" @click="$emit('changeType', 'poskytovatel')">
+                    Poskytovateľ
+                    </button>
+                    <button class="swich-button" :class="{ 'swich-button-active': selectedType === 'zakaznik' }" @click="$emit('changeType', 'zakaznik')">
+                    Zákazník
+                    </button>
                 </div>
             </div>
         </div>
 
-        <div class="break-line"></div>
         <img class="vrana-b" src="../assets/vrana.svg" alt="">
 
         <div class="inner-container">    
             <div class="title-box">
                 <h1>
-                    <span class="main-title-up">Získajte</span> <!-- main-title-a -->
+                    <span class="main-title-up">{{ data['main-title-a'] }}</span>
                     <div class="main-title-down-box">
-                        <span class="main-title-down">viac zákazníkov</span> <!-- main-title-b -->
+                        <span class="main-title-down">{{ data['main-title-b'] }}</span>
                     </div>
                 </h1>
                 <form class="email-form">
                     <div class="input-box">
-                        <input type="email" placeholder="vaša emailová adresa" required>
+                        <input type="email" placeholder="Vaša emailová adresa" required>
                         <button type="submit">Mám záujem <span><img class="array-svg" src="../assets/header-array.svg" alt=""></span></button>
                     </div>
                 </form>
@@ -94,7 +97,8 @@
 </template>
 
 <script setup>
-
+    defineProps(['selectedType', 'data'])
+    defineEmits(['changeType'])
 </script>
 
 <style scoped>
@@ -111,6 +115,7 @@
         top: 0;
         left: 0;
         z-index: 1000;
+        border-bottom: solid 1px rgba(9, 0, 29, 0.05);
     }
 
     .vrana-a {
@@ -132,13 +137,13 @@
     }
 
     .buttons-box {
-        width: 25%;
-        min-width: 254px;
+        width: 10%;
+        min-width: 240px;
         margin: 0 auto;
         align-items: center;
         display: flex;
         flex-direction: column;
-        row-gap: 60px;
+        row-gap: 30px;
         padding-bottom: 30px;
     }
 
@@ -172,10 +177,6 @@
         border: 0.5px solid rgba(0, 0, 0, 0.04);
         background: #FFF;
         box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.12), 0px 3px 1px 0px rgba(0, 0, 0, 0.04);
-    }
-
-    .break-line {
-        border-bottom: solid 1px rgba(9, 0, 29, 0.05);
     }
 
     .title-box {
@@ -274,14 +275,8 @@
         padding-top: 65px;
     }
 
-    .grid-a {
+    .grid-a, .grid-b {
         max-height: 30px;
-        display: flex;
-        column-gap: 60px;
-    }
-
-    .grid-b {
-        max-height: 55px;
         display: flex;
         column-gap: 60px;
     }
@@ -309,7 +304,7 @@
 
 /* animácia doľava (zľava → doprava) */
 .scroll-left {
-  animation: scroll-left 30s linear infinite;
+  animation: scroll-left 40s linear infinite;
 }
 
 /* animácia doprava (sprava → doľava) */
@@ -345,19 +340,23 @@
 
 
 
+    @media (max-width: 1200px) {
+        .main-title-up {
+            line-height: 50px;
+        }
+    }
+
     @media (max-width: 800px) {
         .vrana-a, .vrana-b {
             display: none;
         }
     }
 
-    @media (max-width: 600px) {
-        .buttons-box {
-            row-gap: 40px;
-        }
-    }
-
     @media (max-width: 500px) {
+        .buttons-box {
+            padding-bottom: 20px;
+        }
+
         .email-form {
             max-width: none;
             width: 100%;
@@ -371,6 +370,10 @@
         .input-box input {
             flex: unset;
             width: 100%;
+        }
+
+        .main-container {
+            padding-top: 150px;
         }
     }
 

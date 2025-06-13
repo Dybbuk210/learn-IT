@@ -3,10 +3,19 @@
         <div class="inner-container">
 
             <div class="text-box box-width">
-                <h2 class="text-box-title">Zabudnite na starý spôsob podnikania</h2> <!-- section-b-title -->
-                <p class="text-box-text desktop-text">Našou víziou je vytvárať miesto kde vás môžu zákazníci nájsť<br class="desktop-break"> rýchlo a jednoducho. Lutio je Vaša jediná platforma, kde sa môžete profesionálne odprezentovať zákazníkom.</p> <!-- section-b-text -->
-                <p class="text-box-text mobile-text">Našou víziou je vytvárať miesto kde vás môžu zákazníci nájsť rýchlo a jednoducho.</p> <!-- section-b-text-mobile-a -->
-                <p class="text-box-text mobile-text">Lutio je Vaša jediná platforma, kde sa môžete  profesionálne odprezentovať zákazníkom.</p> <!-- section-b-text-mobile-b -->
+                <h2 class="text-box-title" v-html="data['section-b-title']"></h2>
+                <p class="text-box-text desktop-text" v-html="data['section-b-text']"></p>
+                <p 
+                    class="text-box-text mobile-text"
+                    v-if="$props.data && $props.data['type'] === 'poskytovatel'"
+                    v-html="$props.data['section-b-text-mobile-a']">
+                </p>
+
+                <p 
+                    class="text-box-text mobile-text"
+                    v-if="$props.data && $props.data['type'] === 'poskytovatel'"
+                    v-html="$props.data['section-b-text-mobile-b']">
+                </p>
             </div>
         </div>    
         <div class="image-box">
@@ -18,21 +27,28 @@
                 <h2 class="questions-title">Najčastejšie otázky</h2>
                 <div class="questions-cards">
 
-                 <article class="questions-card" :class="{ 'active-card': isOpen }" @click="toggleCard">
+                <article class="questions-card" v-for="(item, index) in data.questions" :key="index" :class="{ 'active-card': openIndex === index }" @click="toggleCard(index)">
                     <div class="card-box">
                         <div class="card-box-up">
-                        <h3 class="card-title">Čo je Lutio?</h3> <!-- question -->
+                        <h3 class="card-title">{{ item.question }}</h3>
                         <div class="card-buttons">
-                            <img v-if="!isOpen" class="card-open" src="../assets/open.svg" alt="Otvoriť" />
-                            <img v-else class="card-close" src="../assets/close.svg" alt="Zavrieť" />
+                            <img
+                            v-if="openIndex !== index"
+                            class="card-open"
+                            src="../assets/open.svg"
+                            alt="Otvoriť"
+                            />
+                            <img
+                            v-else
+                            class="card-close"
+                            src="../assets/close.svg"
+                            alt="Zavrieť"
+                            />
                         </div>
                         </div>
 
                         <Transition name="slide">
-                        <p v-show="isOpen" class="card-text"> <!-- ansver -->
-                            Lutio je prvá profesionálna platforma, ktorá prepája zákazníkov s poskytovateľmi služieb.
-                            Vďaka Lutio zákazníci nájdu svojich overených odborníkov rýchlo a jednoducho.
-                        </p>
+                        <p v-show="openIndex === index" class="card-text" v-html="item.answer"></p>
                         </Transition>
                     </div>
                 </article>
@@ -45,7 +61,7 @@
                 <p class="down-box-text">V prípade, že máte <span class="second-color">akékoľvek otázky, nápady</span> alebo <span class="second-color">záujem o spoluprácu</span>, budeme radi, <span class="second-color">ak sa nám ozvete.</span></p>
                 <div class="down-box-link-box">
                     <p class="linkbox-text">
-                        Ozvite sa nám na <a class="linkbox-link" href="">info@lutio.eu <img class="array-icon" src="../assets/header-array.svg" alt=""></a>
+                        Ozvite sa nám na <img class="array-icon" src="../assets/array-icon.svg" alt=""> <a class="linkbox-link" href="">info@lutio.eu</a>
                     </p>
                 </div>
             </div>
@@ -54,13 +70,16 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+    defineProps(['data'])
+    import { ref } from 'vue'
 
-const isOpen = ref(false)
+    // Sleduje, ktorá otázka je otvorená (null = žiadna)
+    const openIndex = ref(null)
 
-function toggleCard() {
-  isOpen.value = !isOpen.value
-}
+    // Prepnúť otvorenú otázku
+    function toggleCard(index) {
+    openIndex.value = openIndex.value === index ? null : index
+    }
 </script>
 
 <style scoped>
@@ -223,6 +242,7 @@ function toggleCard() {
 
     .array-icon {
         width: 32px;
+        transform: translateY(2px);
     }
 
     /* skúška efektu */

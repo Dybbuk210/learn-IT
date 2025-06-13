@@ -5,33 +5,33 @@
     "main-img": "../assets/poskitovatel/main-img.webp",
     "galery-title": "S nami je to jednoduchšie",
     "galery-01-img": "../assets/poskitovatel/galery01.webp",
-    "galery-01-title": "Premeňte<br> odbornosť na zisk",
+    "galery-01-title": "Premeňte odbornosť na zisk",
     "galery-02-img": "../assets/poskitovatel/galery02.webp",
-    "galery-02-title": "Rozšírte<br> svoju klientelu",
-    "galery-02-text": "Lutio Vám pomáha získavať zákazníkov",
+    "galery-02-title": "Rozšírte svoju klientelu",
+    "galery-02-text": "Lutio Vám pomáha získavať zákazníkov.",
     "galery-03-img": "../assets/poskitovatel/galery03.webp",
     "galery-03-title": "Budujte si meno",
-    "galery-03-text": "Pozitívne recenzie hovoria za vás",
+    "galery-03-text": "Pozitívne recenzie hovoria za Vás.",
     "galery-04-img": "../assets/poskitovatel/galery04.webp",
-    "galery-04-title": "Žiadny šéf,<br> pracujte pre seba",
+    "galery-04-title": "Žiadny šéf, pracujte pre seba",
     "step-01-img": "../assets/poskitovatel/card01.webp",
-    "step-01-icon": "../assets/poskitovatel/time.svg",
+    "step-01-icon": "../assets/poskitovatel/icon01.svg",
     "step-01-subtitle": "Hotovo do 3 minút!",
     "step-01-title": "Vytvorte si účet",
     "step-01-text": "Registrácia je rýchla a jednoduchá. Vďaka vyplneniu siedmych krokov si zabezpečíte neprehliadnuteľný a zaujímavý profil.",
     "step-02-img": "../assets/poskitovatel/card02.webp",
-    "step-02-icon": "../assets/poskitovatel/file.svg",
+    "step-02-icon": "../assets/poskitovatel/icon02.svg",
     "step-02-subtitle": "Rýchlo a prehľadne",
     "step-02-title": "Vytvárajte objednávky",
     "step-02-text": "Po dohode so zákazníkom vytvoríte objednávku cez<br> formulár vo svojom profile. Zaberie to len pár sekúnd.",
     "step-03-img": "../assets/poskitovatel/card03.webp",
-    "step-03-icon": "../assets/poskitovatel/money.svg",
+    "step-03-icon": "../assets/poskitovatel/icon03.svg",
     "step-03-subtitle": "Stabilný príjem vďaka Lutio",
     "step-03-title": "Prijímajte platby",
     "step-03-text": "Pracujte po svojom a nechajte si za<br> prácu spravodlivo zaplatiť.",
     "section-b-title": "Zabudnite na starý spôsob podnikania",
-    "section-b-text": "Našou víziou je vytvárať miesto kde vás môžu zákazníci nájsť<br class=\"desktop-break\"> rýchlo a jednoducho. Lutio je Vaša jediná platforma, kde sa môžete profesionálne odprezentovať zákazníkom.",
-    "section-b-text-mobile-a": "Našou víziou je vytvárať miesto kde vás môžu zákazníci nájsť rýchlo a jednoducho.",
+    "section-b-text": "Našou víziou je vytvárať miesto, kde vás môžu zákazníci nájsť<br class=\"desktop-break\"> rýchlo a jednoducho. Lutio je Vaša jediná platforma, kde sa môžete profesionálne odprezentovať zákazníkom.",
+    "section-b-text-mobile-a": "Našou víziou je vytvárať miesto, kde vás môžu zákazníci nájsť rýchlo a jednoducho.",
     "section-b-text-mobile-b": "Lutio je Vaša jediná platforma, kde sa môžete  profesionálne odprezentovať zákazníkom.",
     "questions": [
       {
@@ -48,7 +48,7 @@
       },
       {
         "question": "Čo môžem očakávať po vytvorení účtu?",
-        "answer": "Po úspešnom vytvorení profilu Vás uvidia zákazníci v okolí mesta, ktoré ste zadali a môžete začať zarábať. Odporúčame kompletne vyplniť profil a pridať fotografie aby Váš profil bol zaujímavejší ako je profil konkurenta."
+        "answer": "Po úspešnom vytvorení profilu Vás uvidia zákazníci v okolí mesta, ktoré ste zadali a môžete začať zarábať. Odporúčame kompletne vyplniť profil a pridať fotografie, aby bol Váš profil zaujímavejší než profil konkurencie."
       },
       {
         "question": "Môžem kedykoľvek zrušiť účet?",
@@ -56,36 +56,44 @@
       },
       {
         "question": "Viem Lutio využívať aj na počítači?",
-        "answer": "Momentálne je Lutio plne funkčné ako mobilná aplikácia. Na verzii pre počítač už usilovne pracujeme, takže čoskoro sa môžete tešiť na využívanie Lutio na svojom počítači."
+        "answer": "Momentálne je Lutio plne funkčné ako mobilná aplikácia. Na verzii pre počítač už pracujeme, takže čoskoro sa môžete tešiť na využívanie Lutio na svojom počítači."
       }
     ]
   },
 
 
   "zakaznik": {
-    "main-title-a": "",
-    "main-title-b": "",
-    "main-img": "",
-    "galery-title": "",
-    "galery-01-img": "",
-    "galery-01-title": "",
-    "galery-02-img": "",
-    "galery-02-title": "",
-    "galery-02-text": "",
-    "galery-03-img": "",
-    "galery-03-title": "",
-    "galery-03-text": "",
-    "galery-04-img": "",
-    "galery-04-title": "",
-    "step-01-img": "",
-    "step-01-icon": "",
-    "step-01-subtitle": "",
-    "step-01-title": "",
-    "step-01-text": "",
-    "section-b-title": "",
-    "section-b-text": "",
-    "section-b-text-mobile-a": "",
-    "section-b-text-mobile-b": "",
+    "main-title-a": "Nájdite",
+    "main-title-b": "overených odborníkov",
+    "main-img": "../assets/zakaznik/main-img.webp",
+    "galery-title": "Všetko pre Vaše pohodlné vybavenie služby",
+    "galery-01-img": "../assets/zakaznik/galery01.webp",
+    "galery-01-title": "Nájdite, správneho odborníka",
+    "galery-02-img": "../assets/zakaznik/galery02.webp",
+    "galery-02-title": "Vytvorte dopyt",
+    "galery-02-text": "Neviete, koho osloviť?  Nechajte sa kontaktovať overenými poskytovateľmi.",
+    "galery-03-img": "../assets/zakaznik/galery03.webp",
+    "galery-03-title": "Odborníci",
+    "galery-03-text": "Nájdite overených odborníkov, prezerajte si ich profily či ponuky.",
+    "galery-04-img": "../assets/zakaznik/galery04.webp",
+    "galery-04-title": "S Lutio je všetko jednoduchšie",
+    "step-01-img": "../assets/zakaznik/card01.webp",
+    "step-01-icon": "../assets/zakaznik/icon01.svg",
+    "step-01-subtitle": "Len pár klikov!",
+    "step-01-title": "Vytvorte si účet",
+    "step-01-text": "Zaregistrujte sa alebo sa prihláste a otvorte si cestu k overeným odborníkom a službám presne pre Vás.",
+    "step-02-img": "../assets/zakaznik/card02.webp",
+    "step-02-icon": "../assets/zakaznik/icon02.svg",
+    "step-02-subtitle": "Rýchlo a prehľadne",
+    "step-02-title": "Vyhľadajte<br> poskytovateľa",
+    "step-02-text": "Prezrite si profily a hodnotenia. Nájdite niekoho, kto najlepšie vyhovuje Vašim potrebám.",
+    "step-03-img": "../assets/zakaznik/card03.webp",
+    "step-03-icon": "../assets/zakaznik/icon03.svg",
+    "step-03-subtitle": "Začnite spoluprácu",
+    "step-03-title": "Dohodnite si<br> poskytnutie služby",
+    "step-03-text": "Napíšte vybranému poskytovateľovi, dohodnite si cenu, termín a všetky detaily spolupráce.",
+    "section-b-title": "Vďaka platforme Lutio je Váš život jednoduchší",
+    "section-b-text": "Už sa nemusíte trápiť hodiny hľadaním správneho odborníka. Kedykoľvek potrebujete pomôcť, opraviť, postarať sa alebo naučiť, Lutio je tu pre Vás.",
     "questions": [
       {
         "question": "Čo je Lutio?",
@@ -93,7 +101,7 @@
       },
       {
         "question": "Prečo by som mal vyskúšať Lutio?",
-        "answer": "Vďaka Lutio nájdete overených odborníkov v priebehu niekoľkých sekúnd. Pri rozhodovaní Vám pomáhajú recenzie, takže sa nemusíte báť spoľahlivosti odborníka."
+        "answer": "Vďaka Lutio nájdete overených poskytovateľov v priebehu niekoľkých sekúnd. Pri rozhodovaní Vám pomôžu recenzie, takže sa nemusíte obávať o spoľahlivosť poskytovateľa."
       },
       {
         "question": "Je Lutio zadarmo?",
@@ -109,7 +117,7 @@
       },
       {
         "question": "Viem Lutio využívať aj na počítači?",
-        "answer": "Momentálne je Lutio plne funkčné ako mobilná aplikácia. Na verzii pre počítač už usilovne pracujeme, takže čoskoro sa môžete tešiť na využívanie Lutio na svojom počítači. "
+        "answer": "Momentálne je Lutio plne funkčné ako mobilná aplikácia. Na verzii pre počítač už pracujeme, takže čoskoro sa môžete tešiť na využívanie Lutio na svojom počítači."
       }
     ]
   }

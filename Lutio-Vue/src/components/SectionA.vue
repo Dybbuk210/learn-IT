@@ -1,34 +1,34 @@
 <template>
     <div class="main.container">
         <div class="main-img">
-                <img src="../assets/poskitovatel/main-img.webp" alt=""> <!-- main-img -->
+                <img v-if="mainImg" :src="mainImg" alt="hlavný obrázok" />
         </div>
         <div class="inner-container">
 
             <div class="galery-container box-width">
-                <h2 class="galery-title">S nami je to jednoduchšie</h2> <!-- galery-title -->
+                <h2 class="galery-title">{{ props.data['galery-title'] }}</h2>
                 <div class="galery">
                     <div class="galery-left">
                         <article class="galery-card galery-card1">
-                            <img src="../assets/poskitovatel/galery01.webp" alt=""> <!-- galery-img-01 -->
-                            <h3 class="galery-card-text">Premeňte<br> odbornosť na zisk</h3> <!-- galery-img-01-title -->
+                            <img v-if="galery01" :src="galery01" alt="">
+                            <h3 class="galery-card-text">{{ props.data['galery-01-title'] }}</h3>
                         </article>
                         <article class="galery-card galery-card2">
-                            <img src="../assets/poskitovatel/galery02.webp" alt=""> <!-- galery-img-02 -->
-                            <h3 class="galery-card-text">Rozšírte<br> svoju klientelu</h3> <!-- galery-img-02-title -->
-                            <p class="galery-card-text">Lutio Vám pomáha získavať zákazníkov</p> <!-- galery-img-02-text -->
+                            <img v-if="galery02" :src="galery02" alt="">
+                            <h3 class="galery-card-text">{{ props.data['galery-02-title'] }}</h3>
+                            <p class="galery-card-text">{{ props.data['galery-02-text'] }}</p>
                         </article>
                     </div>
 
                     <div class="galery-right">
                         <article class="galery-card galery-card3">
-                            <img src="../assets/poskitovatel/galery03.webp" alt=""> <!-- galery-img-03 -->
-                            <h3 class="galery-card-text">Budujte si meno</h3> <!-- galery-img-03-title -->
-                            <p class="galery-card-text">Pozitívne recenzie hovoria za vás</p> <!-- galery-img-03-text -->
+                            <img v-if="galery03" :src="galery03" alt="">
+                            <h3 class="galery-card-text">{{ props.data['galery-03-title'] }}</h3>
+                            <p class="galery-card-text">{{ props.data['galery-03-text'] }}</p>
                         </article>
                         <article class="galery-card galery-card1">
-                            <img src="../assets/poskitovatel/galery04.webp" alt=""> <!-- galery-img-04 -->
-                            <h3 class="galery-card-text">Žiadny šéf,<br> pracujte pre seba</h3> <!-- galery-img-04-title -->
+                            <img v-if="galery04" :src="galery04" alt="">
+                            <h3 class="galery-card-text">{{ props.data['galery-04-title'] }}</h3>
                         </article>
                     </div>
                 </div>
@@ -43,45 +43,45 @@
                 </div>
                 <div class="down-cards">
                     <article class="down-card">
-                        <img class="down-card-img" src="../assets/poskitovatel/card01.webp" alt=""> <!-- step-01-img -->
+                        <img v-if="stepImg1" class="down-card-img" :src="stepImg1" alt="">
                         <div class="down-card-box">
                             <div class="card-subtitle">
                                 <div class="subtitle-img">
-                                    <img src="../assets/poskitovatel/icon01.svg" alt=""> <!-- step-01-icon -->
+                                    <img v-if="stepIcon1" :src="stepIcon1" alt="">
                                 </div>
-                                <p class="subtitle-text">Hotovo do 3 minút!</p> <!-- step-01-subtitle -->
+                                <p class="subtitle-text">{{ props.data['step-01-subtitle'] }}</p>
                             </div>
                             <h3 class="down-card-title">Vytvorte si účet</h3>
-                            <p class="down-card-text">Registrácia je rýchla a jednoduchá. Vďaka vyplneniu siedmych krokov si zabezpečíte neprehliadnuteľný a zaujímavý profil.</p> <!-- step-01-text -->
+                            <p class="down-card-text" v-html="props.data['step-01-text']"></p>
                             <button class="down-card-button">Mám záujem</button>
                         </div>
                     </article>
 
                     <article class="down-card down-card-second">
-                        <img class="down-card-img" src="../assets/poskitovatel/card02.webp" alt=""> <!-- step-02-img -->
+                        <img v-if="stepImg2" class="down-card-img" :src="stepImg2" alt="">
                         <div class="down-card-box">
                             <div class="card-subtitle">
                                 <div class="subtitle-img">
-                                    <img src="../assets/poskitovatel/icon02.svg" alt=""> <!-- step-02-icon -->
+                                    <img v-if="stepIcon2" :src="stepIcon2" alt="">
                                 </div>
-                                <p class="subtitle-text">Rýchlo a prehľadne</p> <!-- step-02-subtitle -->
+                                <p class="subtitle-text">{{ props.data['step-02-subtitle'] }}</p>
                             </div>
-                            <h3 class="down-card-title">Vytvárajte objednávky</h3> <!-- step-02-title -->
-                            <p class="down-card-text">Po dohode so zákazníkom vytvoríte objednávku cez<br> formulár vo svojom profile. Zaberie to len pár sekúnd.</p> <!-- step-02-text -->
+                            <h3 class="down-card-title" v-html="props.data['step-02-title']"></h3>
+                            <p class="down-card-text" v-html="props.data['step-02-text']"></p>
                         </div>
                     </article>
 
                     <article class="down-card">
-                        <img class="down-card-img" src="../assets/poskitovatel/card03.webp" alt=""> <!-- step-03-img -->
+                        <img v-if="stepImg3" class="down-card-img" :src="stepImg3" alt="">
                         <div class="down-card-box">
                             <div class="card-subtitle">
                                 <div class="subtitle-img">
-                                    <img src="../assets/poskitovatel/icon03.svg" alt=""> <!-- step-03-icon -->
+                                    <img v-if="stepIcon3" :src="stepIcon3" alt="">
                                 </div>
-                                <p class="subtitle-text">Stabilný príjem vďaka Lutio</p> <!-- step-03-subtitle -->
+                                <p class="subtitle-text">{{ props.data['step-03-subtitle'] }}</p>
                             </div>
-                            <h3 class="down-card-title">Prijímajte platby</h3> <!-- step-03-title -->
-                            <p class="down-card-text">Pracujte po svojom a nechajte si za<br> prácu spravodlivo zaplatiť.</p> <!-- step-03-text -->
+                                <h3 class="down-card-title" v-html="props.data['step-03-title']"></h3>
+                                <p class="down-card-text" v-html="props.data['step-03-text']"></p>
                         </div>
                     </article>
                 </div>
@@ -92,8 +92,71 @@
 </template>
 
 <script setup>
+import { ref, watchEffect } from 'vue'
 
+const props = defineProps(['data'])
+
+// Hlavný obrázok
+const mainImg = ref('')
+
+// Galéria obrázky
+const galery01 = ref('')
+const galery02 = ref('')
+const galery03 = ref('')
+const galery04 = ref('')
+
+// Step obrázky
+const stepImg1 = ref('')
+const stepImg2 = ref('')
+const stepImg3 = ref('')
+
+// Step ikony
+const stepIcon1 = ref('')
+const stepIcon2 = ref('')
+const stepIcon3 = ref('')
+
+watchEffect(async () => {
+  if (props.data) {
+    // main
+    const main = await import(/* @vite-ignore */ props.data['main-img'])
+    mainImg.value = main.default
+
+    // galery
+    const g1 = await import(/* @vite-ignore */ props.data['galery-01-img'])
+    galery01.value = g1.default
+
+    const g2 = await import(/* @vite-ignore */ props.data['galery-02-img'])
+    galery02.value = g2.default
+
+    const g3 = await import(/* @vite-ignore */ props.data['galery-03-img'])
+    galery03.value = g3.default
+
+    const g4 = await import(/* @vite-ignore */ props.data['galery-04-img'])
+    galery04.value = g4.default
+
+    // steps images
+    const s1 = await import(/* @vite-ignore */ props.data['step-01-img'])
+    stepImg1.value = s1.default
+
+    const s2 = await import(/* @vite-ignore */ props.data['step-02-img'])
+    stepImg2.value = s2.default
+
+    const s3 = await import(/* @vite-ignore */ props.data['step-03-img'])
+    stepImg3.value = s3.default
+
+    // steps icons
+    const i1 = await import(/* @vite-ignore */ props.data['step-01-icon'])
+    stepIcon1.value = i1.default
+
+    const i2 = await import(/* @vite-ignore */ props.data['step-02-icon'])
+    stepIcon2.value = i2.default
+
+    const i3 = await import(/* @vite-ignore */ props.data['step-03-icon'])
+    stepIcon3.value = i3.default
+  }
+})
 </script>
+
 
 <style scoped>
     .galery-container {
@@ -337,7 +400,7 @@
         }
 
         .down-container {
-            row-gap: 60px;
+            row-gap: 55px;
             padding-bottom: 50px;
         }
     }
