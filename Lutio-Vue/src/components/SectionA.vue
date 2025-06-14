@@ -53,7 +53,7 @@
                             </div>
                             <h3 class="down-card-title">Vytvorte si účet</h3>
                             <p class="down-card-text" v-html="props.data['step-01-text']"></p>
-                            <button class="down-card-button">Mám záujem</button>
+                            <button class="down-card-button" @click="goTop">Mám záujem</button>
                         </div>
                     </article>
 
@@ -93,7 +93,10 @@
 
 <script setup>
 import { ref, watchEffect } from 'vue'
+import { scrollToTop, scrollToElementById } from '../scroll'
 
+const goTop = () => scrollToTop()
+const goToForm = () => scrollToElementById('start')
 const props = defineProps(['data'])
 
 const mainImg = ref('')
@@ -233,6 +236,7 @@ watchEffect(() => {
         display: flex;
         column-gap: 80px;
         align-items: center;
+        justify-content: space-between;
     }
 
     .down-card-second {
@@ -309,7 +313,7 @@ watchEffect(() => {
 
     @media (max-width: 800px) {
         .galery-container {
-            padding: 50px 0;
+            padding: 80px 0;
             row-gap: 50px;
         }
 

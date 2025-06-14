@@ -1,8 +1,8 @@
 <template>
     <div class="main-container">
-
+        <img class="vrana-a" src="../assets/vrana.svg" alt="">
         <div class="fixed-header">
-            <img class="vrana-a" src="../assets/vrana.svg" alt="">
+            
             <div class="buttons-box">
                 <div class="logo-box">
                     <img src="../assets/lutiologo.svg" alt="">
@@ -104,7 +104,7 @@
 <style scoped>
     .main-container {
         position: relative;
-        padding: 220px 0 60px 0;
+        padding: 220px 0 70px 0;
     }
 
     .fixed-header {
@@ -123,7 +123,7 @@
         top: 100px;
         left: 100px;
         width: 120px;
-        z-index: 10;
+        z-index: 9999;
         pointer-events: none;
     }
 
@@ -159,6 +159,7 @@
         align-self: stretch;
         border-radius: 100px;
         background: #F7F8FA;
+        column-gap: 3px;
     }
 
     .swich-button {
@@ -272,7 +273,7 @@
         display: flex;
         flex-direction: column;
         row-gap: 35px;
-        padding-top: 65px;
+        padding-top: 70px;
     }
 
     .grid-a, .grid-b {
@@ -284,6 +285,7 @@
     .partner-logo {
         width: 100%;
         height: 100%;
+        opacity: 50%;
     }
 
     

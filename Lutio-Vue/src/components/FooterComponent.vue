@@ -1,12 +1,13 @@
 <template>
     <div class="main-container">
-        <img src="../assets/footerbackground.webp" alt="Maják" class="footer-image" />
+        <img src="../assets/footerbackground.webp" alt="Maják" class="footer-image background-desktop" />
+        <img src="../assets/mobile-footer-img.webp" alt="Maják" class="footer-image background-mobile" />
         <div class="footer-content">
             <div class="up-box">
                 <h2 class="title-left">Lutio – Najjednoduchší spôsob, ako<br> vyhľadávať alebo ponúkať služby.</h2>
                 <div class="up-box-right">
                     <h2 class="title-right">Máte záujem získať<br> viac zákazníkov?</h2>
-                    <button class="button-right">Mám záujem</button>
+                    <button class="button-right" @click="goTop">Mám záujem</button>
                 </div>
             </div>
             <div class="down-box">
@@ -14,7 +15,7 @@
                     <li><a class="footer-social" href="">Facebook</a></li>
                     <li><a class="footer-social" href="">Instagram</a></li>
                     <li><a class="footer-social" href="">LinkedIn</a></li>
-                    <li><a class="footer-social" href="">info@lutio.eu</a></li>
+                    <li><a class="footer-social" href="mailto:info@lutio.eu">info@lutio.eu</a></li>
                 </ul>
                 <div class="break-line"></div>
                 <p class="down-box-text">© Lutio 2025. All rights reserved.</p>
@@ -24,6 +25,10 @@
 </template>
 
 <script setup>  
+import { scrollToTop, scrollToElementById } from '../scroll'
+
+const goTop = () => scrollToTop()
+const goToForm = () => scrollToElementById('start')
 </script>
 
 <style scoped>
@@ -109,6 +114,10 @@
         opacity: 0.6;
     }
 
+    .background-mobile {
+        display: none;
+    }
+
     @media (max-width: 900px) {
         .title-left {
             display: none;
@@ -161,6 +170,14 @@
 
         .title-right {
             text-align: center;
+        }
+
+        .background-desktop {
+            display: none;
+        }
+
+        .background-mobile {
+            display: block;
         }
     }
 

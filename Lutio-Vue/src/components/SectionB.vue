@@ -4,18 +4,7 @@
 
             <div class="text-box box-width">
                 <h2 class="text-box-title" v-html="data['section-b-title']"></h2>
-                <p class="text-box-text desktop-text" v-html="data['section-b-text']"></p>
-                <p 
-                    class="text-box-text mobile-text"
-                    v-if="$props.data && $props.data['type'] === 'poskytovatel'"
-                    v-html="$props.data['section-b-text-mobile-a']">
-                </p>
-
-                <p 
-                    class="text-box-text mobile-text"
-                    v-if="$props.data && $props.data['type'] === 'poskytovatel'"
-                    v-html="$props.data['section-b-text-mobile-b']">
-                </p>
+                <p class="text-box-text" v-html="data['section-b-text']"></p>
             </div>
         </div>    
         <div class="image-box">
@@ -61,7 +50,7 @@
                 <p class="down-box-text">V prípade, že máte <span class="second-color">akékoľvek otázky, nápady</span> alebo <span class="second-color">záujem o spoluprácu</span>, budeme radi, <span class="second-color">ak sa nám ozvete.</span></p>
                 <div class="down-box-link-box">
                     <p class="linkbox-text">
-                        Ozvite sa nám na <img class="array-icon" src="../assets/array-icon.svg" alt=""> <a class="linkbox-link" href="">info@lutio.eu</a>
+                        Ozvite sa nám na <img class="array-icon" src="../assets/array-icon.svg" alt=""> <a class="linkbox-link" href="mailto:info@lutio.eu">info@lutio.eu</a>
                     </p>
                 </div>
             </div>
@@ -338,4 +327,5 @@
             display: block;
         }
     }
+    
 </style>
